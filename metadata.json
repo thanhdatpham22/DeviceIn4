@@ -1,0 +1,6 @@
+{
+  "name": "DeviceIn4",
+  "description": "Ứng dụng Android hiển thị thông tin thiết bị, hệ thống, cảm biến và tài nguyên trực tiếp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
