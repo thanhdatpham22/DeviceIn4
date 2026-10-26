@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp" android:height="108dp"
-    android:viewportWidth="108" android:viewportHeight="108">
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
     <path android:fillColor="#0B1020" android:pathData="M0,0h108v108h-108z" />
-    <path android:fillColor="#5FE1D5" android:pathData="M31,12h46c5,0 9,4 9,9v66c0,5 -4,9 -9,9H31c-5,0 -9,-4 -9,-9V21c0,-5 4,-9 9,-9z" />
-    <path android:fillColor="#0B1020" android:pathData="M29,21h50v66H29z" />
-    <path android:fillColor="#5FE1D5" android:pathData="M35,57l10,-12 8,9 7,-15 6,19 7,-8v8l-10,10 -5,-16 -5,11 -8,-9 -10,12z" />
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="1.3" android:scaleY="1.3">
+    <!-- The phone and i remain inside the adaptive icon safe area. -->
+    <path android:fillColor="#5FE1D5" android:fillType="evenOdd"
+        android:pathData="M42,25H66Q72,25 72,31V77Q72,83 66,83H42Q36,83 36,77V31Q36,25 42,25ZM42,33V73H66V33Z" />
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M57,39a3.5,3.5 0,1 0,0.01,0ZM50,49H59L55,64H61L60,68H47L52,53H48ZM50,77H58V79H50Z" />
+    <path android:fillColor="#0B1020" android:pathData="M49,28H59V30H49Z" />
+    </group>
 </vector>

@@ -1,0 +1,70 @@
+# Vietnamese|English|French|Japanese|Simplified Chinese
+%1$s ứng dụng Android cho phép nhìn thấy; danh sách có thể thiếu|%1$s apps visible to Android; the list may be incomplete|%1$s applications visibles ; liste potentiellement incomplète|Androidから参照可能なアプリ：%1$s件。一覧は完全とは限りません|Android 可见应用 %1$s 个，列表可能不完整
+Nhân %1$s: %2$s – %3$s|Core %1$s: %2$s – %3$s|Cœur %1$s : %2$s – %3$s|コア%1$s：%2$s〜%3$s|核心 %1$s：%2$s–%3$s
+%1$s nhân|%1$s cores|%1$s cœurs|%1$sコア|%1$s 核心
+%1$s (Android giới hạn phạm vi)|%1$s (Android visibility restrictions)|%1$s (visibilité limitée par Android)|%1$s（Androidによる表示制限）|%1$s（Android 限制可见范围）
+%1$s tiện ích hỗ trợ|%1$s supported extensions|%1$s extensions prises en charge|%1$s件の対応拡張機能|支持 %1$s 项扩展
+Thuộc tính thiết bị: %1$s|Device property: %1$s|Propriété de l’appareil : %1$s|デバイスプロパティ：%1$s|设备属性：%1$s
+ZRAM %1$s · sức chứa logic|ZRAM %1$s · logical capacity|ZRAM %1$s · capacité logique|ZRAM %1$s・論理容量|ZRAM %1$s · 逻辑容量
+ZRAM %1$s · dữ liệu chưa nén|ZRAM %1$s · uncompressed data|ZRAM %1$s · données non compressées|ZRAM %1$s・非圧縮データ|ZRAM %1$s · 未压缩数据
+ZRAM %1$s · RAM thực dùng|ZRAM %1$s · physical RAM used|ZRAM %1$s · RAM physique utilisée|ZRAM %1$s・実際のRAM使用量|ZRAM %1$s · 实际 RAM 用量
+Hỗ trợ chụp cận cảnh Macro|Macro capture supported|Prise en charge macro|マクロ撮影対応|支持微距拍摄
+SCSI / UFS (Chuẩn lưu trữ Flash đa kênh)|SCSI / UFS (multi-channel flash storage)|SCSI / UFS (flash multicanal)|SCSI／UFS（マルチチャネルフラッシュ）|SCSI／UFS（多通道闪存）
+MMC (Đọc ~300 MB/s, ghi ~250 MB/s)|MMC (read ~300 MB/s, write ~250 MB/s)|MMC (lecture ~300 Mo/s, écriture ~250 Mo/s)|MMC（読み取り約300 MB/s、書き込み約250 MB/s）|MMC（读取约 300 MB/s，写入约 250 MB/s）
+SCSI / UFS (Đọc ~1000 MB/s, ghi ~800 MB/s)|SCSI / UFS (read ~1000 MB/s, write ~800 MB/s)|SCSI / UFS (lecture ~1000 Mo/s, écriture ~800 Mo/s)|SCSI／UFS（読み取り約1000 MB/s、書き込み約800 MB/s）|SCSI／UFS（读取约 1000 MB/s，写入约 800 MB/s）
+SCSI / UFS (Đọc ~2100 MB/s, ghi ~1200 MB/s)|SCSI / UFS (read ~2100 MB/s, write ~1200 MB/s)|SCSI / UFS (lecture ~2100 Mo/s, écriture ~1200 Mo/s)|SCSI／UFS（読み取り約2100 MB/s、書き込み約1200 MB/s）|SCSI／UFS（读取约 2100 MB/s，写入约 1200 MB/s）
+SCSI / UFS (Đọc ~4200 MB/s, ghi ~2800 MB/s)|SCSI / UFS (read ~4200 MB/s, write ~2800 MB/s)|SCSI / UFS (lecture ~4200 Mo/s, écriture ~2800 Mo/s)|SCSI／UFS（読み取り約4200 MB/s、書き込み約2800 MB/s）|SCSI／UFS（读取约 4200 MB/s，写入约 2800 MB/s）
+SCSI / UFS (Đọc ~850 MB/s, ghi ~260 MB/s)|SCSI / UFS (read ~850 MB/s, write ~260 MB/s)|SCSI / UFS (lecture ~850 Mo/s, écriture ~260 Mo/s)|SCSI／UFS（読み取り約850 MB/s、書き込み約260 MB/s）|SCSI／UFS（读取约 850 MB/s，写入约 260 MB/s）
+Mở rộng|Expand|Développer|展開|展开
+Thu gọn|Collapse|Réduire|折りたたむ|收起
+Mở chi tiết ứng dụng|Open app details|Ouvrir les informations de l’application|アプリ情報を開く|打开应用详情
+Hiển thị ứng dụng|Show apps|Afficher les applications|アプリを表示|显示应用
+Thu gọn ứng dụng|Collapse apps|Réduire les applications|アプリを折りたたむ|收起应用
+RAM (SỬ DỤNG)|RAM (USED)|RAM UTILISÉE|使用中のRAM|已用 RAM
+Android giới hạn MAC phần cứng; MAC kết nối có thể được ngẫu nhiên hóa|Android restricts hardware MAC; the connection MAC may be randomized|Android limite la MAC matérielle ; la MAC de connexion peut être aléatoire|ハードウェアMACは制限され、接続時のMACはランダム化される場合があります|Android 限制硬件 MAC，连接使用的 MAC 可能随机化
+Chưa kích hoạt|Not activated|Non activé|未有効化|未启用
+Chỉnh tay thông số cảm biến|Manual sensor controls|Réglages manuels du capteur|センサーの手動制御|手动传感器控制
+Chụp liên tục tốc độ cao|High-speed burst capture|Rafale haute vitesse|高速連写|高速连拍
+Chụp ảnh RAW|RAW capture|Capture RAW|RAW撮影|RAW 拍摄
+Có hỗ trợ (Vulkan Compute Shader)|Supported (Vulkan Compute Shader)|Pris en charge (Vulkan Compute Shader)|対応（Vulkan Compute Shader）|支持（Vulkan Compute Shader）
+Có hỗ trợ phần cứng|Hardware supported|Prise en charge matérielle|ハードウェア対応|硬件支持
+Có phần cứng OIS|OIS hardware present|Matériel OIS présent|OISハードウェアあり|具备 OIS 硬件
+Cần Usage Access để xem dung lượng ứng dụng|Usage Access is required to view app storage|L’accès aux données d’utilisation est requis pour le stockage des applications|アプリの使用容量には使用状況へのアクセスが必要です|查看应用存储需要使用情况访问权限
+Cần Usage Access để ước lượng phần chưa phân loại; không thể tách chính xác|Usage Access is required to estimate unclassified storage; exact separation is unavailable|L’accès aux données d’utilisation permet une estimation ; la séparation exacte est indisponible|未分類領域の推定には使用状況へのアクセスが必要です。正確には分離できません|估算未分类存储需要使用情况访问权限，无法精确分离
+Cần bật Usage Access trong cài đặt Android|Enable Usage Access in Android settings|Activez l’accès aux données d’utilisation dans les paramètres Android|Android設定で使用状況へのアクセスを許可してください|请在 Android 设置中启用使用情况访问权限
+External (Thiết bị ngoài)|External device|Appareil externe|外部デバイス|外接设备
+Flagship / Đồ họa cao cấp|Flagship / high-end graphics|Haut de gamme / graphismes avancés|ハイエンドグラフィックス|旗舰／高端图形
+Full (Đầy đủ tính năng Camera2)|Full Camera2 support|Prise en charge complète de Camera2|Camera2完全対応|完整 Camera2 支持
+Góc hẹp / Zoom|Narrow / zoom|Étroit / zoom|狭角／ズーム|窄视角／变焦
+Góc rộng tiêu chuẩn|Standard wide angle|Grand-angle standard|標準広角|标准广角
+Góc siêu rộng|Ultra-wide angle|Ultra grand-angle|超広角|超广角
+Hỗ trợ Ray Tracing hoặc shading hiện đại, chiến mượt mà các tựa game 3D đồ họa nặng ở độ phân giải và FPS cao nhất.|Supports ray tracing or modern shading for demanding 3D games at high resolution and frame rate.|Compatible avec le ray tracing ou les techniques modernes pour les jeux 3D exigeants à haute résolution et fréquence.|レイトレーシングまたは最新シェーディングに対応し、負荷の高い3Dゲームを高解像度・高フレームレートで処理します。|支持光线追踪或现代着色技术，可处理高分辨率、高帧率的重型 3D 游戏。
+Không (Camera đơn lẻ)|No (single camera)|Non (caméra unique)|なし（単眼カメラ）|无（单相机）
+Không công khai hoặc cần quyền camera|Not exposed or camera permission required|Non exposé ou autorisation caméra requise|非公開またはカメラ権限が必要|未公开或需要相机权限
+Không công khai qua Android|Not exposed through Android|Non exposé via Android|Android経由では非公開|未通过 Android 公开
+Không thể tính tỷ lệ đáng tin cậy trên thiết bị này|A reliable ratio cannot be calculated on this device|Aucun ratio fiable ne peut être calculé sur cet appareil|この端末では信頼できる比率を計算できません|无法在此设备上计算可靠的比例
+Không thể đối chiếu: thống kê ứng dụng lớn hơn dung lượng đang dùng|Cannot reconcile: app statistics exceed used storage|Rapprochement impossible : les statistiques dépassent le stockage utilisé|照合不可：アプリ統計が使用容量を超えています|无法核对：应用统计大于已用存储
+Không tìm thấy hoặc Android không cho ứng dụng đọc|Not found or Android restricts access|Introuvable ou accès limité par Android|見つからないかAndroidが読み取りを制限しています|未找到，或 Android 限制访问
+Không đọc được /proc/cpuinfo: hệ thống giới hạn quyền|Cannot read /proc/cpuinfo: system access restriction|Lecture de /proc/cpuinfo impossible : accès limité|/proc/cpuinfoを読み取れません：システム制限|无法读取 /proc/cpuinfo：系统限制访问
+Không đọc được thông số; thiết bị có thể giới hạn quyền truy cập|Cannot read specifications; device access may be restricted|Spécifications indisponibles ; accès potentiellement limité|仕様を読み取れません。端末がアクセスを制限している可能性があります|无法读取参数，设备可能限制访问
+Không đọc được ổ lưu trữ|Cannot read storage volume|Lecture du volume impossible|ストレージを読み取れません|无法读取存储卷
+L1/L2/L3 (Android giới hạn chi tiết)|L1/L2/L3 (details restricted by Android)|L1/L2/L3 (détails limités par Android)|L1/L2/L3（詳細はAndroidが制限）|L1/L2/L3（Android 限制详情）
+Legacy (Cơ bản)|Legacy (basic)|Ancien mode (basique)|レガシー（基本）|传统模式（基础）
+Level 3 (Chuyên nghiệp / RAW & YUV)|Level 3 (advanced / RAW & YUV)|Niveau 3 (avancé / RAW et YUV)|レベル3（高度／RAW・YUV）|级别 3（高级／RAW 与 YUV）
+Limited (Giới hạn)|Limited|Limité|限定対応|有限支持
+Nhận diện qua SoC và phân vùng hệ thống|Identified from SoC and system partitions|Identification par SoC et partitions système|SoCとシステムパーティションから識別|根据 SoC 与系统分区识别
+Quản lý bởi Controller Flash|Managed by flash controller|Géré par le contrôleur flash|フラッシュコントローラーが管理|由闪存控制器管理
+Samsung Semiconductor / SK Hynix (Nhà cung ứng Flash OEM)|Samsung Semiconductor / SK Hynix (OEM flash suppliers)|Samsung Semiconductor / SK Hynix (fournisseurs flash OEM)|Samsung Semiconductor／SK Hynix（OEMフラッシュ供給元）|Samsung Semiconductor／SK Hynix（OEM 闪存供应商）
+System, media và tệp của người dùng không thể tách chính xác bằng quyền hiện có|System, media and user files cannot be separated exactly with current access|Les autorisations actuelles ne permettent pas de séparer exactement système, médias et fichiers utilisateur|現在の権限ではシステム・メディア・ユーザーファイルを正確に分離できません|当前权限无法精确分离系统、媒体和用户文件
+Tiêu chuẩn / Cơ bản|Standard / basic|Standard / basique|標準／基本|标准／基础
+Tương thích ngược|Backward compatible|Rétrocompatible|下位互換|向后兼容
+Tầm trung / Hiệu năng khá|Mid-range / capable|Milieu de gamme / performant|ミドルレンジ／良好な性能|中端／性能良好
+Tệp đang chiếm + trống dành riêng + trống dùng được = tổng; đã dùng / không khả dụng gồm 2 mục đầu|Files + reserved free + usable free = total; used/unavailable includes the first two|Fichiers + libre réservé + libre utilisable = total ; utilisé/indisponible inclut les deux premiers|ファイル＋予約済み空き＋利用可能な空き＝合計。使用済み／利用不可は最初の2項目です|文件占用＋保留空闲＋可用空闲＝总容量；已用／不可用包含前两项
+Tối ưu hóa năng lượng cho giao diện hệ thống và các tựa game giải trí nhẹ nhàng, tiết kiệm pin.|Optimized for efficient system UI and light games, conserving battery.|Optimisé pour une interface fluide et les jeux légers, avec une consommation réduite.|システム表示と軽いゲームを省電力で処理し、バッテリーを節約します。|针对系统界面和轻量游戏优化能耗，节省电量。
+Vô cực / Cố định|Infinity / fixed focus|Infini / mise au point fixe|無限遠／固定焦点|无穷远／固定焦点
+Xuất bản đồ độ sâu|Depth map output|Sortie de carte de profondeur|深度マップ出力|输出深度图
+Xử lý hậu kỳ tay|Manual post-processing|Post-traitement manuel|手動の画像後処理|手动后处理
+Xử lý tốt các tựa game 3D phổ biến ở mức thiết lập trung bình - cao, hỗ trợ Vulkan và OpenGL ES 3.2 ổn định.|Handles common 3D games at medium to high settings with Vulkan and OpenGL ES 3.2 support.|Convient aux jeux 3D courants avec des réglages moyens à élevés et prend en charge Vulkan et OpenGL ES 3.2.|一般的な3Dゲームを中〜高設定で処理し、VulkanとOpenGL ES 3.2に対応します。|可在中高画质下处理常见 3D 游戏，支持 Vulkan 与 OpenGL ES 3.2。
+ZRAM là bộ nhớ hoán đổi nén trong RAM; không cộng vào tỷ lệ bộ nhớ trong|ZRAM is compressed swap in RAM; excluded from internal storage ratios|La ZRAM est du swap compressé en RAM, exclu du taux de stockage interne|ZRAMはRAM内の圧縮スワップで、内部ストレージの比率には含めません|ZRAM 是 RAM 中的压缩交换空间，不计入内部存储比例
+Đọc thông số cảm biến|Read sensor settings|Lecture des réglages du capteur|センサー設定の読み取り|读取传感器设置
+Đọc trực tiếp từ sysfs block device|Read directly from sysfs block device|Lecture directe depuis le périphérique bloc sysfs|sysfsブロックデバイスから直接取得|直接从 sysfs 块设备读取

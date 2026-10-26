@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Outer Shield / Background Base -->
+    <path android:fillColor="#070C1B" android:pathData="M24,12H84Q96,12 96,24V84Q96,96 84,96H24Q12,96 12,84V24Q12,12 24,12Z" />
+
+    <!-- Circuit Lines / Tech Grid -->
+    <path android:strokeColor="#1E294B" android:strokeWidth="2" android:pathData="M30,30H78M30,54H78M30,78H78M54,30V78" />
+
+    <!-- Central Microchip / CPU Core -->
+    <path android:fillColor="#0F172A" android:strokeColor="#00F0FF" android:strokeWidth="2.5" android:pathData="M38,38H70V70H38Z" />
+
+    <!-- Chip Pin Connectors -->
+    <path android:strokeColor="#00F0FF" android:strokeWidth="2" android:pathData="M44,38V32M54,38V32M64,38V32M44,70V76M54,70V76M64,70V76M38,44H32M38,54H32M38,64H32M70,44H76M70,54H76M70,64H76" />
+
+    <!-- Inner Glowing Hardware Core -->
+    <path android:fillColor="#5FE1D5" android:pathData="M46,46H62V62H46Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M54,49a3.5,3.5 0,1 0,0.01,0ZM48,56H60V60H48Z" />
+</vector>

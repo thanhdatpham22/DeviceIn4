@@ -1,0 +1,2768 @@
+[
+  {
+    "name": "ui_overview_286a38",
+    "vi": "Tổng quan",
+    "en": "Overview",
+    "args": 0
+  },
+  {
+    "name": "ui_sensors_496934",
+    "vi": "Cảm biến",
+    "en": "Sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_device_931c00",
+    "vi": "Thiết bị",
+    "en": "Device",
+    "args": 0
+  },
+  {
+    "name": "ui_device_identity_and_hardware_4bddc7",
+    "vi": "Danh tính và phần cứng thiết bị",
+    "en": "Device identity and hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_android_kernel_and_build_information_acb776",
+    "vi": "Android, kernel và thông tin bản dựng",
+    "en": "Android, kernel and build information",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_architecture_and_graphics_capabilities_6b0956",
+    "vi": "Cấu trúc CPU và khả năng đồ họa",
+    "en": "CPU architecture and graphics capabilities",
+    "args": 0
+  },
+  {
+    "name": "ui_live_ram_1077a7",
+    "vi": "RAM trực tiếp",
+    "en": "Live RAM",
+    "args": 0
+  },
+  {
+    "name": "ui_one_sample_per_second_while_the_app_is_open_c1af52",
+    "vi": "Lấy mẫu mỗi giây khi ứng dụng đang mở",
+    "en": "One sample per second while the app is open",
+    "args": 0
+  },
+  {
+    "name": "ui_internal_and_external_storage_1d62e9",
+    "vi": "Bộ nhớ trong, ngoài và dung lượng còn lại",
+    "en": "Internal and external storage",
+    "args": 0
+  },
+  {
+    "name": "ui_resolution_refresh_rate_and_hdr_f9aace",
+    "vi": "Độ phân giải, tần số quét và HDR",
+    "en": "Resolution, refresh rate and HDR",
+    "args": 0
+  },
+  {
+    "name": "ui_live_current_and_power_4c9414",
+    "vi": "Dòng điện và công suất trực tiếp",
+    "en": "Live current and power",
+    "args": 0
+  },
+  {
+    "name": "ui_connectivity_and_data_usage_a46026",
+    "vi": "Kết nối và dữ liệu sử dụng",
+    "en": "Connectivity and data usage",
+    "args": 0
+  },
+  {
+    "name": "ui_lenses_sensors_and_capture_capabilities_f51b19",
+    "vi": "Ống kính, cảm biến và khả năng chụp",
+    "en": "Lenses, sensors and capture capabilities",
+    "args": 0
+  },
+  {
+    "name": "ui_available_android_sensors_90a3a8",
+    "vi": "Danh sách cảm biến Android công khai",
+    "en": "Available Android sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_and_system_features_e82ddd",
+    "vi": "Tính năng phần cứng và hệ thống",
+    "en": "Hardware and system features",
+    "args": 0
+  },
+  {
+    "name": "ui_device_identity_859582",
+    "vi": "Nhận diện thiết bị",
+    "en": "Device identity",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_ef3192",
+    "vi": "Phần cứng",
+    "en": "Hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_android_version_e485cc",
+    "vi": "Phiên bản Android",
+    "en": "Android version",
+    "args": 0
+  },
+  {
+    "name": "ui_updates_bfe9d6",
+    "vi": "Bản cập nhật",
+    "en": "Updates",
+    "args": 0
+  },
+  {
+    "name": "ui_security_and_boot_534c61",
+    "vi": "Bảo mật & khởi động",
+    "en": "Security and boot",
+    "args": 0
+  },
+  {
+    "name": "ui_uptime_bc2d1c",
+    "vi": "Thời gian hoạt động",
+    "en": "Uptime",
+    "args": 0
+  },
+  {
+    "name": "ui_environment_9b1a37",
+    "vi": "Môi trường",
+    "en": "Environment",
+    "args": 0
+  },
+  {
+    "name": "ui_runtime_2f26ef",
+    "vi": "Thời gian chạy",
+    "en": "Runtime",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_architecture_5afb1f",
+    "vi": "CPU · cấu trúc",
+    "en": "CPU architecture",
+    "args": 0
+  },
+  {
+    "name": "ui_gpu_and_graphics_fe22f4",
+    "vi": "GPU & đồ họa",
+    "en": "GPU and graphics",
+    "args": 0
+  },
+  {
+    "name": "ui_internal_storage_ae6a6b",
+    "vi": "Bộ nhớ trong",
+    "en": "Internal storage",
+    "args": 0
+  },
+  {
+    "name": "ui_external_storage_89ff59",
+    "vi": "Bộ nhớ ngoài",
+    "en": "External storage",
+    "args": 0
+  },
+  {
+    "name": "ui_display_6ecd43",
+    "vi": "Màn hình",
+    "en": "Display",
+    "args": 0
+  },
+  {
+    "name": "ui_panel_and_display_aa80b6",
+    "vi": "Tấm nền & hiển thị",
+    "en": "Panel and display",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_and_power_ea15b6",
+    "vi": "Pin & nguồn điện",
+    "en": "Battery and power",
+    "args": 0
+  },
+  {
+    "name": "ui_network_and_hardware_58fe8a",
+    "vi": "Kết nối & phần cứng mạng",
+    "en": "Network and hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_data_usage_e4064e",
+    "vi": "Dữ liệu sử dụng",
+    "en": "Data usage",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_and_system_features_65faa6",
+    "vi": "Tính năng phần cứng & hệ thống",
+    "en": "Hardware and system features",
+    "args": 0
+  },
+  {
+    "name": "ui_memory_details_cb544b",
+    "vi": "Chi tiết bộ nhớ",
+    "en": "Memory details",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_breakdown_60ca11",
+    "vi": "Phân loại dung lượng",
+    "en": "Storage breakdown",
+    "args": 0
+  },
+  {
+    "name": "ui_largest_visible_apps_4ba985",
+    "vi": "Ứng dụng dùng nhiều dung lượng",
+    "en": "Largest visible apps",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_in_use_ff76c7",
+    "vi": "RAM ĐANG SỬ DỤNG",
+    "en": "RAM IN USE",
+    "args": 0
+  },
+  {
+    "name": "ui_available_5020d8",
+    "vi": "Khả dụng",
+    "en": "Available",
+    "args": 0
+  },
+  {
+    "name": "ui_remaining_capacity_f1183d",
+    "vi": "Dung lượng còn lại",
+    "en": "Remaining capacity",
+    "args": 0
+  },
+  {
+    "name": "ui_status_e03c14",
+    "vi": "Trạng thái",
+    "en": "Status",
+    "args": 0
+  },
+  {
+    "name": "ui_health_77e26a",
+    "vi": "Sức khỏe",
+    "en": "Health",
+    "args": 0
+  },
+  {
+    "name": "ui_power_source_2fbcee",
+    "vi": "Nguồn",
+    "en": "Power source",
+    "args": 0
+  },
+  {
+    "name": "ui_temperature_63cc74",
+    "vi": "Nhiệt độ",
+    "en": "Temperature",
+    "args": 0
+  },
+  {
+    "name": "ui_voltage_aa464f",
+    "vi": "Điện áp",
+    "en": "Voltage",
+    "args": 0
+  },
+  {
+    "name": "ui_current_8f4445",
+    "vi": "Dòng điện hiện tại",
+    "en": "Current",
+    "args": 0
+  },
+  {
+    "name": "ui_average_current_92082d",
+    "vi": "Dòng điện trung bình",
+    "en": "Average current",
+    "args": 0
+  },
+  {
+    "name": "ui_instant_power_5f3a41",
+    "vi": "Công suất tức thời",
+    "en": "Instant power",
+    "args": 0
+  },
+  {
+    "name": "ui_charge_cycles_25098a",
+    "vi": "Chu kỳ sạc",
+    "en": "Charge cycles",
+    "args": 0
+  },
+  {
+    "name": "ui_technology_42de15",
+    "vi": "Công nghệ",
+    "en": "Technology",
+    "args": 0
+  },
+  {
+    "name": "ui_charging_d1335c",
+    "vi": "Đang sạc",
+    "en": "Charging",
+    "args": 0
+  },
+  {
+    "name": "ui_not_charging_bb86f1",
+    "vi": "Không sạc",
+    "en": "Not charging",
+    "args": 0
+  },
+  {
+    "name": "ui_discharging_ea89af",
+    "vi": "Đang xả",
+    "en": "Discharging",
+    "args": 0
+  },
+  {
+    "name": "ui_full_398b41",
+    "vi": "Đã đầy",
+    "en": "Full",
+    "args": 0
+  },
+  {
+    "name": "ui_good_f716d5",
+    "vi": "Tốt",
+    "en": "Good",
+    "args": 0
+  },
+  {
+    "name": "ui_yes_05828b",
+    "vi": "Có",
+    "en": "Yes",
+    "args": 0
+  },
+  {
+    "name": "ui_no_3b4a52",
+    "vi": "Không",
+    "en": "No",
+    "args": 0
+  },
+  {
+    "name": "ui_unknown_988a61",
+    "vi": "Không rõ",
+    "en": "Unknown",
+    "args": 0
+  },
+  {
+    "name": "ui_unavailable_895ac2",
+    "vi": "Không công khai",
+    "en": "Unavailable",
+    "args": 0
+  },
+  {
+    "name": "ui_not_provided_3e5e86",
+    "vi": "Không được cung cấp",
+    "en": "Not provided",
+    "args": 0
+  },
+  {
+    "name": "ui_not_exposed_by_android_5a2db8",
+    "vi": "Không được Android công khai",
+    "en": "Not exposed by Android",
+    "args": 0
+  },
+  {
+    "name": "ui_reading_device_data_0010fa",
+    "vi": "Đang đọc dữ liệu",
+    "en": "Reading device data",
+    "args": 0
+  },
+  {
+    "name": "ui_unable_to_read_data_99df88",
+    "vi": "Không thể đọc dữ liệu",
+    "en": "Unable to read data",
+    "args": 0
+  },
+  {
+    "name": "ui_camera_permission_needed_379280",
+    "vi": "Cần quyền camera",
+    "en": "Camera permission needed",
+    "args": 0
+  },
+  {
+    "name": "ui_no_camera_available_215646",
+    "vi": "Chưa có camera",
+    "en": "No camera available",
+    "args": 0
+  },
+  {
+    "name": "ui_no_sensor_available_3f7a99",
+    "vi": "Chưa có cảm biến",
+    "en": "No sensor available",
+    "args": 0
+  },
+  {
+    "name": "ui_allow_access_1f5d43",
+    "vi": "Cho phép đọc thông số",
+    "en": "Allow access",
+    "args": 0
+  },
+  {
+    "name": "ui_code_1c80f9",
+    "vi": "Mã",
+    "en": "Code",
+    "args": 0
+  },
+  {
+    "name": "ui_data_3460de",
+    "vi": "Dữ liệu",
+    "en": "Data",
+    "args": 0
+  },
+  {
+    "name": "ui_cache_50338b",
+    "vi": "Cache",
+    "en": "Cache",
+    "args": 0
+  },
+  {
+    "name": "ui_type_5401d3",
+    "vi": "Loại",
+    "en": "Type",
+    "args": 0
+  },
+  {
+    "name": "ui_total_de995d",
+    "vi": "Tổng",
+    "en": "Total",
+    "args": 0
+  },
+  {
+    "name": "ui_free_b5b9cc",
+    "vi": "Còn trống",
+    "en": "Free",
+    "args": 0
+  },
+  {
+    "name": "ui_used_2cc668",
+    "vi": "Đã dùng",
+    "en": "Used",
+    "args": 0
+  },
+  {
+    "name": "ui_visible_apps_ad7a59",
+    "vi": "Ứng dụng nhìn thấy",
+    "en": "Visible apps",
+    "args": 0
+  },
+  {
+    "name": "ui_visible_system_apps_6e38ff",
+    "vi": "Ứng dụng hệ thống nhìn thấy",
+    "en": "Visible system apps",
+    "args": 0
+  },
+  {
+    "name": "ui_monthly_usage_b1e973",
+    "vi": "Thống kê theo tháng",
+    "en": "Monthly usage",
+    "args": 0
+  },
+  {
+    "name": "ui_error_d29078",
+    "vi": "Lỗi",
+    "en": "Error",
+    "args": 0
+  },
+  {
+    "name": "ui_architecture_fa712a",
+    "vi": "Kiến trúc",
+    "en": "Architecture",
+    "args": 0
+  },
+  {
+    "name": "ui_logical_cores_955f65",
+    "vi": "Số nhân logic",
+    "en": "Logical cores",
+    "args": 0
+  },
+  {
+    "name": "ui_cores_e92b30",
+    "vi": "Số nhân",
+    "en": "Cores",
+    "args": 0
+  },
+  {
+    "name": "ui_component_verification_78aff9",
+    "vi": "Đối chiếu linh kiện",
+    "en": "Component verification",
+    "args": 0
+  },
+  {
+    "name": "ui_since_last_boot_2b0cdf",
+    "vi": "Từ lần khởi động cuối",
+    "en": "Since last boot",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_uptime_5cd9f2",
+    "vi": "Thời gian CPU hoạt động",
+    "en": "CPU uptime",
+    "args": 0
+  },
+  {
+    "name": "ui_kernel_build_a07e83",
+    "vi": "Kernel build",
+    "en": "Kernel build",
+    "args": 0
+  },
+  {
+    "name": "ui_manufacturer_f323a0",
+    "vi": "Nhà sản xuất",
+    "en": "Manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_max_frequency_per_core_272596",
+    "vi": "Xung tối đa từng nhân",
+    "en": "Max frequency per core",
+    "args": 0
+  },
+  {
+    "name": "ui_physical_resolution_3dc45f",
+    "vi": "Độ phân giải thực",
+    "en": "Physical resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_density_f00cb5",
+    "vi": "Mật độ",
+    "en": "Density",
+    "args": 0
+  },
+  {
+    "name": "ui_approximate_size_8bd608",
+    "vi": "Kích thước xấp xỉ",
+    "en": "Approximate size",
+    "args": 0
+  },
+  {
+    "name": "ui_current_refresh_rate_146148",
+    "vi": "Refresh hiện tại",
+    "en": "Current refresh rate",
+    "args": 0
+  },
+  {
+    "name": "ui_supported_modes_3ed76e",
+    "vi": "Chế độ hỗ trợ",
+    "en": "Supported modes",
+    "args": 0
+  },
+  {
+    "name": "ui_system_brightness_b52637",
+    "vi": "Độ sáng hệ thống",
+    "en": "System brightness",
+    "args": 0
+  },
+  {
+    "name": "ui_orientation_05c861",
+    "vi": "Hướng",
+    "en": "Orientation",
+    "args": 0
+  },
+  {
+    "name": "ui_panel_name_3ad286",
+    "vi": "Tên tấm nền",
+    "en": "Panel name",
+    "args": 0
+  },
+  {
+    "name": "ui_panel_oem_code_6e2aff",
+    "vi": "Mã OEM tấm nền",
+    "en": "Panel OEM code",
+    "args": 0
+  },
+  {
+    "name": "ui_panel_product_id_407498",
+    "vi": "Mã sản phẩm tấm nền",
+    "en": "Panel product ID",
+    "args": 0
+  },
+  {
+    "name": "ui_panel_oem_2f6356",
+    "vi": "OEM tấm nền",
+    "en": "Panel OEM",
+    "args": 0
+  },
+  {
+    "name": "ui_replacement_status_0829c3",
+    "vi": "Tình trạng đã thay",
+    "en": "Replacement status",
+    "args": 0
+  },
+  {
+    "name": "ui_total_capacity_3b9610",
+    "vi": "Tổng dung lượng",
+    "en": "Total capacity",
+    "args": 0
+  },
+  {
+    "name": "ui_other_apps_system_cache_other_179dc1",
+    "vi": "Ứng dụng khác / System / Cache / Other",
+    "en": "Other apps / System / Cache / Other",
+    "args": 0
+  },
+  {
+    "name": "ui_devicein4_cache_29fd45",
+    "vi": "Cache của DeviceIn4",
+    "en": "DeviceIn4 cache",
+    "args": 0
+  },
+  {
+    "name": "ui_removable_e8717f",
+    "vi": "Có thể tháo rời",
+    "en": "Removable",
+    "args": 0
+  },
+  {
+    "name": "ui_apps_and_breakdown_9575ee",
+    "vi": "Ứng dụng & phân loại",
+    "en": "Apps and breakdown",
+    "args": 0
+  },
+  {
+    "name": "ui_app_code_f7c702",
+    "vi": "Mã ứng dụng",
+    "en": "App code",
+    "args": 0
+  },
+  {
+    "name": "ui_app_data_14a42b",
+    "vi": "Dữ liệu ứng dụng",
+    "en": "App data",
+    "args": 0
+  },
+  {
+    "name": "ui_app_cache_6f8df8",
+    "vi": "Cache ứng dụng",
+    "en": "App cache",
+    "args": 0
+  },
+  {
+    "name": "ui_unclassified_e91bd8",
+    "vi": "Chưa phân loại",
+    "en": "Unclassified",
+    "args": 0
+  },
+  {
+    "name": "ui_scope_1abf29",
+    "vi": "Phạm vi",
+    "en": "Scope",
+    "args": 0
+  },
+  {
+    "name": "ui_system_app_c5a24d",
+    "vi": "Ứng dụng hệ thống",
+    "en": "System app",
+    "args": 0
+  },
+  {
+    "name": "ui_user_app_59bfd7",
+    "vi": "Ứng dụng người dùng",
+    "en": "User app",
+    "args": 0
+  },
+  {
+    "name": "ui_max_fifo_b08284",
+    "vi": "FIFO tối đa",
+    "en": "Max FIFO",
+    "args": 0
+  },
+  {
+    "name": "ui_minimum_delay_54d85f",
+    "vi": "Độ trễ tối thiểu",
+    "en": "Minimum delay",
+    "args": 0
+  },
+  {
+    "name": "ui_carrier_26ea5f",
+    "vi": "Nhà mạng",
+    "en": "Carrier",
+    "args": 0
+  },
+  {
+    "name": "ui_sim_type_a4057c",
+    "vi": "Loại SIM",
+    "en": "SIM type",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_hardware_e73f2a",
+    "vi": "Phần cứng Wi-Fi",
+    "en": "Wi-Fi hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_cellular_hardware_353b8a",
+    "vi": "Phần cứng di động",
+    "en": "Cellular hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_4g_5g_capability_4c239b",
+    "vi": "Khả năng 4G/5G",
+    "en": "4G/5G capability",
+    "args": 0
+  },
+  {
+    "name": "ui_device_received_since_boot_f3ccfd",
+    "vi": "Thiết bị nhận từ lúc khởi động",
+    "en": "Device received since boot",
+    "args": 0
+  },
+  {
+    "name": "ui_device_sent_since_boot_c4c6de",
+    "vi": "Thiết bị gửi từ lúc khởi động",
+    "en": "Device sent since boot",
+    "args": 0
+  },
+  {
+    "name": "ui_app_received_since_boot_fd9e80",
+    "vi": "App nhận từ lúc khởi động",
+    "en": "App received since boot",
+    "args": 0
+  },
+  {
+    "name": "ui_app_sent_since_boot_274051",
+    "vi": "App gửi từ lúc khởi động",
+    "en": "App sent since boot",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_this_month_6e5be8",
+    "vi": "Wi-Fi tháng này",
+    "en": "Wi-Fi this month",
+    "args": 0
+  },
+  {
+    "name": "ui_cellular_this_month_602c67",
+    "vi": "Di động tháng này",
+    "en": "Cellular this month",
+    "args": 0
+  },
+  {
+    "name": "ui_monthly_statistics_4eba42",
+    "vi": "Thống kê tháng",
+    "en": "Monthly statistics",
+    "args": 0
+  },
+  {
+    "name": "ui_unsupported_4a9535",
+    "vi": "Không hỗ trợ",
+    "en": "Unsupported",
+    "args": 0
+  },
+  {
+    "name": "ui_offline_825095",
+    "vi": "Ngoại tuyến",
+    "en": "Offline",
+    "args": 0
+  },
+  {
+    "name": "ui_cellular_2b8015",
+    "vi": "Di động",
+    "en": "Cellular",
+    "args": 0
+  },
+  {
+    "name": "ui_other_5b8a28",
+    "vi": "Khác",
+    "en": "Other",
+    "args": 0
+  },
+  {
+    "name": "ui_internet_available_3ef2ac",
+    "vi": "Có internet",
+    "en": "Internet available",
+    "args": 0
+  },
+  {
+    "name": "ui_disconnected_438158",
+    "vi": "Không kết nối",
+    "en": "Disconnected",
+    "args": 0
+  },
+  {
+    "name": "ui_connected_internet_unverified_f34ea8",
+    "vi": "Đã kết nối, chưa xác thực internet",
+    "en": "Connected, internet unverified",
+    "args": 0
+  },
+  {
+    "name": "ui_location_permission_required_05607f",
+    "vi": "Cần quyền vị trí",
+    "en": "Location permission required",
+    "args": 0
+  },
+  {
+    "name": "ui_phone_permission_required_642673",
+    "vi": "Cần quyền điện thoại",
+    "en": "Phone permission required",
+    "args": 0
+  },
+  {
+    "name": "ui_overheated_823510",
+    "vi": "Quá nóng",
+    "en": "Overheated",
+    "args": 0
+  },
+  {
+    "name": "ui_dead_40370b",
+    "vi": "Hỏng",
+    "en": "Dead",
+    "args": 0
+  },
+  {
+    "name": "ui_overvoltage_0eab17",
+    "vi": "Quá áp",
+    "en": "Overvoltage",
+    "args": 0
+  },
+  {
+    "name": "ui_too_cold_102cd4",
+    "vi": "Quá lạnh",
+    "en": "Too cold",
+    "args": 0
+  },
+  {
+    "name": "ui_ac_17ec65",
+    "vi": "Nguồn AC",
+    "en": "AC",
+    "args": 0
+  },
+  {
+    "name": "ui_wireless_9ce1e6",
+    "vi": "Không dây",
+    "en": "Wireless",
+    "args": 0
+  },
+  {
+    "name": "ui_unplugged_920752",
+    "vi": "Không cắm sạc",
+    "en": "Unplugged",
+    "args": 0
+  },
+  {
+    "name": "ui_remaining_charge_7f8ea2",
+    "vi": "Điện tích còn lại",
+    "en": "Remaining charge",
+    "args": 0
+  },
+  {
+    "name": "ui_front_42b0ca",
+    "vi": "Trước",
+    "en": "Front",
+    "args": 0
+  },
+  {
+    "name": "ui_back_68196a",
+    "vi": "Sau",
+    "en": "Back",
+    "args": 0
+  },
+  {
+    "name": "ui_external_55dff5",
+    "vi": "Ngoài",
+    "en": "External",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_level_10eaf3",
+    "vi": "Cấp phần cứng",
+    "en": "Hardware level",
+    "args": 0
+  },
+  {
+    "name": "ui_max_jpeg_resolution_b73e28",
+    "vi": "Độ phân giải JPEG tối đa",
+    "en": "Max JPEG resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_size_b755ea",
+    "vi": "Kích thước cảm biến",
+    "en": "Sensor size",
+    "args": 0
+  },
+  {
+    "name": "ui_focal_length_942f9b",
+    "vi": "Tiêu cự",
+    "en": "Focal length",
+    "args": 0
+  },
+  {
+    "name": "ui_aperture_1d30a7",
+    "vi": "Khẩu độ",
+    "en": "Aperture",
+    "args": 0
+  },
+  {
+    "name": "ui_optical_stabilization_b1883e",
+    "vi": "Chống rung quang học",
+    "en": "Optical stabilization",
+    "args": 0
+  },
+  {
+    "name": "ui_flash_9884df",
+    "vi": "Đèn flash",
+    "en": "Flash",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_orientation_e16c2b",
+    "vi": "Hướng cảm biến",
+    "en": "Sensor orientation",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_resolution_f6c3cb",
+    "vi": "Độ phân giải cảm biến",
+    "en": "Sensor resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_active_sensor_area_19a3c0",
+    "vi": "Vùng cảm biến hoạt động",
+    "en": "Active sensor area",
+    "args": 0
+  },
+  {
+    "name": "ui_max_digital_zoom_2086b0",
+    "vi": "Zoom số tối đa",
+    "en": "Max digital zoom",
+    "args": 0
+  },
+  {
+    "name": "ui_max_af_regions_dd0947",
+    "vi": "AF regions tối đa",
+    "en": "Max AF regions",
+    "args": 0
+  },
+  {
+    "name": "ui_max_ae_regions_0d9984",
+    "vi": "AE regions tối đa",
+    "en": "Max AE regions",
+    "args": 0
+  },
+  {
+    "name": "ui_capabilities_codes_7b4a73",
+    "vi": "Capabilities (mã)",
+    "en": "Capabilities (codes)",
+    "args": 0
+  },
+  {
+    "name": "ui_system_other_breakdown_fe918a",
+    "vi": "Phân loại System / Other",
+    "en": "System / Other breakdown",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_by_app_22a99e",
+    "vi": "Dung lượng từng ứng dụng",
+    "en": "Storage by app",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_ssid_97bad4",
+    "vi": "Wi-Fi SSID",
+    "en": "Wi-Fi SSID",
+    "args": 0
+  },
+  {
+    "name": "ui_cellular_network_28125b",
+    "vi": "Mạng di động",
+    "en": "Cellular network",
+    "args": 0
+  },
+  {
+    "name": "ui_android_limits_access_to_other_apps_storage_open_system_1f77ce",
+    "vi": "Android giới hạn quyền đọc dung lượng của ứng dụng khác. Mở cài đặt lưu trữ của hệ thống để xem phân loại do thiết bị cung cấp.",
+    "en": "Android limits access to other apps' storage. Open system storage settings for the device's breakdown.",
+    "args": 0
+  },
+  {
+    "name": "ui_enable_usage_access_to_see_app_code_data_and_cache_for__4bbc80",
+    "vi": "Bật Usage Access để xem mã, dữ liệu và cache của các ứng dụng Android cho phép nhìn thấy.",
+    "en": "Enable Usage Access to see app code, data and cache for visible apps.",
+    "args": 0
+  },
+  {
+    "name": "ui_allow_location_access_to_show_the_current_wi_fi_network_0a767d",
+    "vi": "Cho phép vị trí để Android cung cấp tên mạng Wi-Fi hiện tại.",
+    "en": "Allow location access to show the current Wi-Fi network name.",
+    "args": 0
+  },
+  {
+    "name": "ui_allow_phone_state_access_to_see_the_current_2g_3g_4g_5g_2ce6ef",
+    "vi": "Cho phép trạng thái điện thoại để xem loại mạng 2G/3G/4G/5G.",
+    "en": "Allow phone state access to see the current 2G/3G/4G/5G network type.",
+    "args": 0
+  },
+  {
+    "name": "ui_enable_usage_access_for_this_month_s_wi_fi_and_cellular_5a137e",
+    "vi": "Bật Usage Access để đọc tổng dữ liệu Wi-Fi và di động trong tháng này.",
+    "en": "Enable Usage Access for this month's Wi-Fi and cellular totals.",
+    "args": 0
+  },
+  {
+    "name": "ui_android_requires_camera_access_to_read_lens_characteris_0e8f8a",
+    "vi": "Android yêu cầu quyền camera để đọc đầy đủ đặc tính ống kính. Ứng dụng chỉ đọc thông số, không chụp ảnh.",
+    "en": "Android requires camera access to read lens characteristics. DeviceIn4 only reads specifications and does not take photos.",
+    "args": 0
+  },
+  {
+    "name": "ui_this_device_reports_no_cameras_through_camera2_b8212c",
+    "vi": "Thiết bị không công khai camera qua Camera2.",
+    "en": "This device reports no cameras through Camera2.",
+    "args": 0
+  },
+  {
+    "name": "ui_this_device_reports_no_sensors_through_sensormanager_c61d1c",
+    "vi": "Thiết bị không công khai cảm biến qua Android SensorManager.",
+    "en": "This device reports no sensors through SensorManager.",
+    "args": 0
+  },
+  {
+    "name": "ui_waiting_for_device_data_dac4e7",
+    "vi": "Đợi thiết bị trả về thông số của trang này…",
+    "en": "Waiting for device data…",
+    "args": 0
+  },
+  {
+    "name": "ui_android_cannot_verify_replaced_components_60b8f4",
+    "vi": "Android không cung cấp nguồn để xác định linh kiện đã thay",
+    "en": "Android cannot verify replaced components",
+    "args": 0
+  },
+  {
+    "name": "ui_restricted_for_regular_apps_on_android_10_49e538",
+    "vi": "Android 10+ giới hạn cho ứng dụng thường",
+    "en": "Restricted for regular apps on Android 10+",
+    "args": 0
+  },
+  {
+    "name": "ui_no_root_indicators_detected_8e831b",
+    "vi": "Chưa phát hiện dấu hiệu root",
+    "en": "No root indicators detected",
+    "args": 0
+  },
+  {
+    "name": "ui_possible_root_indicators_unconfirmed_125121",
+    "vi": "Có dấu hiệu root (chưa xác nhận)",
+    "en": "Possible root indicators (unconfirmed)",
+    "args": 0
+  },
+  {
+    "name": "ui_cannot_be_verified_through_android_apis_bd2c93",
+    "vi": "Không thể xác minh qua API Android",
+    "en": "Cannot be verified through Android APIs",
+    "args": 0
+  },
+  {
+    "name": "ui_system_reported_pnp_code_physical_component_not_verifie_e5232a",
+    "vi": "Mã PNP do hệ thống báo; không xác thực linh kiện vật lý",
+    "en": "System-reported PNP code; physical component not verified",
+    "args": 0
+  },
+  {
+    "name": "ui_android_does_not_expose_the_battery_cell_manufacturer_326015",
+    "vi": "Android không công khai nhà sản xuất cell pin",
+    "en": "Android does not expose the battery cell manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_not_reported_by_device_648c79",
+    "vi": "Thiết bị không công khai",
+    "en": "Not reported by device",
+    "args": 0
+  },
+  {
+    "name": "ui_none_8d5f26",
+    "vi": "Không có",
+    "en": "None",
+    "args": 0
+  },
+  {
+    "name": "ui_landscape_dd3b26",
+    "vi": "Ngang",
+    "en": "Landscape",
+    "args": 0
+  },
+  {
+    "name": "ui_portrait_9f5aed",
+    "vi": "Dọc",
+    "en": "Portrait",
+    "args": 0
+  },
+  {
+    "name": "ui_access_4de786",
+    "vi": "Quyền truy cập",
+    "en": "Access",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_data_unavailable_f58ec9",
+    "vi": "Không đọc được dữ liệu pin",
+    "en": "Battery data unavailable",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_hardware_technology_de3edf",
+    "vi": "Phần cứng & Công nghệ RAM",
+    "en": "RAM Hardware & Technology",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_details_hardware_0af78d",
+    "vi": "Chi tiết & phần cứng RAM",
+    "en": "RAM details & hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_modem_4g_5g_hardware_58ba53",
+    "vi": "Modem & phần cứng 4G/5G",
+    "en": "Modem & 4G/5G hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_4g_lte_hardware_30ecd9",
+    "vi": "Phần cứng 4G LTE",
+    "en": "4G LTE hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_5g_nr_hardware_b960b6",
+    "vi": "Phần cứng 5G NR",
+    "en": "5G NR hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_current_data_network_afcb33",
+    "vi": "Mạng dữ liệu hiện tại",
+    "en": "Current data network",
+    "args": 0
+  },
+  {
+    "name": "ui_4g_5g_display_information_f89ee3",
+    "vi": "Hiển thị mạng 4G/5G",
+    "en": "4G/5G display information",
+    "args": 0
+  },
+  {
+    "name": "ui_baseband_version_1ac23d",
+    "vi": "Phiên bản baseband",
+    "en": "Baseband version",
+    "args": 0
+  },
+  {
+    "name": "ui_supported_logical_modems_f54a91",
+    "vi": "Số modem hỗ trợ",
+    "en": "Supported logical modems",
+    "args": 0
+  },
+  {
+    "name": "ui_active_logical_modems_c4728c",
+    "vi": "Số modem đang hoạt động",
+    "en": "Active logical modems",
+    "args": 0
+  },
+  {
+    "name": "ui_confirmation_source_360030",
+    "vi": "Nguồn xác nhận",
+    "en": "Confirmation source",
+    "args": 0
+  },
+  {
+    "name": "ui_modem_frequency_bands_d8cc97",
+    "vi": "Băng tần modem",
+    "en": "Modem frequency bands",
+    "args": 0
+  },
+  {
+    "name": "ui_no_cellular_hardware_e19eec",
+    "vi": "Không có phần cứng di động",
+    "en": "No cellular hardware",
+    "args": 0
+  },
+  {
+    "name": "ui_yes_reported_by_modem_7e4ecd",
+    "vi": "Có · modem báo hỗ trợ",
+    "en": "Yes · reported by modem",
+    "args": 0
+  },
+  {
+    "name": "ui_yes_confirmed_by_network_information_09e167",
+    "vi": "Có · đã xác nhận từ thông tin mạng",
+    "en": "Yes · confirmed by network information",
+    "args": 0
+  },
+  {
+    "name": "ui_no_absent_from_modem_capabilities_1f8b26",
+    "vi": "Không · modem không báo hỗ trợ",
+    "en": "No · absent from modem capabilities",
+    "args": 0
+  },
+  {
+    "name": "ui_unverified_android_restricts_the_modem_capability_inven_c0b996",
+    "vi": "Chưa thể xác minh · Android không công khai khả năng modem cho ứng dụng thường",
+    "en": "Unverified · Android restricts the modem capability inventory for ordinary apps",
+    "args": 0
+  },
+  {
+    "name": "ui_modem_radio_technology_inventory_4ba879",
+    "vi": "Danh sách công nghệ vô tuyến của modem",
+    "en": "Modem radio technology inventory",
+    "args": 0
+  },
+  {
+    "name": "ui_data_network_type_and_display_information_reported_by_a_9c0c30",
+    "vi": "Loại mạng dữ liệu và thông tin hiển thị mạng do Android cung cấp",
+    "en": "Data network type and display information reported by Android",
+    "args": 0
+  },
+  {
+    "name": "ui_android_does_not_expose_the_full_lte_nr_band_inventory__1f9d8a",
+    "vi": "Android không công khai đầy đủ danh sách băng tần LTE/NR cho ứng dụng thường",
+    "en": "Android does not expose the full LTE/NR band inventory to ordinary apps",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_summary_b1e952",
+    "vi": "Thống kê cảm biến",
+    "en": "Sensor summary",
+    "args": 0
+  },
+  {
+    "name": "ui_total_available_sensors_dbe58a",
+    "vi": "Tổng cảm biến khả dụng",
+    "en": "Total available sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_types_70ad9e",
+    "vi": "Số loại cảm biến",
+    "en": "Sensor types",
+    "args": 0
+  },
+  {
+    "name": "ui_wake_up_sensors_96811f",
+    "vi": "Cảm biến đánh thức",
+    "en": "Wake-up sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_non_wake_up_sensors_7f4882",
+    "vi": "Cảm biến không đánh thức",
+    "en": "Non-wake-up sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_connected_dynamic_sensors_2162fc",
+    "vi": "Cảm biến động đang kết nối",
+    "en": "Connected dynamic sensors",
+    "args": 0
+  },
+  {
+    "name": "ui_counting_scope_6bbe00",
+    "vi": "Phạm vi thống kê",
+    "en": "Counting scope",
+    "args": 0
+  },
+  {
+    "name": "ui_reported_by_sensormanager_includes_virtual_sensors_and__a77f15",
+    "vi": "Theo SensorManager, gồm cảm biến ảo và biến thể đánh thức; không phải số chip vật lý",
+    "en": "Reported by SensorManager; includes virtual sensors and wake-up variants, not a physical chip count",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_standard_generation_4eb524",
+    "vi": "Chuẩn RAM & Thế hệ",
+    "en": "RAM Standard & Generation",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_standard_technology_8e2f17",
+    "vi": "Chuẩn RAM & Công nghệ",
+    "en": "RAM Standard & Technology",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_manufacturer_daf69a",
+    "vi": "Nhà sản xuất RAM",
+    "en": "RAM Manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_data_transfer_speed_86d7e4",
+    "vi": "Tốc độ truyền dữ liệu",
+    "en": "Data Transfer Speed",
+    "args": 0
+  },
+  {
+    "name": "ui_nominal_bandwidth_3cf079",
+    "vi": "Băng thông danh định",
+    "en": "Nominal Bandwidth",
+    "args": 0
+  },
+  {
+    "name": "ui_estimated_bandwidth_1dd092",
+    "vi": "Băng thông ước tính",
+    "en": "Estimated Bandwidth",
+    "args": 0
+  },
+  {
+    "name": "ui_detection_source_f6954d",
+    "vi": "Nguồn nhận diện",
+    "en": "Detection Source",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_standard_6ce64c",
+    "vi": "Chuẩn lưu trữ",
+    "en": "Storage Standard",
+    "args": 0
+  },
+  {
+    "name": "ui_flash_storage_manufacturer_8808b8",
+    "vi": "Nhà sản xuất chip Flash",
+    "en": "Flash Storage Manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_flash_component_model_a1ff1d",
+    "vi": "Mã linh kiện Flash",
+    "en": "Flash Component Model",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_interface_2d5e2c",
+    "vi": "Giao tiếp phần cứng",
+    "en": "Hardware Interface",
+    "args": 0
+  },
+  {
+    "name": "ui_firmware_revision_1185e3",
+    "vi": "Firmware Revision",
+    "en": "Firmware Revision",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_activity_7351ad",
+    "vi": "CPU ACTIVITY",
+    "en": "CPU ACTIVITY",
+    "args": 0
+  },
+  {
+    "name": "ui_live_cpu_load_f4f338",
+    "vi": "TẢI CPU TRỰC TIẾP",
+    "en": "LIVE CPU LOAD",
+    "args": 0
+  },
+  {
+    "name": "ui_live_cpu_load_60_seconds_65d303",
+    "vi": "TẢI CPU TRỰC TIẾP (60 GIÂY)",
+    "en": "LIVE CPU LOAD (60 SECONDS)",
+    "args": 0
+  },
+  {
+    "name": "ui_real_time_cpu_load_history_over_the_last_60_seconds_744dcf",
+    "vi": "Biểu đồ tải CPU thời gian thực 60 giây gần nhất",
+    "en": "Real-time CPU load history over the last 60 seconds",
+    "args": 0
+  },
+  {
+    "name": "ui_core_details_proc_cpuinfo_ad66f8",
+    "vi": "Chi tiết từng lõi & /proc/cpuinfo ↗",
+    "en": "Core details & /proc/cpuinfo ↗",
+    "args": 0
+  },
+  {
+    "name": "ui_power_saving_idle_2ee368",
+    "vi": "Rảnh rỗi / Tiết kiệm điện",
+    "en": "Power Saving / Idle",
+    "args": 0
+  },
+  {
+    "name": "ui_balanced_routine_539d4d",
+    "vi": "Cân bằng / Tác vụ thường",
+    "en": "Balanced / Routine",
+    "args": 0
+  },
+  {
+    "name": "ui_balanced_daily_activity_52c5f5",
+    "vi": "Cân bằng / Tác vụ thường nhật",
+    "en": "Balanced / Daily Activity",
+    "args": 0
+  },
+  {
+    "name": "ui_high_performance_peak_load_4daa0e",
+    "vi": "Tải cao / Hiệu năng đỉnh",
+    "en": "High Performance / Peak Load",
+    "args": 0
+  },
+  {
+    "name": "ui_high_performance_heavy_load_53e3e6",
+    "vi": "Tải cao / Hiệu năng tối đa",
+    "en": "High Performance / Heavy Load",
+    "args": 0
+  },
+  {
+    "name": "ui_current_load_274f25",
+    "vi": "TẢI HIỆN TẠI",
+    "en": "CURRENT LOAD",
+    "args": 0
+  },
+  {
+    "name": "ui_peak_load_60s_08df72",
+    "vi": "TẢI ĐỈNH (60S)",
+    "en": "PEAK LOAD (60S)",
+    "args": 0
+  },
+  {
+    "name": "ui_max_freq_63c282",
+    "vi": "XUNG CAO NHẤT",
+    "en": "MAX FREQ",
+    "args": 0
+  },
+  {
+    "name": "ui_active_cores_43cf24",
+    "vi": "LÕI THỨC",
+    "en": "ACTIVE CORES",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_synthesis_analysis_a80404",
+    "vi": "PHÂN TÍCH TỔNG HỢP CPU",
+    "en": "CPU SYNTHESIS & ANALYSIS",
+    "args": 0
+  },
+  {
+    "name": "ui_core_performance_status_3de081",
+    "vi": "Hiệu suất các lõi & Trạng thái",
+    "en": "Core Performance & Status",
+    "args": 0
+  },
+  {
+    "name": "ui_core_frequency_performance_table_3be3fd",
+    "vi": "BẢNG HIỆU SUẤT CHI TIẾT TỪNG LÕI",
+    "en": "CORE FREQUENCY & PERFORMANCE TABLE",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_main_wide_bea6cd",
+    "vi": "Camera Sau · Góc Rộng Chính (Main Wide)",
+    "en": "Rear Camera · Main Wide",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_ultra_wide_808ba7",
+    "vi": "Camera Sau · Góc Siêu Rộng (Ultra-Wide)",
+    "en": "Rear Camera · Ultra-Wide",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_telephoto_optical_zoom_23c461",
+    "vi": "Camera Sau · Ống Kính Telephoto (Zoom Quang Học)",
+    "en": "Rear Camera · Telephoto (Optical Zoom)",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_periscope_telephoto_642515",
+    "vi": "Camera Sau · Telephoto Periscope (Zoom Xa)",
+    "en": "Rear Camera · Periscope Telephoto",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_macro_lens_7be927",
+    "vi": "Camera Sau · Cận Cảnh (Macro Lens)",
+    "en": "Rear Camera · Macro Lens",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_depth_sensor_06c1ef",
+    "vi": "Camera Sau · Cảm Biến Chiều Sâu (Depth Sensor)",
+    "en": "Rear Camera · Depth Sensor",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_camera_monochrome_b_w_9ae7fd",
+    "vi": "Camera Sau · Cảm Biến Đơn Sắc (Monochrome B&W)",
+    "en": "Rear Camera · Monochrome (B&W)",
+    "args": 0
+  },
+  {
+    "name": "ui_front_camera_portrait_selfie_8d7e7c",
+    "vi": "Camera Trước · Chân Dung & Selfie (Front Camera)",
+    "en": "Front Camera · Portrait & Selfie",
+    "args": 0
+  },
+  {
+    "name": "ui_front_camera_ultra_wide_selfie_5e66bb",
+    "vi": "Camera Trước · Góc Siêu Rộng (Ultra-Wide Selfie)",
+    "en": "Front Camera · Ultra-Wide Selfie",
+    "args": 0
+  },
+  {
+    "name": "ui_rear_multi_lens_array_logical_1f91db",
+    "vi": "Cụm Camera Sau Đa Ống Kính (Logical Multi-Camera)",
+    "en": "Rear Multi-Lens Array (Logical)",
+    "args": 0
+  },
+  {
+    "name": "ui_external_usb_camera_cd012d",
+    "vi": "Camera Phụ / Gắn Ngoài (External USB)",
+    "en": "External / USB Camera",
+    "args": 0
+  },
+  {
+    "name": "ui_optical_image_stabilization_ois_dd5bc8",
+    "vi": "Hỗ trợ chống rung quang học (OIS)",
+    "en": "Optical Image Stabilization (OIS)",
+    "args": 0
+  },
+  {
+    "name": "ui_field_of_view_fov_3e36ad",
+    "vi": "Góc nhìn (FOV)",
+    "en": "Field of View (FOV)",
+    "args": 0
+  },
+  {
+    "name": "ui_35mm_equivalent_focal_length_0414c8",
+    "vi": "Tiêu cự quy đổi 35mm",
+    "en": "35mm Equivalent Focal Length",
+    "args": 0
+  },
+  {
+    "name": "ui_minimum_focus_distance_de83b0",
+    "vi": "Khoảng cách lấy nét tối thiểu",
+    "en": "Minimum Focus Distance",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_color_filter_6e09e0",
+    "vi": "Bộ lọc màu cảm biến",
+    "en": "Sensor Color Filter",
+    "args": 0
+  },
+  {
+    "name": "ui_discrete_physical_lens_1e75c4",
+    "vi": "Ống kính vật lý độc lập",
+    "en": "Discrete Physical Lens",
+    "args": 0
+  },
+  {
+    "name": "ui_logical_multi_camera_array_d984ca",
+    "vi": "Cụm đa ống kính logic",
+    "en": "Logical Multi-Camera Array",
+    "args": 0
+  },
+  {
+    "name": "ui_available_5cca76",
+    "vi": "Trống dùng được",
+    "en": "Available",
+    "args": 0
+  },
+  {
+    "name": "ui_app_details_unavailable_700051",
+    "vi": "Không mở được thông tin ứng dụng",
+    "en": "App details unavailable",
+    "args": 0
+  },
+  {
+    "name": "ui_android_restricted_app_settings_0d7f86",
+    "vi": "Android giới hạn truy cập cài đặt ứng dụng",
+    "en": "Android restricted app settings",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_cell_manufacturer_not_exposed_by_android_7fbaca",
+    "vi": "Nhà sản xuất cell pin: Android không công khai",
+    "en": "Battery cell manufacturer: Not exposed by Android",
+    "args": 0
+  },
+  {
+    "name": "ui_camera_module_manufacturer_not_exposed_by_camera2_a87a6c",
+    "vi": "Hãng module camera: Camera2 không công khai",
+    "en": "Camera module manufacturer: Not exposed by Camera2",
+    "args": 0
+  },
+  {
+    "name": "ui_source_android_system_apis_restricted_data_is_noted_in__b241c1",
+    "vi": "Nguồn: API hệ thống Android · Dữ liệu bị giới hạn được ghi rõ ở từng mục · Vuốt ngang để chuyển trang",
+    "en": "Source: Android system APIs · Restricted data is noted in each section · Swipe to change pages",
+    "args": 0
+  },
+  {
+    "name": "ui_device_intelligence_dbc165",
+    "vi": "Thông tin thiết bị",
+    "en": "Device intelligence",
+    "args": 0
+  },
+  {
+    "name": "ui_your_device_4c986b",
+    "vi": "THIẾT BỊ CỦA BẠN",
+    "en": "YOUR DEVICE",
+    "args": 0
+  },
+  {
+    "name": "ui_avg_load_2ada5c",
+    "vi": "tải trung bình",
+    "en": "avg load",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_operating_at_low_power_state_background_tasks_are_h_b5a683",
+    "vi": "CPU đang ở mức tiêu thụ điện năng tối thiểu. Các luồng nền được xử lý nhẹ nhàng bởi cụm nhân tiết kiệm điện, nhiệt độ mát mẻ.",
+    "en": "CPU operating at low power state. Background tasks are handled by efficient little cores. Temperature and battery drain are minimal.",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_handling_ui_streaming_or_routine_multitasking_smoot_5ae283",
+    "vi": "CPU đang xử lý giao diện, đa nhiệm hoặc xem video ổn định. Xung nhịp các lõi được điều phối hài hòa giữa tiết kiệm điện và hiệu năng.",
+    "en": "CPU handling UI, streaming or routine multitasking smoothly with balanced clock distribution.",
+    "args": 0
+  },
+  {
+    "name": "ui_high_cpu_load_active_big_cores_boosted_for_heavy_proces_59ded8",
+    "vi": "CPU đang chạy công suất cao. Các nhân hiệu năng (Big Cores) được đẩy xung nhịp tối đa để xử lý đồ họa, chơi game hoặc tính toán nặng.",
+    "en": "High CPU load active. Big cores boosted for heavy processing, 3D rendering or gaming.",
+    "args": 0
+  },
+  {
+    "name": "ui_avg_load_3a2b10",
+    "vi": "TẢI TB",
+    "en": "AVG LOAD",
+    "args": 0
+  },
+  {
+    "name": "ui_peak_load_12d7be",
+    "vi": "TẢI ĐỈNH",
+    "en": "PEAK LOAD",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_cpu_proc_cpuinfo_analysis_1efcff",
+    "vi": "Phân tích chuyên sâu CPU & Xem /proc/cpuinfo ↗",
+    "en": "In-Depth CPU & /proc/cpuinfo Analysis ↗",
+    "args": 0
+  },
+  {
+    "name": "ui_close_280a01",
+    "vi": "Đóng bảng phân tích",
+    "en": "Close",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_cpu_analysis_f71355",
+    "vi": "PHÂN TÍCH CHUYÊN SÂU CPU",
+    "en": "IN-DEPTH CPU ANALYSIS",
+    "args": 0
+  },
+  {
+    "name": "ui_performance_proc_cpuinfo_e8a37b",
+    "vi": "Hiệu suất các core & /proc/cpuinfo",
+    "en": "Performance & /proc/cpuinfo",
+    "args": 0
+  },
+  {
+    "name": "ui_core_performance_live_8f4e11",
+    "vi": "Hiệu suất các core (Live)",
+    "en": "Core Performance (Live)",
+    "args": 0
+  },
+  {
+    "name": "ui_proc_cpuinfo_1_s_cores_0aaf39",
+    "vi": "proc.cpuinfo (%1$s nhân)",
+    "en": "proc.cpuinfo (%1$s cores)",
+    "args": 1
+  },
+  {
+    "name": "ui_real_time_logical_core_metrics_6f6bd0",
+    "vi": "THÔNG SỐ CHI TIẾT TỪNG NHÂN LOGIC",
+    "en": "REAL-TIME LOGICAL CORE METRICS",
+    "args": 0
+  },
+  {
+    "name": "ui_system_hardware_identifiers_7547b6",
+    "vi": "ĐỊNH DANH PHẦN CỨNG TỪ /proc/cpuinfo",
+    "en": "SYSTEM HARDWARE IDENTIFIERS",
+    "args": 0
+  },
+  {
+    "name": "ui_copied_cd3a9c",
+    "vi": "Đã sao chép!",
+    "en": "Copied!",
+    "args": 0
+  },
+  {
+    "name": "ui_copy_all_b072db",
+    "vi": "Sao chép toàn bộ",
+    "en": "Copy All",
+    "args": 0
+  },
+  {
+    "name": "ui_raw_proc_cpuinfo_output_373d66",
+    "vi": "DỮ LIỆU THÔ /proc/cpuinfo",
+    "en": "RAW /proc/cpuinfo OUTPUT",
+    "args": 0
+  },
+  {
+    "name": "ui_close_d2b73a",
+    "vi": "Đóng",
+    "en": "Close",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_gpu_analysis_aa223e",
+    "vi": "PHÂN TÍCH CHUYÊN SÂU GPU",
+    "en": "IN-DEPTH GPU ANALYSIS",
+    "args": 0
+  },
+  {
+    "name": "ui_graphics_capabilities_hardware_limits_b1c442",
+    "vi": "Năng lực đồ họa & Tiện ích mở rộng",
+    "en": "Graphics Capabilities & Hardware Limits",
+    "args": 0
+  },
+  {
+    "name": "ui_capabilities_limits_39b67b",
+    "vi": "Năng lực & Giới hạn",
+    "en": "Capabilities & Limits",
+    "args": 0
+  },
+  {
+    "name": "ui_gl_extensions_1_s_a8e639",
+    "vi": "GL_EXTENSIONS (%1$s)",
+    "en": "GL_EXTENSIONS (%1$s)",
+    "args": 1
+  },
+  {
+    "name": "ui_opengl_es_hardware_limits_49443f",
+    "vi": "GIỚI HẠN PHẦN CỨNG OPENGL ES",
+    "en": "OPENGL ES HARDWARE LIMITS",
+    "args": 0
+  },
+  {
+    "name": "ui_driver_compute_capabilities_1cbab5",
+    "vi": "DRIVER VÀ KHẢ NĂNG TÍNH TOÁN",
+    "en": "DRIVER & COMPUTE CAPABILITIES",
+    "args": 0
+  },
+  {
+    "name": "ui_copy_all_fa7c79",
+    "vi": "Sao chép tất cả",
+    "en": "Copy All",
+    "args": 0
+  },
+  {
+    "name": "ui_search_extensions_c33cb0",
+    "vi": "Tìm kiếm extension...",
+    "en": "Search extensions...",
+    "args": 0
+  },
+  {
+    "name": "ui_showing_1_s_of_2_s_798ef1",
+    "vi": "Hiển thị %1$s / %2$s tiện ích",
+    "en": "Showing %1$s of %2$s",
+    "args": 2
+  },
+  {
+    "name": "ui_bw_6a0af1",
+    "vi": "Băng thông",
+    "en": "BW",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_3adadd",
+    "vi": "PIN",
+    "en": "BATTERY",
+    "args": 0
+  },
+  {
+    "name": "ui_system_files_223df7",
+    "vi": "Tệp & Hệ thống",
+    "en": "System & Files",
+    "args": 0
+  },
+  {
+    "name": "ui_reserved_free_474e45",
+    "vi": "Trống dành riêng",
+    "en": "Reserved free",
+    "args": 0
+  },
+  {
+    "name": "ui_last_60_seconds_30f824",
+    "vi": "60 GIÂY GẦN NHẤT",
+    "en": "LAST 60 SECONDS",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_d1e637",
+    "vi": "BỘ NHỚ TRONG",
+    "en": "STORAGE",
+    "args": 0
+  },
+  {
+    "name": "ui_collapse_analysis_8a4e9d",
+    "vi": "Thu gọn phân tích",
+    "en": "Collapse analysis",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_analysis_bdc2c6",
+    "vi": "Phân tích chuyên sâu",
+    "en": "In-depth analysis",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_cpu_proc_cpuinfo_analysis_010e4d",
+    "vi": "Phân tích chuyên sâu CPU & /proc/cpuinfo",
+    "en": "In-Depth CPU & /proc/cpuinfo Analysis",
+    "args": 0
+  },
+  {
+    "name": "ui_in_depth_gpu_extensions_analysis_fff0ea",
+    "vi": "Phân tích chuyên sâu GPU & Tiện ích mở rộng",
+    "en": "In-Depth GPU & Extensions Analysis",
+    "args": 0
+  },
+  {
+    "name": "ui_live_core_metrics_structured_proc_cpuinfo_bd01fa",
+    "vi": "Hiệu suất từng core thời gian thực & dữ liệu từ /proc/cpuinfo",
+    "en": "Live core metrics & structured /proc/cpuinfo",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_limits_vulkan_gl_extensions_261127",
+    "vi": "Giới hạn đồ họa, Vulkan & danh sách GL_EXTENSIONS",
+    "en": "Hardware limits, Vulkan & GL_EXTENSIONS",
+    "args": 0
+  },
+  {
+    "name": "ui_open_275cce",
+    "vi": "Mở ↗",
+    "en": "Open ↗",
+    "args": 0
+  },
+  {
+    "name": "ui_used_4b49ad",
+    "vi": "đã dùng",
+    "en": "used",
+    "args": 0
+  },
+  {
+    "name": "ui_zram_is_compressed_ram_and_is_shown_on_the_ram_page_cac_2bdcff",
+    "vi": "ZRAM là RAM nén và nằm ở trang RAM. Cache được tách riêng khi có quyền Usage Access.",
+    "en": "ZRAM is compressed RAM and is shown on the RAM page. Cache is separated when Usage Access is available.",
+    "args": 0
+  },
+  {
+    "name": "ui_live_power_9b8c4b",
+    "vi": "ĐIỆN NĂNG TRỰC TIẾP",
+    "en": "LIVE POWER",
+    "args": 0
+  },
+  {
+    "name": "ui_current_e9ee5c",
+    "vi": "DÒNG",
+    "en": "CURRENT",
+    "args": 0
+  },
+  {
+    "name": "ui_power_15c965",
+    "vi": "CÔNG SUẤT",
+    "en": "POWER",
+    "args": 0
+  },
+  {
+    "name": "ui_p_over_60_seconds_the_sign_depends_on_device_reporting_3a7cd9",
+    "vi": "|P| trong 60 giây · Dấu +/− tùy cách thiết bị báo dòng sạc/xả",
+    "en": "|P| over 60 seconds · The +/- sign depends on device reporting",
+    "args": 0
+  },
+  {
+    "name": "ui_applications_1_s_10df7c",
+    "vi": "Ứng dụng (%1$s)",
+    "en": "Applications (%1$s)",
+    "args": 1
+  },
+  {
+    "name": "ui_tap_to_collapse_4baf54",
+    "vi": "Chạm để thu gọn",
+    "en": "Tap to collapse",
+    "args": 0
+  },
+  {
+    "name": "ui_tap_to_view_app_storage_72a32d",
+    "vi": "Chạm để xem dung lượng ứng dụng",
+    "en": "Tap to view app storage",
+    "args": 0
+  },
+  {
+    "name": "ui_about_c94c1d",
+    "vi": "Về ứng dụng",
+    "en": "About",
+    "args": 0
+  },
+  {
+    "name": "ui_explore_device_hardware_android_sensors_and_live_resour_b2ba30",
+    "vi": "Khám phá phần cứng, Android, cảm biến và tài nguyên trực tiếp của thiết bị.",
+    "en": "Explore device hardware, Android, sensors and live resources.",
+    "args": 0
+  },
+  {
+    "name": "ui_privacy_99d106",
+    "vi": "Quyền riêng tư",
+    "en": "Privacy",
+    "args": 0
+  },
+  {
+    "name": "ui_device_data_is_read_locally_no_account_or_cloud_sync_5f5d44",
+    "vi": "Thông số được đọc trên thiết bị. Không yêu cầu tài khoản hay đồng bộ đám mây.",
+    "en": "Device data is read locally. No account or cloud sync.",
+    "args": 0
+  },
+  {
+    "name": "ui_built_with_kotlin_jetpack_compose_and_android_apis_thir_e1e16d",
+    "vi": "Xây dựng bằng Kotlin, Jetpack Compose và Android API. Bản quyền thư viện theo từng gói tương ứng.",
+    "en": "Built with Kotlin, Jetpack Compose and Android APIs. Third-party licenses follow their respective packages.",
+    "args": 0
+  },
+  {
+    "name": "ui_settings_01f3f3",
+    "vi": "Cài đặt",
+    "en": "Settings",
+    "args": 0
+  },
+  {
+    "name": "ui_language_65074a",
+    "vi": "Ngôn ngữ",
+    "en": "Language",
+    "args": 0
+  },
+  {
+    "name": "ui_appearance_705b42",
+    "vi": "Giao diện",
+    "en": "Appearance",
+    "args": 0
+  },
+  {
+    "name": "ui_accent_color_cf445b",
+    "vi": "Màu chủ đạo",
+    "en": "Accent color",
+    "args": 0
+  },
+  {
+    "name": "ui_apply_color_b8866c",
+    "vi": "Áp dụng màu",
+    "en": "Apply color",
+    "args": 0
+  },
+  {
+    "name": "ui_units_bbf372",
+    "vi": "Đơn vị đo",
+    "en": "Units",
+    "args": 0
+  },
+  {
+    "name": "ui_home_screen_widget_70e1d8",
+    "vi": "Widget màn hình chính",
+    "en": "Home screen widget",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_9c9184",
+    "vi": "Pin",
+    "en": "Battery",
+    "args": 0
+  },
+  {
+    "name": "ui_add_widget_df8816",
+    "vi": "Thêm widget",
+    "en": "Add widget",
+    "args": 0
+  },
+  {
+    "name": "ui_system_language_fc7995",
+    "vi": "🌐 Theo ngôn ngữ hệ thống",
+    "en": "🌐 System language",
+    "args": 0
+  },
+  {
+    "name": "ui_default_d75aa6",
+    "vi": "Mặc định",
+    "en": "Default",
+    "args": 0
+  },
+  {
+    "name": "ui_custom_66c5f1",
+    "vi": "Tùy chỉnh",
+    "en": "Custom",
+    "args": 0
+  },
+  {
+    "name": "ui_live_last_10_s_bbd494",
+    "vi": "Trực tiếp · 10 giây gần nhất",
+    "en": "Live · last 10 s",
+    "args": 0
+  },
+  {
+    "name": "ui_unable_to_rearm_trigger_0e93e7",
+    "vi": "Không thể đăng ký lại cảm biến kích hoạt",
+    "en": "Unable to rearm trigger",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_access_restricted_71ca13",
+    "vi": "Quyền đọc cảm biến bị giới hạn",
+    "en": "Sensor access restricted",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_disconnected_7472c1",
+    "vi": "Cảm biến đã ngắt kết nối",
+    "en": "Sensor disconnected",
+    "args": 0
+  },
+  {
+    "name": "ui_permission_required_to_receive_data_1178b8",
+    "vi": "Cần cấp quyền để nhận dữ liệu",
+    "en": "Permission required to receive data",
+    "args": 0
+  },
+  {
+    "name": "ui_device_declined_this_sensor_stream_d1436a",
+    "vi": "Thiết bị không cho đăng ký luồng cảm biến này",
+    "en": "Device declined this sensor stream",
+    "args": 0
+  },
+  {
+    "name": "ui_listening_waiting_for_a_sensor_event_a4a322",
+    "vi": "Đang nghe · chờ cảm biến gửi sự kiện",
+    "en": "Listening · waiting for a sensor event",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_access_restricted_by_android_oem_34a285",
+    "vi": "Android/OEM giới hạn quyền đọc cảm biến",
+    "en": "Sensor access restricted by Android/OEM",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_is_no_longer_available_bb7d9d",
+    "vi": "Cảm biến không còn khả dụng",
+    "en": "Sensor is no longer available",
+    "args": 0
+  },
+  {
+    "name": "ui_paused_b8d3bf",
+    "vi": "Tạm dừng",
+    "en": "Paused",
+    "args": 0
+  },
+  {
+    "name": "ui_allow_sensor_access_45ba4b",
+    "vi": "Cấp quyền cảm biến",
+    "en": "Allow sensor access",
+    "args": 0
+  },
+  {
+    "name": "ui_latest_event_324f6c",
+    "vi": "Sự kiện mới nhất",
+    "en": "Latest event",
+    "args": 0
+  },
+  {
+    "name": "ui_raw_sensor_values_f3895e",
+    "vi": "Giá trị gốc từ cảm biến",
+    "en": "Raw sensor values",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_used_d8b314",
+    "vi": "BỘ NHỚ ĐÃ DÙNG",
+    "en": "STORAGE USED",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_in_use_3cff75",
+    "vi": "RAM ĐANG DÙNG",
+    "en": "RAM IN USE",
+    "args": 0
+  },
+  {
+    "name": "ui_os_cbdae4",
+    "vi": "Hệ điều hành",
+    "en": "OS",
+    "args": 0
+  },
+  {
+    "name": "ui_storage_229800",
+    "vi": "Lưu trữ",
+    "en": "Storage",
+    "args": 0
+  },
+  {
+    "name": "ui_network_955ba5",
+    "vi": "Mạng",
+    "en": "Network",
+    "args": 0
+  },
+  {
+    "name": "ui_camera_4da9c9",
+    "vi": "Camera",
+    "en": "Camera",
+    "args": 0
+  },
+  {
+    "name": "ui_features_5cbb5b",
+    "vi": "Tính năng",
+    "en": "Features",
+    "args": 0
+  },
+  {
+    "name": "ui_system_d90f70",
+    "vi": "Hệ thống",
+    "en": "System",
+    "args": 0
+  },
+  {
+    "name": "ui_dark_ca1dd5",
+    "vi": "Tối",
+    "en": "Dark",
+    "args": 0
+  },
+  {
+    "name": "ui_light_55942c",
+    "vi": "Sáng",
+    "en": "Light",
+    "args": 0
+  },
+  {
+    "name": "ui_mint_d89d9e",
+    "vi": "Bạc hà",
+    "en": "Mint",
+    "args": 0
+  },
+  {
+    "name": "ui_violet_684e59",
+    "vi": "Tím",
+    "en": "Violet",
+    "args": 0
+  },
+  {
+    "name": "ui_amber_a2fec9",
+    "vi": "Hổ phách",
+    "en": "Amber",
+    "args": 0
+  },
+  {
+    "name": "ui_rose_5a43ba",
+    "vi": "Hồng",
+    "en": "Rose",
+    "args": 0
+  },
+  {
+    "name": "ui_blue_95beb5",
+    "vi": "Xanh dương",
+    "en": "Blue",
+    "args": 0
+  },
+  {
+    "name": "ui_version_ba3f38",
+    "vi": "Phiên bản",
+    "en": "Version",
+    "args": 0
+  },
+  {
+    "name": "ui_vendor_oem_dbb458",
+    "vi": "Nhà cung cấp / OEM",
+    "en": "Vendor / OEM",
+    "args": 0
+  },
+  {
+    "name": "ui_resolution_ce25cb",
+    "vi": "Độ phân giải",
+    "en": "Resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_power_bbe3cb",
+    "vi": "Điện năng",
+    "en": "Power",
+    "args": 0
+  },
+  {
+    "name": "ui_maximum_range_743a9d",
+    "vi": "Dải đo tối đa",
+    "en": "Maximum Range",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_name_8ee03c",
+    "vi": "Tên cảm biến",
+    "en": "Sensor Name",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_type_22c414",
+    "vi": "Loại cảm biến",
+    "en": "Sensor Type",
+    "args": 0
+  },
+  {
+    "name": "ui_reporting_mode_e98f8f",
+    "vi": "Chế độ báo cáo",
+    "en": "Reporting Mode",
+    "args": 0
+  },
+  {
+    "name": "ui_continuous_557f07",
+    "vi": "Liên tục",
+    "en": "Continuous",
+    "args": 0
+  },
+  {
+    "name": "ui_on_change_7a06cb",
+    "vi": "Khi thay đổi",
+    "en": "On change",
+    "args": 0
+  },
+  {
+    "name": "ui_one_shot_4b3112",
+    "vi": "Kích hoạt một lần",
+    "en": "One shot",
+    "args": 0
+  },
+  {
+    "name": "ui_special_trigger_5b4f5d",
+    "vi": "Kích hoạt đặc biệt",
+    "en": "Special trigger",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_ff221d",
+    "vi": "CPU",
+    "en": "CPU",
+    "args": 0
+  },
+  {
+    "name": "ui_gpu_a6a631",
+    "vi": "GPU",
+    "en": "GPU",
+    "args": 0
+  },
+  {
+    "name": "ui_system_ram_2f86a7",
+    "vi": "RAM hệ thống",
+    "en": "System RAM",
+    "args": 0
+  },
+  {
+    "name": "ui_ram_in_use_dfa352",
+    "vi": "RAM đang sử dụng",
+    "en": "RAM in use",
+    "args": 0
+  },
+  {
+    "name": "ui_available_ram_5d8fe2",
+    "vi": "RAM khả dụng",
+    "en": "Available RAM",
+    "args": 0
+  },
+  {
+    "name": "ui_low_memory_threshold_912795",
+    "vi": "Ngưỡng thiếu RAM",
+    "en": "Low memory threshold",
+    "args": 0
+  },
+  {
+    "name": "ui_app_heap_memory_b401a2",
+    "vi": "Bộ nhớ heap của app",
+    "en": "App heap memory",
+    "args": 0
+  },
+  {
+    "name": "ui_advertised_ram_7a9d29",
+    "vi": "RAM quảng cáo",
+    "en": "Advertised RAM",
+    "args": 0
+  },
+  {
+    "name": "ui_memory_pressure_05a0bc",
+    "vi": "Áp lực bộ nhớ",
+    "en": "Memory pressure",
+    "args": 0
+  },
+  {
+    "name": "ui_normal_7a1fa8",
+    "vi": "Bình thường",
+    "en": "Normal",
+    "args": 0
+  },
+  {
+    "name": "ui_system_reports_low_memory_007d9c",
+    "vi": "Hệ thống báo thiếu RAM",
+    "en": "System reports low memory",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_cache_4eb84d",
+    "vi": "Bộ nhớ đệm (Cache)",
+    "en": "CPU cache",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_governor_fa2f52",
+    "vi": "Bộ điều phối (Governor)",
+    "en": "CPU governor",
+    "args": 0
+  },
+  {
+    "name": "ui_per_core_frequency_range_dd617c",
+    "vi": "Dải xung từng nhân (Min - Max)",
+    "en": "Per-core frequency range",
+    "args": 0
+  },
+  {
+    "name": "ui_supported_abis_ba2a23",
+    "vi": "ABI hỗ trợ",
+    "en": "Supported ABIs",
+    "args": 0
+  },
+  {
+    "name": "ui_instruction_set_6f83f4",
+    "vi": "Tập lệnh (Features)",
+    "en": "Instruction set",
+    "args": 0
+  },
+  {
+    "name": "ui_soc_manufacturer_95cb69",
+    "vi": "Nhà sản xuất SoC",
+    "en": "SoC manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_chip_platform_84aa29",
+    "vi": "Chip / nền tảng",
+    "en": "Chip / platform",
+    "args": 0
+  },
+  {
+    "name": "ui_64_bit_architecture_a90624",
+    "vi": "Kiến trúc 64 bit",
+    "en": "64-bit architecture",
+    "args": 0
+  },
+  {
+    "name": "ui_logical_cores_651e66",
+    "vi": "Nhân logic",
+    "en": "Logical cores",
+    "args": 0
+  },
+  {
+    "name": "ui_total_data_partition_capacity_76cafe",
+    "vi": "Tổng dung lượng phân vùng dữ liệu",
+    "en": "Total data partition capacity",
+    "args": 0
+  },
+  {
+    "name": "ui_used_unavailable_4a114c",
+    "vi": "Đã dùng / không khả dụng",
+    "en": "Used / unavailable",
+    "args": 0
+  },
+  {
+    "name": "ui_occupied_by_files_ff8f6c",
+    "vi": "Tệp đang chiếm",
+    "en": "Occupied by files",
+    "args": 0
+  },
+  {
+    "name": "ui_reserved_free_space_a017c1",
+    "vi": "Trống nhưng dành riêng",
+    "en": "Reserved free space",
+    "args": 0
+  },
+  {
+    "name": "ui_usable_free_space_68dca5",
+    "vi": "Còn trống dùng được",
+    "en": "Usable free space",
+    "args": 0
+  },
+  {
+    "name": "ui_calculation_e43fe7",
+    "vi": "Cách tính",
+    "en": "Calculation",
+    "args": 0
+  },
+  {
+    "name": "ui_app_data_excluding_cache_5a270a",
+    "vi": "Dữ liệu ứng dụng (không cache)",
+    "en": "App data excluding cache",
+    "args": 0
+  },
+  {
+    "name": "ui_app_cache_included_in_data_910e49",
+    "vi": "Cache ứng dụng (trong dữ liệu)",
+    "en": "App cache included in data",
+    "args": 0
+  },
+  {
+    "name": "ui_app_code_reported_by_system_9f9b5b",
+    "vi": "Mã ứng dụng (hệ thống báo)",
+    "en": "App code reported by system",
+    "args": 0
+  },
+  {
+    "name": "ui_limitations_7c8a4d",
+    "vi": "Giới hạn",
+    "en": "Limitations",
+    "args": 0
+  },
+  {
+    "name": "ui_classification_f581d1",
+    "vi": "Phân loại",
+    "en": "Classification",
+    "args": 0
+  },
+  {
+    "name": "ui_system_wide_swap_ffd1bc",
+    "vi": "Swap toàn hệ thống",
+    "en": "System-wide swap",
+    "args": 0
+  },
+  {
+    "name": "ui_zram_swap_separate_from_internal_storage_d07430",
+    "vi": "ZRAM & swap · ngoài bộ nhớ trong",
+    "en": "ZRAM & swap · separate from internal storage",
+    "args": 0
+  },
+  {
+    "name": "ui_wake_up_mode_d89545",
+    "vi": "Chế độ báo thức",
+    "en": "Wake-up mode",
+    "args": 0
+  },
+  {
+    "name": "ui_battery_cell_manufacturer_a18f84",
+    "vi": "Nhà sản xuất cell pin",
+    "en": "Battery cell manufacturer",
+    "args": 0
+  },
+  {
+    "name": "ui_lens_function_62a167",
+    "vi": "Chức năng ống kính",
+    "en": "Lens function",
+    "args": 0
+  },
+  {
+    "name": "ui_actual_field_of_view_fov_62ccae",
+    "vi": "Góc nhìn thực tế (FOV)",
+    "en": "Actual field of view (FOV)",
+    "args": 0
+  },
+  {
+    "name": "ui_sensor_pixel_resolution_5eff76",
+    "vi": "Độ phân giải thực cảm biến",
+    "en": "Sensor pixel resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_physical_sensor_size_2e3502",
+    "vi": "Kích thước cảm biến vật lý",
+    "en": "Physical sensor size",
+    "args": 0
+  },
+  {
+    "name": "ui_hardware_identity_2d90db",
+    "vi": "Định danh phần cứng",
+    "en": "Hardware identity",
+    "args": 0
+  },
+  {
+    "name": "ui_camera2_hardware_level_14c83b",
+    "vi": "Cấp phần cứng Camera2",
+    "en": "Camera2 hardware level",
+    "args": 0
+  },
+  {
+    "name": "ui_optical_image_stabilization_ois_e15b4a",
+    "vi": "Chống rung quang học (OIS)",
+    "en": "Optical image stabilization (OIS)",
+    "args": 0
+  },
+  {
+    "name": "ui_flash_light_d86624",
+    "vi": "Đèn flash trợ sáng",
+    "en": "Flash light",
+    "args": 0
+  },
+  {
+    "name": "ui_frame_rate_fps_a86d99",
+    "vi": "Tốc độ khung hình (FPS)",
+    "en": "Frame rate (FPS)",
+    "args": 0
+  },
+  {
+    "name": "ui_iso_sensitivity_range_59778b",
+    "vi": "Dải nhạy sáng ISO",
+    "en": "ISO sensitivity range",
+    "args": 0
+  },
+  {
+    "name": "ui_exposure_time_range_7e6423",
+    "vi": "Dải thời gian phơi sáng",
+    "en": "Exposure time range",
+    "args": 0
+  },
+  {
+    "name": "ui_face_detection_65d2b9",
+    "vi": "Nhận diện khuôn mặt",
+    "en": "Face detection",
+    "args": 0
+  },
+  {
+    "name": "ui_linked_physical_cameras_764969",
+    "vi": "Ống kính vật lý liên kết",
+    "en": "Linked physical cameras",
+    "args": 0
+  },
+  {
+    "name": "ui_advanced_capabilities_0c6b1d",
+    "vi": "Tính năng chuyên sâu",
+    "en": "Advanced capabilities",
+    "args": 0
+  },
+  {
+    "name": "ui_extensions_572808",
+    "vi": "Tiện ích mở rộng (Extensions)",
+    "en": "Extensions",
+    "args": 0
+  },
+  {
+    "name": "ui_maximum_digital_zoom_118f8e",
+    "vi": "Zoom kỹ thuật số tối đa",
+    "en": "Maximum digital zoom",
+    "args": 0
+  },
+  {
+    "name": "ui_build_cccc7f",
+    "vi": "Bản dựng",
+    "en": "Build",
+    "args": 0
+  },
+  {
+    "name": "ui_product_name_a2ed56",
+    "vi": "Tên sản phẩm",
+    "en": "Product name",
+    "args": 0
+  },
+  {
+    "name": "ui_brand_74de14",
+    "vi": "Thương hiệu",
+    "en": "Brand",
+    "args": 0
+  },
+  {
+    "name": "ui_device_code_a450df",
+    "vi": "Mã thiết bị",
+    "en": "Device code",
+    "args": 0
+  },
+  {
+    "name": "ui_board_4f90cf",
+    "vi": "Bo mạch",
+    "en": "Board",
+    "args": 0
+  },
+  {
+    "name": "ui_manufacturer_model_902b67",
+    "vi": "Hãng / mẫu",
+    "en": "Manufacturer / model",
+    "args": 0
+  },
+  {
+    "name": "ui_device_board_29bdb4",
+    "vi": "Thiết bị / bo mạch",
+    "en": "Device / board",
+    "args": 0
+  },
+  {
+    "name": "ui_device_system_00fd91",
+    "vi": "Thiết bị & hệ thống",
+    "en": "Device & system",
+    "args": 0
+  },
+  {
+    "name": "ui_cpu_architecture_1e9f3d",
+    "vi": "CPU & kiến trúc",
+    "en": "CPU & architecture",
+    "args": 0
+  },
+  {
+    "name": "ui_model_68c2cc",
+    "vi": "Model",
+    "en": "Model",
+    "args": 0
+  },
+  {
+    "name": "ui_board_e879b0",
+    "vi": "Board",
+    "en": "Board",
+    "args": 0
+  },
+  {
+    "name": "ui_brand_62b4aa",
+    "vi": "Brand",
+    "en": "Brand",
+    "args": 0
+  },
+  {
+    "name": "ui_build_time_72b8e5",
+    "vi": "Build Time",
+    "en": "Build time",
+    "args": 0
+  },
+  {
+    "name": "ui_product_dd3b86",
+    "vi": "Product",
+    "en": "Product",
+    "args": 0
+  },
+  {
+    "name": "ui_user_9f8a23",
+    "vi": "User",
+    "en": "User",
+    "args": 0
+  },
+  {
+    "name": "ui_host_3960ec",
+    "vi": "Host",
+    "en": "Host",
+    "args": 0
+  },
+  {
+    "name": "ui_description_55f8eb",
+    "vi": "Description",
+    "en": "Description",
+    "args": 0
+  },
+  {
+    "name": "ui_processor_b74d0d",
+    "vi": "Processor",
+    "en": "Processor",
+    "args": 0
+  },
+  {
+    "name": "ui_vendor_d96159",
+    "vi": "Vendor",
+    "en": "Vendor",
+    "args": 0
+  },
+  {
+    "name": "ui_connection_status_bcab62",
+    "vi": "Connection Status",
+    "en": "Connection status",
+    "args": 0
+  },
+  {
+    "name": "ui_transport_network_type_64c7f8",
+    "vi": "Data Type / Network Type",
+    "en": "Transport / network type",
+    "args": 0
+  },
+  {
+    "name": "ui_ip_address_11f510",
+    "vi": "IP Address",
+    "en": "IP address",
+    "args": 0
+  },
+  {
+    "name": "ui_link_speed_758697",
+    "vi": "Link Speed",
+    "en": "Link speed",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_frequency_dd64ca",
+    "vi": "Wi-Fi frequency",
+    "en": "Wi-Fi frequency",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_standard_809543",
+    "vi": "Wi-Fi standard",
+    "en": "Wi-Fi standard",
+    "args": 0
+  },
+  {
+    "name": "ui_wi_fi_mac_address_3ebca5",
+    "vi": "Wi-Fi MAC Address",
+    "en": "Wi-Fi MAC address",
+    "args": 0
+  },
+  {
+    "name": "ui_screen_resolution_390a92",
+    "vi": "Screen Resolution",
+    "en": "Screen resolution",
+    "args": 0
+  },
+  {
+    "name": "ui_security_patch_e0097a",
+    "vi": "Security patch",
+    "en": "Security patch",
+    "args": 0
+  },
+  {
+    "name": "ui_security_level_0ec835",
+    "vi": "Security level",
+    "en": "Security level",
+    "args": 0
+  },
+  {
+    "name": "ui_version_name_95e238",
+    "vi": "Version Name",
+    "en": "Version name",
+    "args": 0
+  },
+  {
+    "name": "ui_gpu_renderer_6dfa7e",
+    "vi": "GPU renderer",
+    "en": "GPU renderer",
+    "args": 0
+  },
+  {
+    "name": "ui_gpu_vendor_d7e0f5",
+    "vi": "GPU vendor",
+    "en": "GPU vendor",
+    "args": 0
+  },
+  {
+    "name": "ui_opengl_driver_ad91bb",
+    "vi": "Driver OpenGL",
+    "en": "OpenGL driver",
+    "args": 0
+  },
+  {
+    "name": "ui_maximum_texture_size_d3b4ed",
+    "vi": "Max Texture Size",
+    "en": "Maximum texture size",
+    "args": 0
+  },
+  {
+    "name": "ui_dynamic_sensor_711481",
+    "vi": "isDynamicSensor",
+    "en": "Dynamic sensor",
+    "args": 0
+  },
+  {
+    "name": "ui_wake_up_sensor_c8b760",
+    "vi": "isWakeUpSensor",
+    "en": "Wake-up sensor",
+    "args": 0
+  },
+  {
+    "name": "ui_wide_color_gamut_47e775",
+    "vi": "Wide color gamut",
+    "en": "Wide color gamut",
+    "args": 0
+  }
+]

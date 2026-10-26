@@ -42,6 +42,25 @@ object IconAssets {
 
     fun page(title: String): String = pages[title].orEmpty()
 
+    fun chip(name: String): String {
+        val value = name.lowercase(java.util.Locale.ROOT)
+        val brand = when {
+            listOf("adreno", "qualcomm", "snapdragon").any(value::contains) || Regex("\\b(sm|msm|sdm)\\d+").containsMatchIn(value) -> "qualcomm"
+            listOf("mediatek", "dimensity", "helio").any(value::contains) || Regex("\\bmt\\d+").containsMatchIn(value) -> "mediatek"
+            listOf("xclipse", "radeon", "amd").any(value::contains) -> "amd"
+            listOf("powervr", "imagination").any(value::contains) -> "imagination"
+            listOf("nvidia", "tegra").any(value::contains) -> "nvidia"
+            listOf("exynos", "samsung").any(value::contains) -> "samsung"
+            listOf("tensor", "google").any(value::contains) -> "google"
+            listOf("kirin", "hisilicon").any(value::contains) -> "hisilicon"
+            listOf("unisoc", "spreadtrum").any(value::contains) -> "unisoc"
+            value.contains("intel") -> "intel"
+            listOf("mali", "immortalis", "arm").any(value::contains) -> "arm"
+            else -> return ""
+        }
+        return "brand_$brand"
+    }
+
     fun sensor(type: String): String = sensors.firstOrNull {
         type.contains(it, ignoreCase = true)
     }?.let { "sensor_$it" }.orEmpty()

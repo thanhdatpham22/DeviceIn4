@@ -1,0 +1,462 @@
+# catalog index|French|Japanese|Simplified Chinese
+0|Aperçu|概要|总览
+1|Capteurs|センサー|传感器
+2|Appareil|デバイス|设备
+3|Identité et matériel de l’appareil|デバイス情報とハードウェア|设备标识与硬件
+4|Android, noyau et version système|Android・カーネル・ビルド情報|Android、内核与版本信息
+5|Architecture CPU et capacités graphiques|CPU構成とグラフィックス性能|CPU 架构与图形能力
+6|RAM en direct|RAMリアルタイム|实时 RAM
+7|Un échantillon par seconde au premier plan|アプリ表示中は毎秒更新|应用在前台时每秒采样
+8|Stockage interne et externe|内部・外部ストレージ|内部与外部存储
+9|Résolution, fréquence et HDR|解像度・リフレッシュレート・HDR|分辨率、刷新率与 HDR
+10|Courant et puissance en direct|電流と電力のリアルタイム表示|实时电流与功率
+11|Connexions et consommation de données|接続とデータ使用量|连接与流量使用
+12|Objectifs, capteurs et fonctions photo|レンズ・センサー・撮影機能|镜头、传感器与拍摄能力
+13|Capteurs disponibles via Android|Androidが公開するセンサー|Android 提供的传感器
+14|Fonctions matérielles et système|ハードウェアとシステム機能|硬件与系统功能
+15|Identité de l’appareil|デバイス識別情報|设备标识
+16|Matériel|ハードウェア|硬件
+17|Version Android|Androidバージョン|Android 版本
+18|Mises à jour|アップデート|更新
+19|Sécurité et démarrage|セキュリティと起動|安全与启动
+20|Durée de fonctionnement|稼働時間|运行时间
+21|Environnement|環境|环境
+22|Temps d’exécution|実行時間|运行时长
+23|Architecture CPU|CPU構成|CPU 架构
+24|GPU et graphismes|GPUとグラフィックス|GPU 与图形
+25|Stockage interne|内部ストレージ|内部存储
+26|Stockage externe|外部ストレージ|外部存储
+27|Écran|ディスプレイ|屏幕
+28|Dalle et affichage|パネルと表示|面板与显示
+29|Batterie et alimentation|バッテリーと電源|电池与供电
+30|Réseau et matériel|ネットワークとハードウェア|网络与硬件
+31|Consommation de données|データ使用量|流量使用
+32|Fonctions matérielles et système|ハードウェアとシステム機能|硬件与系统功能
+33|Détails de la mémoire|メモリ詳細|内存详情
+34|Répartition du stockage|ストレージ内訳|存储分类
+35|Applications visibles par taille|参照可能なアプリ（容量順）|可见应用（按大小排序）
+36|RAM UTILISÉE|使用中のRAM|已用 RAM
+37|Disponible|利用可能|可用
+38|Capacité restante|残り容量|剩余容量
+39|État|状態|状态
+40|État de santé|健全性|健康状态
+41|Source d’alimentation|電源|电源来源
+42|Température|温度|温度
+43|Tension|電圧|电压
+44|Courant|電流|电流
+45|Courant moyen|平均電流|平均电流
+46|Puissance instantanée|瞬時電力|瞬时功率
+47|Cycles de charge|充電サイクル|充电循环
+48|Technologie|方式|技术
+49|En charge|充電中|正在充电
+50|Pas en charge|充電していません|未充电
+51|Décharge|放電中|正在放电
+52|Pleine|満充電|已充满
+53|Bon|良好|良好
+54|Oui|はい|是
+55|Non|いいえ|否
+56|Inconnu|不明|未知
+57|Indisponible|取得不可|不可用
+58|Non fourni|提供なし|未提供
+59|Non exposé par Android|Androidが公開していません|Android 未公开
+60|Lecture des données|データを読み込み中|正在读取设备数据
+61|Lecture impossible|データを読み取れません|无法读取数据
+62|Autorisation caméra requise|カメラ権限が必要です|需要相机权限
+63|Aucune caméra disponible|利用可能なカメラがありません|没有可用相机
+64|Aucun capteur disponible|利用可能なセンサーがありません|没有可用传感器
+65|Autoriser l’accès|アクセスを許可|允许访问
+66|Code|コード|代码
+67|Données|データ|数据
+68|Cache|キャッシュ|缓存
+69|Type|種類|类型
+70|Total|合計|总计
+71|Libre|空き|空闲
+72|Utilisé|使用済み|已用
+73|Applications visibles|参照可能なアプリ|可见应用
+74|Applications système visibles|参照可能なシステムアプリ|可见系统应用
+75|Consommation mensuelle|月間使用量|每月用量
+76|Erreur|エラー|错误
+77|Architecture|アーキテクチャ|架构
+78|Cœurs logiques|論理コア|逻辑核心
+79|Cœurs|コア|核心
+80|Vérification des composants|部品の検証|组件验证
+81|Depuis le dernier démarrage|前回起動から|自上次启动以来
+82|Durée d’activité CPU|CPU稼働時間|CPU 运行时间
+83|Version du noyau|カーネルビルド|内核构建
+84|Fabricant|メーカー|制造商
+85|Fréquence maximale par cœur|コア別最大周波数|每核心最高频率
+86|Résolution physique|物理解像度|物理分辨率
+87|Densité|密度|密度
+88|Taille approximative|推定サイズ|大致尺寸
+89|Fréquence actuelle|現在のリフレッシュレート|当前刷新率
+90|Modes pris en charge|対応モード|支持的模式
+91|Luminosité système|システム輝度|系统亮度
+92|Orientation|向き|方向
+93|Nom de la dalle|パネル名|面板名称
+94|Code OEM de la dalle|パネルOEMコード|面板 OEM 代码
+95|Identifiant de la dalle|パネル製品ID|面板产品 ID
+96|OEM de la dalle|パネルOEM|面板 OEM
+97|État du remplacement|交換状態|更换状态
+98|Capacité totale|総容量|总容量
+99|Autres applis / Système / Cache / Autre|他のアプリ／システム／キャッシュ／その他|其他应用／系统／缓存／其他
+100|Cache DeviceIn4|DeviceIn4のキャッシュ|DeviceIn4 缓存
+101|Amovible|取り外し可能|可移除
+102|Applications et répartition|アプリと内訳|应用与分类
+103|Code des applications|アプリコード|应用代码
+104|Données des applications|アプリデータ|应用数据
+105|Cache des applications|アプリキャッシュ|应用缓存
+106|Non classé|未分類|未分类
+107|Périmètre|範囲|范围
+108|Application système|システムアプリ|系统应用
+109|Application utilisateur|ユーザーアプリ|用户应用
+110|FIFO maximal|最大FIFO|最大 FIFO
+111|Délai minimal|最小遅延|最小延迟
+112|Opérateur|通信事業者|运营商
+113|Type de SIM|SIMの種類|SIM 类型
+114|Matériel Wi-Fi|Wi-Fiハードウェア|Wi-Fi 硬件
+115|Matériel cellulaire|モバイル通信ハードウェア|蜂窝网络硬件
+116|Capacité 4G/5G|4G/5G対応|4G/5G 能力
+117|Reçu depuis le démarrage|起動後の端末受信量|设备自启动以来接收
+118|Envoyé depuis le démarrage|起動後の端末送信量|设备自启动以来发送
+119|Reçu par l’appli depuis le démarrage|起動後のアプリ受信量|应用自启动以来接收
+120|Envoyé par l’appli depuis le démarrage|起動後のアプリ送信量|应用自启动以来发送
+121|Wi-Fi ce mois-ci|今月のWi-Fi|本月 Wi-Fi
+122|Cellulaire ce mois-ci|今月のモバイル通信|本月蜂窝网络
+123|Statistiques mensuelles|月間統計|每月统计
+124|Non pris en charge|非対応|不支持
+125|Hors ligne|オフライン|离线
+126|Cellulaire|モバイル通信|蜂窝网络
+127|Autre|その他|其他
+128|Internet disponible|インターネット接続あり|可访问互联网
+129|Déconnecté|未接続|未连接
+130|Connecté, Internet non vérifié|接続済み・インターネット未確認|已连接，互联网未验证
+131|Autorisation de localisation requise|位置情報の権限が必要です|需要位置权限
+132|Autorisation téléphone requise|電話の権限が必要です|需要电话权限
+133|Surchauffe|過熱|过热
+134|Hors service|故障|已损坏
+135|Surtension|過電圧|过压
+136|Trop froide|低温|温度过低
+137|Secteur|AC電源|交流电
+138|Sans fil|ワイヤレス|无线
+139|Débranchée|未接続|未插入电源
+140|Charge restante|残り充電量|剩余电量
+141|Avant|前面|前置
+142|Arrière|背面|后置
+143|Externe|外部|外接
+144|Niveau matériel|ハードウェアレベル|硬件级别
+145|Résolution JPEG maximale|最大JPEG解像度|最大 JPEG 分辨率
+146|Taille du capteur|センサーサイズ|传感器尺寸
+147|Distance focale|焦点距離|焦距
+148|Ouverture|絞り|光圈
+149|Stabilisation optique|光学手ぶれ補正|光学防抖
+150|Flash|フラッシュ|闪光灯
+151|Orientation du capteur|センサーの向き|传感器方向
+152|Résolution du capteur|センサー解像度|传感器分辨率
+153|Zone active du capteur|センサー有効領域|传感器有效区域
+154|Zoom numérique maximal|最大デジタルズーム|最大数字变焦
+155|Zones AF maximales|最大AF領域数|最大 AF 区域数
+156|Zones AE maximales|最大AE領域数|最大 AE 区域数
+157|Fonctions (codes)|機能（コード）|能力（代码）
+158|Répartition Système / Autre|システム／その他の内訳|系统／其他分类
+159|Stockage par application|アプリ別ストレージ|各应用存储
+160|SSID Wi-Fi|Wi-Fi SSID|Wi-Fi SSID
+161|Réseau cellulaire|モバイルネットワーク|蜂窝网络
+162|Android limite l’accès au stockage des autres applications. Consultez les paramètres système pour la répartition fournie par l’appareil.|Androidは他のアプリのストレージへのアクセスを制限します。内訳はシステムのストレージ設定で確認してください。|Android 限制访问其他应用的存储。请打开系统存储设置查看设备提供的分类。
+163|Activez l’accès aux données d’utilisation pour voir le code, les données et le cache des applications visibles.|使用状況へのアクセスを許可すると、参照可能なアプリのコード・データ・キャッシュを確認できます。|请启用使用情况访问权限，以查看可见应用的代码、数据和缓存。
+164|Autorisez la localisation pour afficher le nom du réseau Wi-Fi actuel.|現在のWi-Fi名を表示するには、位置情報へのアクセスを許可してください。|请允许位置访问，以显示当前 Wi-Fi 网络名称。
+165|Autorisez l’état du téléphone pour afficher le type de réseau 2G/3G/4G/5G actuel.|現在の2G/3G/4G/5Gを表示するには、電話の状態の読み取りを許可してください。|请允许读取电话状态，以显示当前 2G/3G/4G/5G 网络类型。
+166|Activez l’accès aux données d’utilisation pour lire les totaux Wi-Fi et cellulaires du mois.|今月のWi-Fiとモバイル通信量を表示するには、使用状況へのアクセスを許可してください。|请启用使用情况访问权限，以读取本月 Wi-Fi 和蜂窝网络流量总计。
+167|Android exige l’accès à la caméra pour certaines caractéristiques. DeviceIn4 lit uniquement les spécifications, sans prendre de photos.|一部のレンズ情報にはカメラ権限が必要です。DeviceIn4は仕様を読み取るだけで、撮影はしません。|Android 要求相机权限才能读取部分镜头特性。DeviceIn4 仅读取参数，不会拍照。
+168|L’appareil ne signale aucune caméra via Camera2.|Camera2からカメラ情報が提供されていません。|设备未通过 Camera2 提供相机信息。
+169|L’appareil ne signale aucun capteur via SensorManager.|SensorManagerからセンサー情報が提供されていません。|设备未通过 SensorManager 提供传感器信息。
+170|En attente des données…|データを待機中…|正在等待设备数据…
+171|Android ne peut pas vérifier les composants remplacés|Androidでは部品の交換を検証できません|Android 无法验证更换过的组件
+172|Accès limité aux applications ordinaires sur Android 10+|Android 10以降は一般アプリで制限されています|Android 10 及以上限制普通应用访问
+173|Aucun indice de root détecté|rootの兆候は検出されていません|未发现 root 迹象
+174|Indices de root possibles, non confirmés|rootの可能性あり（未確認）|可能存在 root 迹象（未确认）
+175|Impossible à vérifier via les API Android|Android APIでは検証できません|无法通过 Android API 验证
+176|Code PNP fourni par le système ; composant physique non vérifié|システムが報告するPNPコードです。実際の部品は検証していません|系统报告的 PNP 代码，未验证物理组件
+177|Android n’expose pas le fabricant de la cellule|Androidは電池セルメーカーを公開していません|Android 未公开电芯制造商
+178|Non indiqué par l’appareil|デバイスから情報提供なし|设备未报告
+179|Aucun|なし|无
+180|Paysage|横向き|横向
+181|Portrait|縦向き|纵向
+182|Accès|アクセス|访问
+183|Données batterie indisponibles|バッテリーデータを取得できません|电池数据不可用
+184|Matériel et technologie RAM|RAMのハードウェアと方式|RAM 硬件与技术
+185|Détails et matériel RAM|RAMの詳細とハードウェア|RAM 详情与硬件
+186|Modem et matériel 4G/5G|モデムと4G/5Gハードウェア|调制解调器与 4G/5G 硬件
+187|Matériel 4G LTE|4G LTEハードウェア|4G LTE 硬件
+188|Matériel 5G NR|5G NRハードウェア|5G NR 硬件
+189|Réseau de données actuel|現在のデータ通信方式|当前数据网络
+190|Informations d’affichage 4G/5G|4G/5G表示情報|4G/5G 显示信息
+191|Version de bande de base|ベースバンドバージョン|基带版本
+192|Modems logiques pris en charge|対応論理モデム数|支持的逻辑调制解调器数量
+193|Modems logiques actifs|動作中の論理モデム数|活动的逻辑调制解调器数量
+194|Source de confirmation|確認元|确认来源
+195|Bandes de fréquences du modem|モデムの周波数帯|调制解调器频段
+196|Aucun matériel cellulaire|モバイル通信ハードウェアなし|没有蜂窝网络硬件
+197|Oui · indiqué par le modem|対応・モデムが報告|支持 · 调制解调器已报告
+198|Oui · confirmé par les informations réseau|対応・ネットワーク情報で確認|支持 · 已通过网络信息确认
+199|Non · absent des capacités du modem|非対応・モデムの対応一覧にありません|不支持 · 调制解调器能力中未列出
+200|Non vérifié · Android limite l’inventaire du modem pour les applications ordinaires|未確認・一般アプリではモデムの対応一覧が制限されています|未验证 · Android 限制普通应用读取调制解调器能力列表
+201|Inventaire des technologies radio du modem|モデムの対応無線方式一覧|调制解调器无线技术列表
+202|Type de réseau et informations d’affichage fournis par Android|Androidが提供する通信方式と表示情報|Android 提供的数据网络类型与显示信息
+203|Android n’expose pas la liste complète des bandes LTE/NR aux applications ordinaires|一般アプリではLTE/NRの全対応帯域を取得できません|Android 不向普通应用公开完整的 LTE/NR 频段列表
+204|Résumé des capteurs|センサー集計|传感器统计
+205|Nombre de capteurs disponibles|利用可能なセンサー数|可用传感器总数
+206|Types de capteurs|センサーの種類数|传感器类型数
+207|Capteurs de réveil|ウェイクアップセンサー|唤醒传感器
+208|Capteurs sans réveil|非ウェイクアップセンサー|非唤醒传感器
+209|Capteurs dynamiques connectés|接続中の動的センサー|已连接的动态传感器
+210|Périmètre du comptage|集計範囲|统计范围
+211|Données SensorManager : incluent les capteurs virtuels et variantes de réveil, pas le nombre de puces physiques|SensorManagerの一覧には仮想センサーやウェイクアップの別種を含みます。物理チップ数ではありません|按 SensorManager 统计，包含虚拟传感器和唤醒变体，并非物理芯片数量
+212|Norme et génération RAM|RAM規格と世代|RAM 标准与代际
+213|Norme et technologie RAM|RAM規格と方式|RAM 标准与技术
+214|Fabricant de la RAM|RAMメーカー|RAM 制造商
+215|Débit de transfert|データ転送速度|数据传输速率
+216|Bande passante nominale|公称帯域幅|标称带宽
+217|Bande passante estimée|推定帯域幅|估算带宽
+218|Source d’identification|識別情報の取得元|识别来源
+219|Norme de stockage|ストレージ規格|存储标准
+220|Fabricant de la mémoire flash|フラッシュメモリメーカー|闪存制造商
+221|Modèle de la puce flash|フラッシュ部品型番|闪存组件型号
+222|Interface matérielle|ハードウェアインターフェース|硬件接口
+223|Révision du micrologiciel|ファームウェアリビジョン|固件修订版本
+224|ACTIVITÉ CPU|CPUアクティビティ|CPU 活动
+225|CHARGE CPU EN DIRECT|CPU負荷リアルタイム|实时 CPU 负载
+226|CHARGE CPU · 60 SECONDES|CPU負荷・60秒|CPU 负载 · 60 秒
+227|Historique de charge CPU des 60 dernières secondes|直近60秒間のCPU負荷|最近 60 秒的 CPU 负载记录
+228|Détails des cœurs et /proc/cpuinfo ↗|コア詳細・/proc/cpuinfo ↗|核心详情与 /proc/cpuinfo ↗
+229|Économie d’énergie / Repos|省電力／アイドル|省电／空闲
+230|Équilibré / Usage courant|バランス／通常動作|均衡／日常任务
+231|Équilibré / Activité quotidienne|バランス／日常処理|均衡／日常活动
+232|Hautes performances / Pic de charge|高性能／ピーク負荷|高性能／峰值负载
+233|Hautes performances / Charge élevée|高性能／高負荷|高性能／高负载
+234|CHARGE ACTUELLE|現在の負荷|当前负载
+235|PIC DE CHARGE · 60 S|ピーク負荷・60秒|峰值负载 · 60 秒
+236|FRÉQUENCE MAX.|最大周波数|最高频率
+237|CŒURS ACTIFS|稼働コア|活动核心
+238|SYNTHÈSE ET ANALYSE CPU|CPU総合分析|CPU 综合分析
+239|Performances et état des cœurs|コアの性能と状態|核心性能与状态
+240|FRÉQUENCE ET PERFORMANCE PAR CŒUR|コア別周波数・性能一覧|各核心频率与性能
+241|Caméra arrière · Grand-angle principal|背面カメラ・メイン広角|后置相机 · 主广角
+242|Caméra arrière · Ultra grand-angle|背面カメラ・超広角|后置相机 · 超广角
+243|Caméra arrière · Téléobjectif optique|背面カメラ・光学望遠|后置相机 · 光学长焦
+244|Caméra arrière · Téléobjectif périscopique|背面カメラ・ペリスコープ望遠|后置相机 · 潜望长焦
+245|Caméra arrière · Macro|背面カメラ・マクロ|后置相机 · 微距
+246|Caméra arrière · Profondeur|背面カメラ・深度|后置相机 · 深度传感器
+247|Caméra arrière · Monochrome|背面カメラ・モノクロ|后置相机 · 黑白
+248|Caméra avant · Portrait et selfie|前面カメラ・ポートレートと自撮り|前置相机 · 人像与自拍
+249|Caméra avant · Selfie ultra grand-angle|前面カメラ・超広角自撮り|前置相机 · 超广角自拍
+250|Ensemble arrière multi-objectifs (logique)|背面マルチカメラ（論理）|后置多镜头组合（逻辑相机）
+251|Caméra externe / USB|外部／USBカメラ|外接／USB 相机
+252|Stabilisation optique (OIS)|光学手ぶれ補正（OIS）|光学防抖（OIS）
+253|Champ de vision (FOV)|画角（FOV）|视场角（FOV）
+254|Distance focale équivalente 35 mm|35mm換算焦点距離|35 毫米等效焦距
+255|Distance minimale de mise au point|最短撮影距離|最近对焦距离
+256|Filtre couleur du capteur|センサーのカラーフィルター|传感器滤色阵列
+257|Objectif physique distinct|独立した物理レンズ|独立物理镜头
+258|Ensemble multi-caméras logique|論理マルチカメラ|逻辑多相机组合
+259|Disponible|利用可能|可用
+260|Informations sur l’application indisponibles|アプリ情報を開けません|无法打开应用信息
+261|Android a limité l’accès aux paramètres de l’application|Androidがアプリ設定へのアクセスを制限しました|Android 限制访问应用设置
+262|Fabricant de la cellule : non exposé par Android|電池セルメーカー：Android非公開|电芯制造商：Android 未公开
+263|Fabricant du module caméra : non exposé par Camera2|カメラモジュールメーカー：Camera2非公開|相机模组制造商：Camera2 未公开
+264|Source : API Android · Les restrictions sont signalées dans chaque section · Balayez pour changer de page|取得元：Android API・制限は各項目に表示・スワイプでページ切替|来源：Android API · 各部分已注明受限数据 · 滑动切换页面
+265|Informations sur l’appareil|デバイス情報|设备信息
+266|VOTRE APPAREIL|お使いのデバイス|你的设备
+267|charge moyenne|平均負荷|平均负载
+268|Le CPU fonctionne à faible consommation. Les petits cœurs économes traitent les tâches de fond, avec peu de chaleur et de décharge.|CPUは低消費電力で動作中です。バックグラウンド処理を省電力コアが担当し、発熱と電池消費を抑えています。|CPU 处于低功耗状态，后台任务由节能小核处理，发热和电量消耗较低。
+269|Le CPU gère l’interface, la vidéo ou le multitâche courant avec une répartition équilibrée des fréquences.|CPUは画面表示・動画・通常のマルチタスクを処理中です。各コアの周波数を性能と省電力のバランスに合わせています。|CPU 正平稳处理界面、视频或日常多任务，各核心频率在节能与性能之间保持平衡。
+270|Charge CPU élevée. Les grands cœurs accélèrent pour le calcul intensif, le rendu 3D ou les jeux.|CPUは高負荷で動作中です。高性能コアが周波数を上げ、重い計算・3D描画・ゲームを処理しています。|CPU 负载较高，高性能大核提升频率以处理重计算、3D 渲染或游戏。
+271|CHARGE MOY.|平均負荷|平均负载
+272|PIC DE CHARGE|ピーク負荷|峰值负载
+273|Analyse détaillée CPU et /proc/cpuinfo ↗|CPU・/proc/cpuinfo詳細分析 ↗|CPU 与 /proc/cpuinfo 深度分析 ↗
+274|Fermer|閉じる|关闭
+275|ANALYSE CPU DÉTAILLÉE|CPU詳細分析|CPU 深度分析
+276|Performances et /proc/cpuinfo|性能と/proc/cpuinfo|性能与 /proc/cpuinfo
+277|Performances des cœurs en direct|コア性能（リアルタイム）|核心性能（实时）
+278|proc.cpuinfo (%1$s cœurs)|proc.cpuinfo（%1$sコア）|proc.cpuinfo（%1$s 核心）
+279|MESURES DES CŒURS LOGIQUES EN DIRECT|論理コアのリアルタイム情報|实时逻辑核心指标
+280|IDENTIFIANTS MATÉRIELS DU SYSTÈME|システムのハードウェア識別情報|系统硬件标识
+281|Copié !|コピーしました|已复制！
+282|Tout copier|すべてコピー|全部复制
+283|SORTIE BRUTE /proc/cpuinfo|/proc/cpuinfoの生データ|/proc/cpuinfo 原始输出
+284|Fermer|閉じる|关闭
+285|ANALYSE GPU DÉTAILLÉE|GPU詳細分析|GPU 深度分析
+286|Capacités graphiques et limites matérielles|グラフィックス性能とハードウェア上限|图形能力与硬件限制
+287|Capacités et limites|機能と上限|能力与限制
+288|GL_EXTENSIONS (%1$s)|GL_EXTENSIONS（%1$s）|GL_EXTENSIONS（%1$s）
+289|LIMITES MATÉRIELLES OPENGL ES|OPENGL ESハードウェア上限|OPENGL ES 硬件限制
+290|PILOTE ET CAPACITÉS DE CALCUL|ドライバーと演算機能|驱动与计算能力
+291|Tout copier|すべてコピー|全部复制
+292|Rechercher une extension…|拡張機能を検索…|搜索扩展…
+293|%1$s sur %2$s affichés|%2$s件中%1$s件を表示|显示 %1$s／%2$s 项
+294|Bande passante|帯域幅|带宽
+295|BATTERIE|バッテリー|电池
+296|Système et fichiers|システムとファイル|系统与文件
+297|Espace libre réservé|予約済み空き領域|保留空闲空间
+298|60 DERNIÈRES SECONDES|直近60秒|最近 60 秒
+299|STOCKAGE|ストレージ|存储
+300|Réduire l’analyse|分析を折りたたむ|收起分析
+301|Analyse détaillée|詳細分析|深度分析
+302|Analyse détaillée CPU et /proc/cpuinfo|CPU・/proc/cpuinfo詳細分析|CPU 与 /proc/cpuinfo 深度分析
+303|Analyse détaillée GPU et extensions|GPU・拡張機能詳細分析|GPU 与扩展深度分析
+304|Mesures des cœurs en direct et /proc/cpuinfo structuré|コアのリアルタイム情報と構造化した/proc/cpuinfo|实时核心指标与结构化 /proc/cpuinfo
+305|Limites matérielles, Vulkan et GL_EXTENSIONS|ハードウェア上限・Vulkan・GL_EXTENSIONS|硬件限制、Vulkan 与 GL_EXTENSIONS
+306|Ouvrir ↗|開く ↗|打开 ↗
+307|utilisé|使用済み|已用
+308|La ZRAM est de la RAM compressée, affichée dans l’onglet RAM. Le cache est séparé lorsque l’accès aux données d’utilisation est autorisé.|ZRAMは圧縮RAMで、RAMページに表示します。使用状況へのアクセスがある場合、キャッシュを分けて表示します。|ZRAM 是压缩内存，显示在 RAM 页面。获得使用情况访问权限后会单独列出缓存。
+309|PUISSANCE EN DIRECT|電力リアルタイム|实时功率
+310|COURANT|電流|电流
+311|PUISSANCE|電力|功率
+312|Puissance absolue sur 60 s · Le signe dépend des données fournies par l’appareil|60秒間の電力絶対値・符号はデバイスの報告方式によります|最近 60 秒的功率绝对值 · 正负号取决于设备报告方式
+313|Applications (%1$s)|アプリ（%1$s件）|应用（%1$s 个）
+314|Appuyez pour réduire|タップして折りたたむ|点击收起
+315|Appuyez pour voir le stockage des applications|タップしてアプリの使用容量を表示|点击查看应用存储
+316|À propos|このアプリについて|关于
+317|Explorez le matériel, Android, les capteurs et les ressources en direct.|ハードウェア・Android・センサー・リソースをリアルタイムで確認できます。|查看设备硬件、Android、传感器及实时资源。
+318|Confidentialité|プライバシー|隐私
+319|Les données sont lues sur l’appareil. Aucun compte ni synchronisation cloud.|データは端末内で読み取ります。アカウント登録やクラウド同期はありません。|数据在设备本地读取，无需账号，也不进行云同步。
+320|Conçu avec Kotlin, Jetpack Compose et les API Android. Les bibliothèques tierces conservent leurs licences respectives.|Kotlin・Jetpack Compose・Android APIで開発しています。外部ライブラリにはそれぞれのライセンスが適用されます。|使用 Kotlin、Jetpack Compose 和 Android API 构建。第三方库遵循各自的许可证。
+321|Paramètres|設定|设置
+322|Langue|言語|语言
+323|Apparence|外観|外观
+324|Couleur d’accent|アクセントカラー|主题色
+325|Appliquer la couleur|色を適用|应用颜色
+326|Unités|単位|单位
+327|Widget d’écran d’accueil|ホーム画面ウィジェット|主屏幕小组件
+328|Batterie|バッテリー|电池
+329|Ajouter un widget|ウィジェットを追加|添加小组件
+330|🌐 Langue du système|🌐 システムの言語|🌐 跟随系统语言
+331|Par défaut|既定|默认
+332|Personnalisé|カスタム|自定义
+333|En direct · 10 dernières secondes|リアルタイム・直近10秒|实时 · 最近 10 秒
+334|Impossible de réarmer le déclencheur|トリガーを再登録できません|无法重新注册触发传感器
+335|Accès au capteur limité|センサーへのアクセスが制限されています|传感器访问受限
+336|Capteur déconnecté|センサーが切断されました|传感器已断开
+337|Autorisation nécessaire pour recevoir des données|データ受信には権限が必要です|接收数据需要权限
+338|L’appareil a refusé ce flux de capteur|デバイスがセンサーストリームを許可しませんでした|设备拒绝了此传感器数据流
+339|Écoute en cours · En attente d’un événement|監視中・センサーイベントを待機中|正在监听 · 等待传感器事件
+340|Accès au capteur limité par Android ou le fabricant|Androidまたはメーカーがセンサーへのアクセスを制限しています|Android 或厂商限制传感器访问
+341|Capteur désormais indisponible|センサーが利用できなくなりました|传感器已不可用
+342|En pause|一時停止|已暂停
+343|Autoriser le capteur|センサーへのアクセスを許可|允许传感器访问
+344|Dernier événement|最新のイベント|最新事件
+345|Valeurs brutes du capteur|センサーの生データ|传感器原始值
+346|STOCKAGE UTILISÉ|使用中のストレージ|已用存储
+347|RAM UTILISÉE|使用中のRAM|已用 RAM
+348|Système|OS|系统
+349|Stockage|ストレージ|存储
+350|Réseau|ネットワーク|网络
+351|Caméra|カメラ|相机
+352|Fonctions|機能|功能
+353|Système|システム|系统
+354|Sombre|ダーク|深色
+355|Clair|ライト|浅色
+356|Menthe|ミント|薄荷绿
+357|Violet|バイオレット|紫色
+358|Ambre|アンバー|琥珀色
+359|Rose|ローズ|玫瑰色
+360|Bleu|ブルー|蓝色
+361|Version|バージョン|版本
+362|Fournisseur / OEM|提供元／OEM|供应商／OEM
+363|Résolution|解像度|分辨率
+364|Puissance|電力|功率
+365|Plage maximale|最大測定範囲|最大量程
+366|Nom du capteur|センサー名|传感器名称
+367|Type de capteur|センサー種類|传感器类型
+368|Mode de rapport|報告モード|报告模式
+369|Continu|連続|连续
+370|Lors d’un changement|変化時|变化时
+371|Déclenchement unique|ワンショット|单次触发
+372|Déclenchement spécial|特殊トリガー|特殊触发
+373|CPU|CPU|CPU
+374|GPU|GPU|GPU
+375|RAM système|システムRAM|系统 RAM
+376|RAM utilisée|使用中のRAM|已用 RAM
+377|RAM disponible|利用可能なRAM|可用 RAM
+378|Seuil de mémoire faible|メモリ不足のしきい値|低内存阈值
+379|Mémoire du tas de l’application|アプリのヒープメモリ|应用堆内存
+380|RAM annoncée|公称RAM|标称 RAM
+381|Pression mémoire|メモリ負荷|内存压力
+382|Normal|正常|正常
+383|Le système signale un manque de mémoire|システムがメモリ不足を報告しています|系统报告内存不足
+384|Cache CPU|CPUキャッシュ|CPU 缓存
+385|Gouverneur CPU|CPUガバナー|CPU 调度器
+386|Plage de fréquence par cœur|コア別周波数範囲|每核心频率范围
+387|ABI pris en charge|対応ABI|支持的 ABI
+388|Jeu d’instructions|命令セット|指令集
+389|Fabricant du SoC|SoCメーカー|SoC 制造商
+390|Puce / plateforme|チップ／プラットフォーム|芯片／平台
+391|Architecture 64 bits|64ビット構成|64 位架构
+392|Cœurs logiques|論理コア|逻辑核心
+393|Capacité totale de la partition de données|データパーティション総容量|数据分区总容量
+394|Utilisé / indisponible|使用済み／利用不可|已用／不可用
+395|Occupé par les fichiers|ファイル使用量|文件占用
+396|Espace libre réservé|予約済み空き領域|保留空闲空间
+397|Espace libre utilisable|利用可能な空き領域|可用空闲空间
+398|Calcul|計算方法|计算方法
+399|Données des applications hors cache|キャッシュを除くアプリデータ|应用数据（不含缓存）
+400|Cache inclus dans les données|データに含まれるキャッシュ|数据中包含的应用缓存
+401|Code des applications signalé par le système|システムが報告するアプリコード|系统报告的应用代码
+402|Limites|制限事項|限制
+403|Classification|分類|分类
+404|Swap du système|システム全体のスワップ|全系统交换空间
+405|ZRAM et swap · Séparés du stockage interne|ZRAMとスワップ・内部ストレージとは別|ZRAM 与交换空间 · 不计入内部存储
+406|Mode de réveil|ウェイクアップモード|唤醒模式
+407|Fabricant de la cellule de batterie|電池セルメーカー|电芯制造商
+408|Fonction de l’objectif|レンズ機能|镜头功能
+409|Champ de vision réel (FOV)|実画角（FOV）|实际视场角（FOV）
+410|Résolution en pixels du capteur|センサーの画素解像度|传感器像素分辨率
+411|Taille physique du capteur|センサーの物理サイズ|传感器物理尺寸
+412|Identité matérielle|ハードウェア識別情報|硬件标识
+413|Niveau matériel Camera2|Camera2ハードウェアレベル|Camera2 硬件级别
+414|Stabilisation optique de l’image (OIS)|光学手ぶれ補正（OIS）|光学图像防抖（OIS）
+415|Éclairage flash|補助フラッシュ|补光灯
+416|Cadence d’images (FPS)|フレームレート（FPS）|帧率（FPS）
+417|Plage de sensibilité ISO|ISO感度範囲|ISO 感光度范围
+418|Plage du temps d’exposition|露光時間範囲|曝光时间范围
+419|Détection des visages|顔検出|人脸检测
+420|Caméras physiques associées|関連する物理カメラ|关联的物理相机
+421|Fonctions avancées|高度な機能|高级能力
+422|Extensions|拡張機能|扩展
+423|Zoom numérique maximal|最大デジタルズーム|最大数字变焦
+424|Version système|ビルド|构建版本
+425|Nom du produit|製品名|产品名称
+426|Marque|ブランド|品牌
+427|Code de l’appareil|デバイスコード|设备代码
+428|Carte mère|ボード|主板
+429|Fabricant / modèle|メーカー／モデル|制造商／型号
+430|Appareil / carte mère|デバイス／ボード|设备／主板
+431|Appareil et système|デバイスとシステム|设备与系统
+432|CPU et architecture|CPUと構成|CPU 与架构
+433|Modèle|モデル|型号
+434|Carte mère|ボード|主板
+435|Marque|ブランド|品牌
+436|Date de compilation|ビルド日時|构建时间
+437|Produit|製品|产品
+438|Utilisateur|ユーザー|用户
+439|Hôte|ホスト|主机
+440|Description|説明|说明
+441|Processeur|プロセッサー|处理器
+442|Fournisseur|提供元|供应商
+443|État de connexion|接続状態|连接状态
+444|Transport / type de réseau|接続方式／ネットワーク種類|传输方式／网络类型
+445|Adresse IP|IPアドレス|IP 地址
+446|Vitesse de liaison|リンク速度|链路速度
+447|Fréquence Wi-Fi|Wi-Fi周波数|Wi-Fi 频率
+448|Norme Wi-Fi|Wi-Fi規格|Wi-Fi 标准
+449|Adresse MAC Wi-Fi|Wi-Fi MACアドレス|Wi-Fi MAC 地址
+450|Résolution de l’écran|画面解像度|屏幕分辨率
+451|Correctif de sécurité|セキュリティパッチ|安全补丁
+452|Niveau de sécurité|セキュリティレベル|安全级别
+453|Nom de version|バージョン名|版本名称
+454|Moteur de rendu GPU|GPUレンダラー|GPU 渲染器
+455|Fournisseur du GPU|GPU提供元|GPU 供应商
+456|Pilote OpenGL|OpenGLドライバー|OpenGL 驱动
+457|Taille maximale des textures|最大テクスチャサイズ|最大纹理尺寸
+458|Capteur dynamique|動的センサー|动态传感器
+459|Capteur de réveil|ウェイクアップセンサー|唤醒传感器
+460|Gamme de couleurs étendue|広色域|广色域

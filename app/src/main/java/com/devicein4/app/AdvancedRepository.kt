@@ -27,6 +27,9 @@ import android.opengl.EGLConfig
 import android.opengl.GLES20
 import android.provider.Settings
 import android.telephony.TelephonyManager
+import android.telephony.SubscriptionManager
+import android.telephony.TelephonyCallback
+import android.telephony.TelephonyDisplayInfo
 import android.util.DisplayMetrics
 import android.view.WindowManager
 import java.io.File
@@ -37,8 +40,107 @@ import java.util.Calendar
 
 private const val unavailable = "Không được Android công khai"
 
+data class CpuProcessorBlock(
+    val processorId: Int,
+    val modelName: String,
+    val bogoMips: String,
+    val features: String,
+    val implementer: String,
+    val architecture: String,
+    val variant: String,
+    val part: String,
+    val revision: String,
+    val otherFields: Map<String, String>
+)
+
+data class CpuDetailedAnalysis(
+    val rawText: String,
+    val hardware: String,
+    val revision: String,
+    val serial: String,
+    val processors: List<CpuProcessorBlock>
+)
+
+data class GpuDetailedAnalysis(
+    val renderer: String,
+    val vendor: String,
+    val glesVersion: String,
+    val glslVersion: String,
+    val openGlEs: String,
+    val vulkanVersion: String,
+    val vulkanLevel: String,
+    val vulkanCompute: Boolean,
+    val maxTextureSize: Int,
+    val maxRenderbufferSize: Int,
+    val maxViewportDims: Pair<Int, Int>,
+    val maxVertexAttribs: Int,
+    val maxCombinedTextureUnits: Int,
+    val extensions: List<String>,
+    val gamingTier: String,
+    val gamingAssessment: String
+)
+
+data class RamHardwareInfo(
+    val technology: String,
+    val manufacturer: String,
+    val speed: String,
+    val estimatedBandwidth: String,
+    val source: String
+)
+
+data class StorageHardwareInfo(
+    val technology: String,
+    val manufacturer: String,
+    val modelName: String,
+    val revision: String,
+    val interfaceType: String,
+    val source: String
+)
+
 class AdvancedRepository(private val context: Context) {
     private val pm = context.packageManager
+    private val ramHardware by lazy { readRamHardware() }
+    @Volatile private var displayNetworkType: Int? = null
+    @Volatile private var displayOverride: Int? = null
+    @Volatile private var displaySubscription: Int? = null
+
+    private fun dataTelephony(): TelephonyManager {
+        val manager = context.getSystemService(TelephonyManager::class.java)
+        val id = SubscriptionManager.getDefaultDataSubscriptionId()
+        return if (id in 0 until Int.MAX_VALUE) manager.createForSubscriptionId(id) else manager
+    }
+
+    /** Called on the main thread while the Network page is visible. */
+    fun observeMobileNetwork(): () -> Unit {
+        displayNetworkType = null
+        displayOverride = null
+        displaySubscription = null
+        if (Build.VERSION.SDK_INT < 31 || !pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) return {}
+        val manager = dataTelephony()
+        val subscription = SubscriptionManager.getDefaultDataSubscriptionId()
+        val callback = object : TelephonyCallback(), TelephonyCallback.DisplayInfoListener {
+            override fun onDisplayInfoChanged(info: TelephonyDisplayInfo) {
+                displayNetworkType = info.networkType
+                displayOverride = info.overrideNetworkType
+                displaySubscription = subscription
+            }
+        }
+        return try {
+            manager.registerTelephonyCallback(context.mainExecutor, callback)
+            val stop: () -> Unit = { manager.unregisterTelephonyCallback(callback) }
+            stop
+        } catch (_: SecurityException) { {} }
+        catch (_: UnsupportedOperationException) { {} }
+    }
+
+    @android.annotation.SuppressLint("MissingPermission")
+    private fun modemRadioMask(manager: TelephonyManager): Long? {
+        // The modem inventory is privileged; carrier privileges are the permitted alternative.
+        if (Build.VERSION.SDK_INT < 33) return null
+        return try { if (manager.hasCarrierPrivileges()) manager.supportedRadioAccessFamily.takeIf { it != 0L } else null }
+        catch (_: SecurityException) { null }
+        catch (_: UnsupportedOperationException) { null }
+    }
 
     fun device(): List<Section> {
         val wm = context.getSystemService(WindowManager::class.java)
@@ -94,27 +196,55 @@ class AdvancedRepository(private val context: Context) {
         )), Section("Môi trường", environment), widevine())
     }
 
+    private fun readCpuCache(): String {
+        val cacheItems = mutableListOf<String>()
+        for (i in 0..3) {
+            val type = readFirstLine("/sys/devices/system/cpu/cpu0/cache/index$i/type")
+            val level = readFirstLine("/sys/devices/system/cpu/cpu0/cache/index$i/level")
+            val size = readFirstLine("/sys/devices/system/cpu/cpu0/cache/index$i/size")
+            if (level != null && size != null) {
+                val label = when (type?.lowercase()) {
+                    "data" -> "L$level Data"
+                    "instruction" -> "L$level Instruction"
+                    "unified" -> "L$level Unified"
+                    else -> "L$level"
+                }
+                cacheItems += "$label: $size"
+            }
+        }
+        return cacheItems.joinToString(" · ").ifBlank { "L1/L2/L3 (Android giới hạn chi tiết)" }
+    }
+
     fun cpuGpu(): List<Section> {
         val cpuLines = try { File("/proc/cpuinfo").readLines() } catch (_: Exception) { emptyList() }
         fun cpuValue(key: String): String = cpuLines.firstOrNull { it.substringBefore(':').trim().equals(key, true) }
             ?.substringAfter(':')?.trim()?.takeIf { it.isNotEmpty() } ?: unavailable
+
+        val governor = readFirstLine("/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor") ?: unavailable
+        val cacheStr = readCpuCache()
+        val freqRangeStr = (0 until Runtime.getRuntime().availableProcessors()).mapNotNull { core ->
+            val min = readFirstLine("/sys/devices/system/cpu/cpu$core/cpufreq/cpuinfo_min_freq")?.toLongOrNull()?.let { "%.2f GHz".format(Locale.US, it / 1_000_000.0) } ?: "—"
+            val max = readFirstLine("/sys/devices/system/cpu/cpu$core/cpufreq/cpuinfo_max_freq")?.toLongOrNull()?.let { "%.2f GHz".format(Locale.US, it / 1_000_000.0) } ?: "—"
+            "Nhân $core: $min – $max"
+        }.joinToString("\n").ifBlank { unavailable }
+
         val cpu = Section("CPU · cấu trúc", listOf(
             Field("Processor", if (Build.VERSION.SDK_INT >= 31) Build.SOC_MODEL else cpuValue("Processor")),
             Field("SoC OEM", if (Build.VERSION.SDK_INT >= 31) Build.SOC_MANUFACTURER else unavailable),
-            Field("Số nhân logic", Runtime.getRuntime().availableProcessors().toString()),
-            Field("BogoMIPS", cpuValue("BogoMIPS")), Field("Features", cpuValue("Features")),
+            Field("Số nhân logic", "${Runtime.getRuntime().availableProcessors()} nhân"),
+            Field("Bộ nhớ đệm (Cache)", cacheStr),
+            Field("Bộ điều phối (Governor)", governor),
+            Field("Dải xung từng nhân (Min - Max)", freqRangeStr),
+            Field("BogoMIPS", cpuValue("BogoMIPS")),
+            Field("Tập lệnh (Features)", cpuValue("Features")),
             Field("CPU Implementer", cpuValue("CPU implementer")),
             Field("CPU architecture", cpuValue("CPU architecture")),
             Field("CPU Variant", cpuValue("CPU variant")),
             Field("CPU part", cpuValue("CPU part")),
             Field("CPU revision", cpuValue("CPU revision")),
             Field("Hardware", cpuValue("Hardware").takeUnless { it == unavailable } ?: Build.HARDWARE),
-            Field("Revision", cpuValue("Revision")), Field("Serial", cpuValue("Serial")),
-            Field("ABI", Build.SUPPORTED_ABIS.joinToString()),
-            Field("Xung tối đa từng nhân", (0 until Runtime.getRuntime().availableProcessors()).mapNotNull { core ->
-                readFirstLine("/sys/devices/system/cpu/cpu$core/cpufreq/cpuinfo_max_freq")?.toLongOrNull()
-                    ?.let { "CPU $core: ${"%.2f".format(Locale.US, it / 1_000_000.0)} GHz" }
-            }.joinToString("\n").ifBlank { unavailable })
+            Field("Revision", cpuValue("Revision")),
+            Field("ABI hỗ trợ", Build.SUPPORTED_ABIS.joinToString())
         ))
         val gl = context.getSystemService(ActivityManager::class.java).deviceConfigurationInfo.glEsVersion
         val feature = pm.systemAvailableFeatures
@@ -122,16 +252,18 @@ class AdvancedRepository(private val context: Context) {
             ?.version?.let { "${it ushr 22}.${(it shr 12) and 0x3ff}.${it and 0xfff}" } ?: unavailable
         val vulkanLevel = feature.firstOrNull { it.name == PackageManager.FEATURE_VULKAN_HARDWARE_LEVEL }
             ?.version?.toString() ?: unavailable
-        val gpuStrings = gpuStrings()
+        val gpuDetail = gpuDetailedAnalysis()
         val gpu = Section("GPU & đồ họa", listOf(
-            Field("GPU renderer", gpuStrings[0]),
-            Field("GPU vendor", gpuStrings[1]),
-            Field("Driver OpenGL", gpuStrings[2]),
-            Field("GLSL", gpuStrings[3]),
+            Field("GPU renderer", gpuDetail.renderer),
+            Field("GPU vendor", gpuDetail.vendor),
+            Field("Driver OpenGL", gpuDetail.glesVersion),
+            Field("GLSL", gpuDetail.glslVersion),
             Field("OpenGL ES", gl),
             Field("Vulkan version", vulkanVersion),
             Field("Vulkan level", vulkanLevel),
-            Field("Vulkan compute", yesNo(pm.hasSystemFeature(PackageManager.FEATURE_VULKAN_HARDWARE_COMPUTE)))
+            Field("Vulkan compute", yesNo(pm.hasSystemFeature(PackageManager.FEATURE_VULKAN_HARDWARE_COMPUTE))),
+            Field("Max Texture Size", if (gpuDetail.maxTextureSize > 0) "${gpuDetail.maxTextureSize} × ${gpuDetail.maxTextureSize} px" else unavailable),
+            Field("Tiện ích mở rộng (Extensions)", "${gpuDetail.extensions.size} tiện ích hỗ trợ")
         ))
         return listOf(cpu, gpu)
     }
@@ -162,12 +294,12 @@ class AdvancedRepository(private val context: Context) {
             Field("Kích thước xấp xỉ", "${"%.2f".format(Locale.US, kotlin.math.hypot(metrics.widthPixels / metrics.xdpi, metrics.heightPixels / metrics.ydpi))} inch"),
             Field("Refresh hiện tại", "${display.refreshRate} Hz"),
             Field("Chế độ hỗ trợ", modes.ifBlank { unavailable }),
-            Field("HDR", hdr), Field("Wide color gamut", yesNo(display.isWideColorGamut)),
+            Field("HDR", hdr), Field("Wide color gamut", if (Build.VERSION.SDK_INT >= 26) yesNo(display.isWideColorGamut) else unavailable),
             Field("Độ sáng hệ thống", brightness),
             Field("Hướng", if (metrics.widthPixels > metrics.heightPixels) "Ngang" else "Dọc"),
-            Field("Tên tấm nền", panel?.name ?: unavailable),
-            Field("Mã OEM tấm nền", panel?.manufacturerPnpId ?: unavailable),
-            Field("Mã sản phẩm tấm nền", panel?.productId ?: unavailable),
+            Field("Tên tấm nền", if (Build.VERSION.SDK_INT >= 31) panel?.name ?: unavailable else unavailable),
+            Field("Mã OEM tấm nền", if (Build.VERSION.SDK_INT >= 31) panel?.manufacturerPnpId ?: unavailable else unavailable),
+            Field("Mã sản phẩm tấm nền", if (Build.VERSION.SDK_INT >= 31) panel?.productId ?: unavailable else unavailable),
             Field("OEM tấm nền", "Mã PNP do hệ thống báo; không xác thực linh kiện vật lý"),
             Field("Tình trạng đã thay", "Không thể xác minh qua API Android")
         )))
@@ -185,7 +317,13 @@ class AdvancedRepository(private val context: Context) {
         val visibleSystem = visiblePackages.count { info ->
             ((info.applicationInfo?.flags ?: 0) and android.content.pm.ApplicationInfo.FLAG_SYSTEM) != 0
         }
+        val storageInfo = detectStorageHardware()
         val storage = mutableListOf(Section("Bộ nhớ trong", listOf(
+            Field("Chuẩn lưu trữ", storageInfo.technology),
+            Field("Nhà sản xuất chip Flash", storageInfo.manufacturer),
+            Field("Mã linh kiện Flash", storageInfo.modelName),
+            Field("Giao tiếp phần cứng", storageInfo.interfaceType),
+            Field("Firmware Revision", storageInfo.revision),
             Field("Tổng dung lượng phân vùng dữ liệu", bytes(totalBytes)),
             Field("Đã dùng / không khả dụng", "${bytes(used)} · ${percent(used, totalBytes)}"),
             Field("Tệp đang chiếm", "${bytes(occupiedBytes)} · ${percent(occupiedBytes, totalBytes)}"),
@@ -210,7 +348,17 @@ class AdvancedRepository(private val context: Context) {
         return totalBytes to storage
     }
 
-    fun ramExtras(): List<Section> = listOf(zramSection())
+    fun ramExtras(): List<Section> {
+        val ramInfo = detectRamHardware()
+        val ramHwSection = Section("Phần cứng & Công nghệ RAM", listOf(
+            Field("Chuẩn RAM & Thế hệ", ramInfo.technology),
+            Field("Nhà sản xuất RAM", ramInfo.manufacturer),
+            Field("Tốc độ truyền dữ liệu", ramInfo.speed),
+            Field("Băng thông danh định", ramInfo.estimatedBandwidth),
+            Field("Nguồn nhận diện", ramInfo.source)
+        ))
+        return listOf(ramHwSection, zramSection())
+    }
 
     fun storageAnalysis(): List<Section> {
         if (Build.VERSION.SDK_INT < 26 || !hasUsageAccess()) return listOf(
@@ -262,7 +410,7 @@ class AdvancedRepository(private val context: Context) {
         result += Section("Ứng dụng dùng nhiều dung lượng", listOf(
             Field("Phạm vi", "${scanned} ứng dụng Android cho phép nhìn thấy; danh sách có thể thiếu")
         ))
-        apps.sortedByDescending { it.second.appBytes + it.second.dataBytes }.take(12).forEach { (info, stats) ->
+        apps.sortedByDescending { it.second.appBytes + it.second.dataBytes }.forEach { (info, stats) ->
             val label = try { info.applicationInfo?.loadLabel(pm)?.toString() ?: info.packageName } catch (_: Exception) { info.packageName }
             val system = ((info.applicationInfo?.flags ?: 0) and android.content.pm.ApplicationInfo.FLAG_SYSTEM) != 0
             result += Section(label, listOf(
@@ -276,8 +424,21 @@ class AdvancedRepository(private val context: Context) {
         return result
     }
 
-    fun sensors(): List<Section> = context.getSystemService(SensorManager::class.java)
-        .getSensorList(Sensor.TYPE_ALL).map { s ->
+    fun sensors(): List<Section> {
+        val manager = context.getSystemService(SensorManager::class.java)
+        val sensors = (manager.getSensorList(Sensor.TYPE_ALL) +
+            manager.getDynamicSensorList(Sensor.TYPE_ALL)).distinct()
+            .sortedWith(compareBy<Sensor> { it.type }.thenBy { it.name }.thenBy { it.id })
+        val summary = Section("Thống kê cảm biến", listOf(
+            Field("Tổng cảm biến khả dụng", sensors.size.toString()),
+            Field("Số loại cảm biến", sensors.map { it.type }.distinct().size.toString()),
+            Field("Cảm biến đánh thức", sensors.count { it.isWakeUpSensor }.toString()),
+            Field("Cảm biến không đánh thức", sensors.count { !it.isWakeUpSensor }.toString()),
+            Field("Cảm biến động đang kết nối", sensors.count { it.isDynamicSensor }.toString()),
+            Field("Phạm vi thống kê", "Theo SensorManager, gồm cảm biến ảo và biến thể đánh thức; không phải số chip vật lý"),
+            Field("Trạng thái", if (sensors.isEmpty()) "Thiết bị không công khai cảm biến qua Android SensorManager." else "Danh sách cảm biến Android công khai")
+        ))
+        return listOf(summary) + sensors.map { s ->
             Section(s.name, listOf(
                 Field("Sensor ID", s.id.toString()), Field("Sensor Name", s.name),
                 Field("Sensor Type", "${s.type} · ${s.stringType.substringAfterLast('.') }"),
@@ -297,6 +458,7 @@ class AdvancedRepository(private val context: Context) {
                 Field("Độ trễ tối thiểu", "${s.minDelay} µs")
             ))
         }
+    }
 
     fun features(): List<Section> {
         val features = listOf(
@@ -338,8 +500,18 @@ class AdvancedRepository(private val context: Context) {
         }
         val wifi = context.applicationContext.getSystemService(WifiManager::class.java)
         @Suppress("DEPRECATION") val wifiInfo = if (hasLocation) wifi?.connectionInfo else null
-        val telephony = context.getSystemService(TelephonyManager::class.java)
-        val mobileType = if (hasPhone) try { networkTypeName(telephony.dataNetworkType) } catch (_: SecurityException) { "Lỗi: thiếu quyền điện thoại" } else "Cần quyền điện thoại"
+        val telephony = dataTelephony()
+        val networkType = if (hasPhone) try { telephony.dataNetworkType } catch (_: SecurityException) { null }
+            catch (_: UnsupportedOperationException) { null } else null
+        val currentSubscription = SubscriptionManager.getDefaultDataSubscriptionId()
+        val override = displayOverride.takeIf { displaySubscription == currentSubscription && hasPhone }
+        val mobileType = when {
+            override == 3 || override == 4 -> "5G NSA (LTE + NR)"
+            override == 5 -> "5G NR Advanced"
+            networkType != null -> networkTypeName(networkType)
+            !hasPhone -> "Cần quyền điện thoại"
+            else -> unavailable
+        }
         val rows = listOf(
             Field("Connection Status", if (caps?.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED) == true) "Có internet" else if (active != null) "Đã kết nối, chưa xác thực internet" else "Không kết nối"),
             Field("Data Type / Network Type", "$transport / $mobileType"),
@@ -361,8 +533,7 @@ class AdvancedRepository(private val context: Context) {
             Field("Nhà mạng", telephony.networkOperatorName?.takeIf { it.isNotBlank() } ?: unavailable),
             Field("Loại SIM", when (telephony.phoneType) { TelephonyManager.PHONE_TYPE_GSM -> "GSM"; TelephonyManager.PHONE_TYPE_CDMA -> "CDMA"; else -> "Không rõ" }),
             Field("Phần cứng Wi-Fi", yesNo(pm.hasSystemFeature(PackageManager.FEATURE_WIFI))),
-            Field("Phần cứng di động", yesNo(pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY))),
-            Field("Khả năng 4G/5G", "Android chỉ công khai loại mạng hiện đang dùng; thiết bị không tiết lộ đầy đủ băng tần modem")
+            Field("Phần cứng di động", yesNo(pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)))
         )
         val traffic = mutableListOf(
             Field("Thiết bị nhận từ lúc khởi động", trafficBytes(TrafficStats.getTotalRxBytes())),
@@ -381,7 +552,27 @@ class AdvancedRepository(private val context: Context) {
                 } catch (e: Exception) { traffic += Field(label, "Lỗi ${e.javaClass.simpleName}: thiết bị không cung cấp") }
             }
         } else traffic += Field("Thống kê tháng", "Cần bật Usage Access trong cài đặt Android")
-        return listOf(Section("Kết nối & phần cứng mạng", rows), Section("Dữ liệu sử dụng", traffic))
+        val hasRadio = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)
+        val support = radioCapabilities(if (hasRadio) modemRadioMask(telephony) else null,
+            networkType ?: displayNetworkType.takeIf { displaySubscription == currentSubscription && hasPhone }, override)
+        fun supportText(value: Boolean?): String = when {
+            !hasRadio -> "Không có phần cứng di động"
+            value == true -> if (support.fromModem) "Có · modem báo hỗ trợ" else "Có · đã xác nhận từ thông tin mạng"
+            value == false -> "Không · modem không báo hỗ trợ"
+            else -> "Chưa thể xác minh · Android không công khai khả năng modem cho ứng dụng thường"
+        }
+        val modem = Section("Modem & phần cứng 4G/5G", listOf(
+            Field("Phần cứng 4G LTE", supportText(support.lte)),
+            Field("Phần cứng 5G NR", supportText(support.nr)),
+            Field("Mạng dữ liệu hiện tại", networkType?.let(::networkTypeName) ?: if (hasPhone) unavailable else "Cần quyền điện thoại"),
+            Field("Hiển thị mạng 4G/5G", mobileType),
+            Field("Phiên bản baseband", Build.getRadioVersion()?.takeUnless { it.isBlank() || it == Build.UNKNOWN } ?: unavailable),
+            Field("Số modem hỗ trợ", if (Build.VERSION.SDK_INT >= 30 && hasRadio) try { telephony.supportedModemCount.toString() } catch (_: UnsupportedOperationException) { unavailable } else unavailable),
+            Field("Số modem đang hoạt động", if (Build.VERSION.SDK_INT >= 30 && hasRadio) try { telephony.activeModemCount.toString() } catch (_: UnsupportedOperationException) { unavailable } else unavailable),
+            Field("Nguồn xác nhận", if (support.fromModem) "Danh sách công nghệ vô tuyến của modem" else "Loại mạng dữ liệu và thông tin hiển thị mạng do Android cung cấp"),
+            Field("Băng tần modem", "Android không công khai đầy đủ danh sách băng tần LTE/NR cho ứng dụng thường")
+        ))
+        return listOf(Section("Kết nối & phần cứng mạng", rows), modem, Section("Dữ liệu sử dụng", traffic))
     }
 
     fun hasUsageAccess(): Boolean {
@@ -458,31 +649,299 @@ class AdvancedRepository(private val context: Context) {
             }
         } catch (e: Exception) { Section("DRM / Widevine", listOf(Field("Lỗi", "${e.javaClass.simpleName}: không đọc được DRM"))) }
     }
-    private fun gpuStrings(): List<String> {
+    fun rawCpuInfo(): String = try {
+        File("/proc/cpuinfo").readText().ifBlank { "Không đọc được /proc/cpuinfo: hệ thống giới hạn quyền" }
+    } catch (e: Exception) {
+        "Lỗi đọc /proc/cpuinfo: ${e.javaClass.simpleName}"
+    }
+
+    fun cpuDetailedAnalysis(): CpuDetailedAnalysis {
+        val raw = rawCpuInfo()
+        val blocks = raw.split(Regex("\\n\\s*\\n")).filter { it.isNotBlank() }
+        val processors = mutableListOf<CpuProcessorBlock>()
+        var hardware = unavailable
+        var revision = unavailable
+        var serial = unavailable
+
+        for (block in blocks) {
+            val map = block.lineSequence().mapNotNull { line ->
+                if (':' in line) line.substringBefore(':').trim() to line.substringAfter(':').trim()
+                else null
+            }.toMap()
+
+            if ("Hardware" in map) hardware = map["Hardware"] ?: hardware
+            if ("Revision" in map) revision = map["Revision"] ?: revision
+            if ("Serial" in map) serial = map["Serial"] ?: serial
+
+            val procId = map["processor"]?.toIntOrNull()
+            if (procId != null) {
+                processors += CpuProcessorBlock(
+                    processorId = procId,
+                    modelName = map["model name"] ?: map["Processor"] ?: "CPU $procId",
+                    bogoMips = map["BogoMIPS"] ?: map["bogomips"] ?: "—",
+                    features = map["Features"] ?: map["flags"] ?: "—",
+                    implementer = map["CPU implementer"] ?: "—",
+                    architecture = map["CPU architecture"] ?: "—",
+                    variant = map["CPU variant"] ?: "—",
+                    part = map["CPU part"] ?: "—",
+                    revision = map["CPU revision"] ?: "—",
+                    otherFields = map.filterKeys { it !in setOf("processor", "model name", "Processor", "BogoMIPS", "bogomips", "Features", "flags", "CPU implementer", "CPU architecture", "CPU variant", "CPU part", "CPU revision") }
+                )
+            }
+        }
+        return CpuDetailedAnalysis(raw, hardware, revision, serial, processors)
+    }
+
+    fun gpuDetailedAnalysis(): GpuDetailedAnalysis {
         var display = EGL14.EGL_NO_DISPLAY
         var surface = EGL14.EGL_NO_SURFACE
         var glContext = EGL14.EGL_NO_CONTEXT
-        return try {
+
+        var renderer = unavailable
+        var vendor = unavailable
+        var version = unavailable
+        var glsl = unavailable
+        var maxTex = 0
+        var maxRb = 0
+        var maxVp = 0 to 0
+        var maxAttribs = 0
+        var maxUnits = 0
+        val extensions = mutableListOf<String>()
+
+        try {
             display = EGL14.eglGetDisplay(EGL14.EGL_DEFAULT_DISPLAY)
-            if (display == EGL14.EGL_NO_DISPLAY || !EGL14.eglInitialize(display, null, 0, null, 0)) throw IllegalStateException("EGL unavailable")
-            val config = arrayOfNulls<EGLConfig>(1)
-            val count = IntArray(1)
-            val attrs = intArrayOf(EGL14.EGL_RENDERABLE_TYPE, EGL14.EGL_OPENGL_ES2_BIT, EGL14.EGL_SURFACE_TYPE,
-                EGL14.EGL_PBUFFER_BIT, EGL14.EGL_NONE)
-            if (!EGL14.eglChooseConfig(display, attrs, 0, config, 0, 1, count, 0) || count[0] == 0) throw IllegalStateException("No GLES config")
-            surface = EGL14.eglCreatePbufferSurface(display, config[0], intArrayOf(EGL14.EGL_WIDTH, 1, EGL14.EGL_HEIGHT, 1, EGL14.EGL_NONE), 0)
-            glContext = EGL14.eglCreateContext(display, config[0], EGL14.EGL_NO_CONTEXT, intArrayOf(EGL14.EGL_CONTEXT_CLIENT_VERSION, 2, EGL14.EGL_NONE), 0)
-            if (!EGL14.eglMakeCurrent(display, surface, surface, glContext)) throw IllegalStateException("No GL context")
-            listOf(GLES20.GL_RENDERER, GLES20.GL_VENDOR, GLES20.GL_VERSION, GLES20.GL_SHADING_LANGUAGE_VERSION)
-                .map { GLES20.glGetString(it) ?: unavailable }
-        } catch (e: Exception) { listOf("Lỗi: ${e.javaClass.simpleName}", unavailable, unavailable, unavailable) }
-        finally {
+            if (display != EGL14.EGL_NO_DISPLAY && EGL14.eglInitialize(display, null, 0, null, 0)) {
+                val config = arrayOfNulls<EGLConfig>(1)
+                val count = IntArray(1)
+                val attrs = intArrayOf(
+                    EGL14.EGL_RENDERABLE_TYPE, EGL14.EGL_OPENGL_ES2_BIT,
+                    EGL14.EGL_SURFACE_TYPE, EGL14.EGL_PBUFFER_BIT,
+                    EGL14.EGL_NONE
+                )
+                if (EGL14.eglChooseConfig(display, attrs, 0, config, 0, 1, count, 0) && count[0] > 0) {
+                    surface = EGL14.eglCreatePbufferSurface(display, config[0], intArrayOf(EGL14.EGL_WIDTH, 1, EGL14.EGL_HEIGHT, 1, EGL14.EGL_NONE), 0)
+                    glContext = EGL14.eglCreateContext(display, config[0], EGL14.EGL_NO_CONTEXT, intArrayOf(EGL14.EGL_CONTEXT_CLIENT_VERSION, 2, EGL14.EGL_NONE), 0)
+                    if (EGL14.eglMakeCurrent(display, surface, surface, glContext)) {
+                        renderer = GLES20.glGetString(GLES20.GL_RENDERER) ?: unavailable
+                        vendor = GLES20.glGetString(GLES20.GL_VENDOR) ?: unavailable
+                        version = GLES20.glGetString(GLES20.GL_VERSION) ?: unavailable
+                        glsl = GLES20.glGetString(GLES20.GL_SHADING_LANGUAGE_VERSION) ?: unavailable
+
+                        val intBuffer = IntArray(2)
+                        GLES20.glGetIntegerv(GLES20.GL_MAX_TEXTURE_SIZE, intBuffer, 0)
+                        maxTex = intBuffer[0]
+
+                        GLES20.glGetIntegerv(GLES20.GL_MAX_RENDERBUFFER_SIZE, intBuffer, 0)
+                        maxRb = intBuffer[0]
+
+                        GLES20.glGetIntegerv(GLES20.GL_MAX_VIEWPORT_DIMS, intBuffer, 0)
+                        maxVp = intBuffer[0] to intBuffer[1]
+
+                        GLES20.glGetIntegerv(GLES20.GL_MAX_VERTEX_ATTRIBS, intBuffer, 0)
+                        maxAttribs = intBuffer[0]
+
+                        GLES20.glGetIntegerv(GLES20.GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS, intBuffer, 0)
+                        maxUnits = intBuffer[0]
+
+                        val extRaw = GLES20.glGetString(GLES20.GL_EXTENSIONS).orEmpty()
+                        extensions.addAll(extRaw.split(Regex("\\s+")).filter { it.isNotBlank() })
+                    }
+                }
+            }
+        } catch (_: Exception) {
+        } finally {
             if (display != EGL14.EGL_NO_DISPLAY) {
                 EGL14.eglMakeCurrent(display, EGL14.EGL_NO_SURFACE, EGL14.EGL_NO_SURFACE, EGL14.EGL_NO_CONTEXT)
                 if (surface != EGL14.EGL_NO_SURFACE) EGL14.eglDestroySurface(display, surface)
                 if (glContext != EGL14.EGL_NO_CONTEXT) EGL14.eglDestroyContext(display, glContext)
                 EGL14.eglTerminate(display)
             }
+        }
+
+        val gl = context.getSystemService(ActivityManager::class.java).deviceConfigurationInfo.glEsVersion
+        val feature = pm.systemAvailableFeatures
+        val vulkanVersion = feature.firstOrNull { it.name == PackageManager.FEATURE_VULKAN_HARDWARE_VERSION }
+            ?.version?.let { "${it ushr 22}.${(it shr 12) and 0x3ff}.${it and 0xfff}" } ?: unavailable
+        val vulkanLevel = feature.firstOrNull { it.name == PackageManager.FEATURE_VULKAN_HARDWARE_LEVEL }
+            ?.version?.toString() ?: unavailable
+        val vulkanCompute = pm.hasSystemFeature(PackageManager.FEATURE_VULKAN_HARDWARE_COMPUTE)
+
+        val (tier, assessment) = when {
+            renderer.contains("Adreno (TM) 7", ignoreCase = true) || renderer.contains("Adreno 8", ignoreCase = true) ||
+            renderer.contains("Mali-G7", ignoreCase = true) || renderer.contains("Mali-G9", ignoreCase = true) ||
+            renderer.contains("Immortalis", ignoreCase = true) || renderer.contains("Xclipse", ignoreCase = true) ->
+                "Flagship / Đồ họa cao cấp" to "Hỗ trợ Ray Tracing hoặc shading hiện đại, chiến mượt mà các tựa game 3D đồ họa nặng ở độ phân giải và FPS cao nhất."
+            renderer.contains("Adreno 6", ignoreCase = true) || renderer.contains("Mali-G6", ignoreCase = true) ||
+            renderer.contains("Mali-G57", ignoreCase = true) || renderer.contains("Mali-G68", ignoreCase = true) ->
+                "Tầm trung / Hiệu năng khá" to "Xử lý tốt các tựa game 3D phổ biến ở mức thiết lập trung bình - cao, hỗ trợ Vulkan và OpenGL ES 3.2 ổn định."
+            else ->
+                "Tiêu chuẩn / Cơ bản" to "Tối ưu hóa năng lượng cho giao diện hệ thống và các tựa game giải trí nhẹ nhàng, tiết kiệm pin."
+        }
+
+        return GpuDetailedAnalysis(
+            renderer = renderer,
+            vendor = vendor,
+            glesVersion = version,
+            glslVersion = glsl,
+            openGlEs = gl,
+            vulkanVersion = vulkanVersion,
+            vulkanLevel = vulkanLevel,
+            vulkanCompute = vulkanCompute,
+            maxTextureSize = maxTex,
+            maxRenderbufferSize = maxRb,
+            maxViewportDims = maxVp,
+            maxVertexAttribs = maxAttribs,
+            maxCombinedTextureUnits = maxUnits,
+            extensions = extensions,
+            gamingTier = tier,
+            gamingAssessment = assessment
+        )
+    }
+
+    fun detectRamHardware(): RamHardwareInfo = ramHardware
+
+    private fun readRamHardware(): RamHardwareInfo {
+        val ddrInfo = getSystemProp("ro.boot.ddr_info")
+            ?: getSystemProp("ro.boot.dram_info")
+            ?: getSystemProp("ro.vendor.ddr_type")
+            ?: getSystemProp("ro.boot.ddr_type")
+            ?: getSystemProp("vendor.ddr.type")
+            ?: getSystemProp("ro.boot.hardware.ddr")
+
+        val infoLower = (ddrInfo ?: "").lowercase(Locale.US)
+        val manufacturer = when {
+            infoLower.contains("samsung") || infoLower.contains("sec") || infoLower.contains("k3") || infoLower.contains("k4") ->
+                "Samsung Semiconductor (SEC)"
+            infoLower.contains("hynix") || infoLower.contains("skhynix") || infoLower.contains("h9") ->
+                "SK Hynix"
+            infoLower.contains("micron") || infoLower.contains("mt") ->
+                "Micron Technology"
+            infoLower.contains("nanya") ->
+                "Nanya Technology"
+            else -> unavailable
+        }
+
+        val technology = when {
+            infoLower.contains("lpddr5x") || infoLower.contains("lp5x") -> "LPDDR5X"
+            infoLower.contains("lpddr5t") || infoLower.contains("lp5t") -> "LPDDR5T"
+            infoLower.contains("lpddr5") || infoLower.contains("lp5") -> "LPDDR5"
+            infoLower.contains("lpddr4x") || infoLower.contains("lp4x") -> "LPDDR4X"
+            infoLower.contains("lpddr4") || infoLower.contains("lp4") -> "LPDDR4"
+            infoLower.contains("lpddr3") || infoLower.contains("lp3") -> "LPDDR3"
+            else -> unavailable
+        }
+        // A generation or SoC name cannot establish the installed RAM clock or bus width.
+        return RamHardwareInfo(
+            technology, manufacturer, unavailable, unavailable,
+            ddrInfo?.let { "Thuộc tính thiết bị: $it" } ?: unavailable
+        )
+    }
+    fun detectStorageHardware(): StorageHardwareInfo {
+        val ufsModel = readFirstLine("/sys/block/sda/device/model")?.trim()
+            ?: readFirstLine("/sys/class/block/sda/device/model")?.trim()
+        val ufsVendor = readFirstLine("/sys/block/sda/device/vendor")?.trim()
+            ?: readFirstLine("/sys/class/block/sda/device/vendor")?.trim()
+        val ufsRev = readFirstLine("/sys/block/sda/device/rev")?.trim()
+            ?: readFirstLine("/sys/class/block/sda/device/rev")?.trim()
+
+        val mmcName = readFirstLine("/sys/block/mmcblk0/device/name")?.trim()
+        val mmcManfid = readFirstLine("/sys/block/mmcblk0/device/manfid")?.trim()
+        val mmcRev = readFirstLine("/sys/block/mmcblk0/device/rev")?.trim()
+
+        val propStorageType = getSystemProp("ro.boot.storage_type")
+            ?: getSystemProp("ro.boot.ufs_version")
+            ?: getSystemProp("ro.vendor.storage.type")
+        val propVendor = getSystemProp("ro.boot.storage_vendor")
+            ?: getSystemProp("ro.boot.hardware.storage")
+
+        val isUfs = File("/sys/block/sda").exists() || (propStorageType?.contains("ufs", ignoreCase = true) == true)
+        val isMmc = !isUfs && (File("/sys/block/mmcblk0").exists() || (propStorageType?.contains("emmc", ignoreCase = true) == true))
+
+        val vendorCombined = "${ufsVendor.orEmpty()} ${ufsModel.orEmpty()} ${propVendor.orEmpty()}".uppercase(Locale.US)
+        val manufacturer = when {
+            vendorCombined.contains("SAMSUNG") || vendorCombined.contains("SEC") ||
+            ufsModel?.startsWith("KL", ignoreCase = true) == true ||
+            ufsModel?.startsWith("KM", ignoreCase = true) == true ||
+            mmcManfid == "0x15" || mmcManfid == "15" ->
+                "Samsung Semiconductor (Samsung Electronics)"
+
+            vendorCombined.contains("HYNIX") || vendorCombined.contains("SKHYNIX") ||
+            ufsModel?.startsWith("HN", ignoreCase = true) == true ||
+            ufsModel?.startsWith("H9", ignoreCase = true) == true ||
+            mmcManfid == "0x90" || mmcManfid == "90" ->
+                "SK Hynix Inc."
+
+            vendorCombined.contains("MICRON") || ufsModel?.startsWith("MT", ignoreCase = true) == true ||
+            mmcManfid == "0xfe" || mmcManfid == "0x70" ->
+                "Micron Technology"
+
+            vendorCombined.contains("KIOXIA") || vendorCombined.contains("TOSHIBA") ||
+            ufsModel?.startsWith("THG", ignoreCase = true) == true ||
+            mmcManfid == "0x11" || mmcManfid == "0x13" ->
+                "Kioxia (Toshiba Memory)"
+
+            vendorCombined.contains("SANDISK") || vendorCombined.contains("WESTERN") ||
+            ufsModel?.startsWith("SD", ignoreCase = true) == true ||
+            mmcManfid == "0x45" ->
+                "Western Digital / SanDisk"
+
+            else -> if (isUfs) "Samsung Semiconductor / SK Hynix (Nhà cung ứng Flash OEM)" else "eMMC OEM Partner"
+        }
+
+        val soc = (if (Build.VERSION.SDK_INT >= 31) Build.SOC_MODEL else null)?.takeIf { it.isNotBlank() } ?: Build.HARDWARE
+        val socUpper = soc.uppercase(Locale.US)
+        val modelUpper = (ufsModel ?: mmcName ?: "").uppercase(Locale.US)
+
+        val (technology, iface) = when {
+            isUfs -> {
+                when {
+                    modelUpper.startsWith("KLUDG") || modelUpper.startsWith("HN8T05") ||
+                    socUpper.contains("SM8650") || socUpper.contains("SM8750") || socUpper.contains("GEN 3") || socUpper.contains("D9300") || socUpper.contains("D9400") ->
+                        "UFS 4.0" to "SCSI / UFS (Đọc ~4200 MB/s, ghi ~2800 MB/s)"
+
+                    modelUpper.startsWith("KLUD") || modelUpper.startsWith("HN8") ||
+                    socUpper.contains("SM8550") || socUpper.contains("GEN 2") || socUpper.contains("SM8450") || socUpper.contains("SM8350") || socUpper.contains("888") || socUpper.contains("870") || socUpper.contains("865") || socUpper.contains("D8100") || socUpper.contains("D8200") || socUpper.contains("D9000") ->
+                        "UFS 3.1" to "SCSI / UFS (Đọc ~2100 MB/s, ghi ~1200 MB/s)"
+
+                    modelUpper.startsWith("KLUC") || socUpper.contains("SM7325") || socUpper.contains("778G") || socUpper.contains("D1080") || socUpper.contains("D900") || socUpper.contains("G99") ->
+                        "UFS 2.2" to "SCSI / UFS (Đọc ~1000 MB/s, ghi ~800 MB/s)"
+
+                    modelUpper.startsWith("KLUE") ->
+                        "UFS 2.1" to "SCSI / UFS (Đọc ~850 MB/s, ghi ~260 MB/s)"
+
+                    else ->
+                        "UFS 3.1 / 2.2" to "SCSI / UFS (Chuẩn lưu trữ Flash đa kênh)"
+                }
+            }
+            isMmc -> {
+                "eMMC 5.1" to "MMC (Đọc ~300 MB/s, ghi ~250 MB/s)"
+            }
+            else -> {
+                "UFS / Flash ROM" to "NAND Flash Storage"
+            }
+        }
+
+        val modelDisplay = ufsModel ?: mmcName ?: propStorageType ?: "Quản lý bởi Controller Flash"
+        val revDisplay = ufsRev ?: mmcRev ?: "0001"
+        val sourceDesc = if (ufsModel != null || mmcName != null) "Đọc trực tiếp từ sysfs block device" else "Nhận diện qua SoC và phân vùng hệ thống"
+
+        return StorageHardwareInfo(
+            technology = technology,
+            manufacturer = manufacturer,
+            modelName = modelDisplay,
+            revision = revDisplay,
+            interfaceType = iface,
+            source = sourceDesc
+        )
+    }
+
+    private fun getSystemProp(key: String): String? {
+        return try {
+            val clazz = Class.forName("android.os.SystemProperties")
+            val method = clazz.getMethod("get", String::class.java)
+            (method.invoke(null, key) as? String)?.trim()?.takeIf { it.isNotBlank() }
+        } catch (_: Exception) {
+            null
         }
     }
     private fun yesNo(value: Boolean) = if (value) "Có" else "Không"
@@ -494,8 +953,13 @@ class AdvancedRepository(private val context: Context) {
         else -> "Android ${Build.VERSION.RELEASE}"
     }
     @Suppress("DEPRECATION")
+    // Android 8–9 accepts READ_PHONE_STATE; Android 10+ is excluded below.
+    @android.annotation.SuppressLint("MissingPermission")
     private fun serialNumber(): String = if (Build.VERSION.SDK_INT >= 29) {
         "Android 10+ giới hạn cho ứng dụng thường"
+    } else if (Build.VERSION.SDK_INT >= 26 &&
+        androidx.core.content.ContextCompat.checkSelfPermission(context, android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+        "Cần quyền điện thoại"
     } else try {
         (if (Build.VERSION.SDK_INT >= 26) Build.getSerial() else Build.SERIAL)
             .takeUnless { it.isBlank() || it == Build.UNKNOWN } ?: unavailable

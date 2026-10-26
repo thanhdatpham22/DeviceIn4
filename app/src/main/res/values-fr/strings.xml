@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Device Info</string>
+    <string name="ui_overview_286a38" formatted="false">Aperçu</string>
+    <string name="ui_sensors_496934" formatted="false">Capteurs</string>
+    <string name="ui_device_931c00" formatted="false">Appareil</string>
+    <string name="ui_device_identity_and_hardware_4bddc7" formatted="false">Identité et matériel de l’appareil</string>
+    <string name="ui_android_kernel_and_build_information_acb776" formatted="false">Android, noyau et version système</string>
+    <string name="ui_cpu_architecture_and_graphics_capabilities_6b0956" formatted="false">Architecture CPU et capacités graphiques</string>
+    <string name="ui_live_ram_1077a7" formatted="false">RAM en direct</string>
+    <string name="ui_one_sample_per_second_while_the_app_is_open_c1af52" formatted="false">Un échantillon par seconde au premier plan</string>
+    <string name="ui_internal_and_external_storage_1d62e9" formatted="false">Stockage interne et externe</string>
+    <string name="ui_resolution_refresh_rate_and_hdr_f9aace" formatted="false">Résolution, fréquence et HDR</string>
+    <string name="ui_live_current_and_power_4c9414" formatted="false">Courant et puissance en direct</string>
+    <string name="ui_connectivity_and_data_usage_a46026" formatted="false">Connexions et consommation de données</string>
+    <string name="ui_lenses_sensors_and_capture_capabilities_f51b19" formatted="false">Objectifs, capteurs et fonctions photo</string>
+    <string name="ui_available_android_sensors_90a3a8" formatted="false">Capteurs disponibles via Android</string>
+    <string name="ui_hardware_and_system_features_e82ddd" formatted="false">Fonctions matérielles et système</string>
+    <string name="ui_device_identity_859582" formatted="false">Identité de l’appareil</string>
+    <string name="ui_hardware_ef3192" formatted="false">Matériel</string>
+    <string name="ui_android_version_e485cc" formatted="false">Version Android</string>
+    <string name="ui_updates_bfe9d6" formatted="false">Mises à jour</string>
+    <string name="ui_security_and_boot_534c61" formatted="false">Sécurité et démarrage</string>
+    <string name="ui_uptime_bc2d1c" formatted="false">Durée de fonctionnement</string>
+    <string name="ui_environment_9b1a37" formatted="false">Environnement</string>
+    <string name="ui_runtime_2f26ef" formatted="false">Temps d’exécution</string>
+    <string name="ui_cpu_architecture_5afb1f" formatted="false">Architecture CPU</string>
+    <string name="ui_gpu_and_graphics_fe22f4" formatted="false">GPU et graphismes</string>
+    <string name="ui_internal_storage_ae6a6b" formatted="false">Stockage interne</string>
+    <string name="ui_external_storage_89ff59" formatted="false">Stockage externe</string>
+    <string name="ui_display_6ecd43" formatted="false">Écran</string>
+    <string name="ui_panel_and_display_aa80b6" formatted="false">Dalle et affichage</string>
+    <string name="ui_battery_and_power_ea15b6" formatted="false">Batterie et alimentation</string>
+    <string name="ui_network_and_hardware_58fe8a" formatted="false">Réseau et matériel</string>
+    <string name="ui_data_usage_e4064e" formatted="false">Consommation de données</string>
+    <string name="ui_hardware_and_system_features_65faa6" formatted="false">Fonctions matérielles et système</string>
+    <string name="ui_memory_details_cb544b" formatted="false">Détails de la mémoire</string>
+    <string name="ui_storage_breakdown_60ca11" formatted="false">Répartition du stockage</string>
+    <string name="ui_largest_visible_apps_4ba985" formatted="false">Applications visibles par taille</string>
+    <string name="ui_ram_in_use_ff76c7" formatted="false">RAM UTILISÉE</string>
+    <string name="ui_available_5020d8" formatted="false">Disponible</string>
+    <string name="ui_remaining_capacity_f1183d" formatted="false">Capacité restante</string>
+    <string name="ui_status_e03c14" formatted="false">État</string>
+    <string name="ui_health_77e26a" formatted="false">État de santé</string>
+    <string name="ui_power_source_2fbcee" formatted="false">Source d’alimentation</string>
+    <string name="ui_temperature_63cc74" formatted="false">Température</string>
+    <string name="ui_voltage_aa464f" formatted="false">Tension</string>
+    <string name="ui_current_8f4445" formatted="false">Courant</string>
+    <string name="ui_average_current_92082d" formatted="false">Courant moyen</string>
+    <string name="ui_instant_power_5f3a41" formatted="false">Puissance instantanée</string>
+    <string name="ui_charge_cycles_25098a" formatted="false">Cycles de charge</string>
+    <string name="ui_technology_42de15" formatted="false">Technologie</string>
+    <string name="ui_charging_d1335c" formatted="false">En charge</string>
+    <string name="ui_not_charging_bb86f1" formatted="false">Pas en charge</string>
+    <string name="ui_discharging_ea89af" formatted="false">Décharge</string>
+    <string name="ui_full_398b41" formatted="false">Pleine</string>
+    <string name="ui_good_f716d5" formatted="false">Bon</string>
+    <string name="ui_yes_05828b" formatted="false">Oui</string>
+    <string name="ui_no_3b4a52" formatted="false">Non</string>
+    <string name="ui_unknown_988a61" formatted="false">Inconnu</string>
+    <string name="ui_unavailable_895ac2" formatted="false">Indisponible</string>
+    <string name="ui_not_provided_3e5e86" formatted="false">Non fourni</string>
+    <string name="ui_not_exposed_by_android_5a2db8" formatted="false">Non exposé par Android</string>
+    <string name="ui_reading_device_data_0010fa" formatted="false">Lecture des données</string>
+    <string name="ui_unable_to_read_data_99df88" formatted="false">Lecture impossible</string>
+    <string name="ui_camera_permission_needed_379280" formatted="false">Autorisation caméra requise</string>
+    <string name="ui_no_camera_available_215646" formatted="false">Aucune caméra disponible</string>
+    <string name="ui_no_sensor_available_3f7a99" formatted="false">Aucun capteur disponible</string>
+    <string name="ui_allow_access_1f5d43" formatted="false">Autoriser l’accès</string>
+    <string name="ui_code_1c80f9" formatted="false">Code</string>
+    <string name="ui_data_3460de" formatted="false">Données</string>
+    <string name="ui_cache_50338b" formatted="false">Cache</string>
+    <string name="ui_type_5401d3" formatted="false">Type</string>
+    <string name="ui_total_de995d" formatted="false">Total</string>
+    <string name="ui_free_b5b9cc" formatted="false">Libre</string>
+    <string name="ui_used_2cc668" formatted="false">Utilisé</string>
+    <string name="ui_visible_apps_ad7a59" formatted="false">Applications visibles</string>
+    <string name="ui_visible_system_apps_6e38ff" formatted="false">Applications système visibles</string>
+    <string name="ui_monthly_usage_b1e973" formatted="false">Consommation mensuelle</string>
+    <string name="ui_error_d29078" formatted="false">Erreur</string>
+    <string name="ui_architecture_fa712a" formatted="false">Architecture</string>
+    <string name="ui_logical_cores_955f65" formatted="false">Cœurs logiques</string>
+    <string name="ui_cores_e92b30" formatted="false">Cœurs</string>
+    <string name="ui_component_verification_78aff9" formatted="false">Vérification des composants</string>
+    <string name="ui_since_last_boot_2b0cdf" formatted="false">Depuis le dernier démarrage</string>
+    <string name="ui_cpu_uptime_5cd9f2" formatted="false">Durée d’activité CPU</string>
+    <string name="ui_kernel_build_a07e83" formatted="false">Version du noyau</string>
+    <string name="ui_manufacturer_f323a0" formatted="false">Fabricant</string>
+    <string name="ui_max_frequency_per_core_272596" formatted="false">Fréquence maximale par cœur</string>
+    <string name="ui_physical_resolution_3dc45f" formatted="false">Résolution physique</string>
+    <string name="ui_density_f00cb5" formatted="false">Densité</string>
+    <string name="ui_approximate_size_8bd608" formatted="false">Taille approximative</string>
+    <string name="ui_current_refresh_rate_146148" formatted="false">Fréquence actuelle</string>
+    <string name="ui_supported_modes_3ed76e" formatted="false">Modes pris en charge</string>
+    <string name="ui_system_brightness_b52637" formatted="false">Luminosité système</string>
+    <string name="ui_orientation_05c861" formatted="false">Orientation</string>
+    <string name="ui_panel_name_3ad286" formatted="false">Nom de la dalle</string>
+    <string name="ui_panel_oem_code_6e2aff" formatted="false">Code OEM de la dalle</string>
+    <string name="ui_panel_product_id_407498" formatted="false">Identifiant de la dalle</string>
+    <string name="ui_panel_oem_2f6356" formatted="false">OEM de la dalle</string>
+    <string name="ui_replacement_status_0829c3" formatted="false">État du remplacement</string>
+    <string name="ui_total_capacity_3b9610" formatted="false">Capacité totale</string>
+    <string name="ui_other_apps_system_cache_other_179dc1" formatted="false">Autres applis / Système / Cache / Autre</string>
+    <string name="ui_devicein4_cache_29fd45" formatted="false">Cache DeviceIn4</string>
+    <string name="ui_removable_e8717f" formatted="false">Amovible</string>
+    <string name="ui_apps_and_breakdown_9575ee" formatted="false">Applications et répartition</string>
+    <string name="ui_app_code_f7c702" formatted="false">Code des applications</string>
+    <string name="ui_app_data_14a42b" formatted="false">Données des applications</string>
+    <string name="ui_app_cache_6f8df8" formatted="false">Cache des applications</string>
+    <string name="ui_unclassified_e91bd8" formatted="false">Non classé</string>
+    <string name="ui_scope_1abf29" formatted="false">Périmètre</string>
+    <string name="ui_system_app_c5a24d" formatted="false">Application système</string>
+    <string name="ui_user_app_59bfd7" formatted="false">Application utilisateur</string>
+    <string name="ui_max_fifo_b08284" formatted="false">FIFO maximal</string>
+    <string name="ui_minimum_delay_54d85f" formatted="false">Délai minimal</string>
+    <string name="ui_carrier_26ea5f" formatted="false">Opérateur</string>
+    <string name="ui_sim_type_a4057c" formatted="false">Type de SIM</string>
+    <string name="ui_wi_fi_hardware_e73f2a" formatted="false">Matériel Wi-Fi</string>
+    <string name="ui_cellular_hardware_353b8a" formatted="false">Matériel cellulaire</string>
+    <string name="ui_4g_5g_capability_4c239b" formatted="false">Capacité 4G/5G</string>
+    <string name="ui_device_received_since_boot_f3ccfd" formatted="false">Reçu depuis le démarrage</string>
+    <string name="ui_device_sent_since_boot_c4c6de" formatted="false">Envoyé depuis le démarrage</string>
+    <string name="ui_app_received_since_boot_fd9e80" formatted="false">Reçu par l’appli depuis le démarrage</string>
+    <string name="ui_app_sent_since_boot_274051" formatted="false">Envoyé par l’appli depuis le démarrage</string>
+    <string name="ui_wi_fi_this_month_6e5be8" formatted="false">Wi-Fi ce mois-ci</string>
+    <string name="ui_cellular_this_month_602c67" formatted="false">Cellulaire ce mois-ci</string>
+    <string name="ui_monthly_statistics_4eba42" formatted="false">Statistiques mensuelles</string>
+    <string name="ui_unsupported_4a9535" formatted="false">Non pris en charge</string>
+    <string name="ui_offline_825095" formatted="false">Hors ligne</string>
+    <string name="ui_cellular_2b8015" formatted="false">Cellulaire</string>
+    <string name="ui_other_5b8a28" formatted="false">Autre</string>
+    <string name="ui_internet_available_3ef2ac" formatted="false">Internet disponible</string>
+    <string name="ui_disconnected_438158" formatted="false">Déconnecté</string>
+    <string name="ui_connected_internet_unverified_f34ea8" formatted="false">Connecté, Internet non vérifié</string>
+    <string name="ui_location_permission_required_05607f" formatted="false">Autorisation de localisation requise</string>
+    <string name="ui_phone_permission_required_642673" formatted="false">Autorisation téléphone requise</string>
+    <string name="ui_overheated_823510" formatted="false">Surchauffe</string>
+    <string name="ui_dead_40370b" formatted="false">Hors service</string>
+    <string name="ui_overvoltage_0eab17" formatted="false">Surtension</string>
+    <string name="ui_too_cold_102cd4" formatted="false">Trop froide</string>
+    <string name="ui_ac_17ec65" formatted="false">Secteur</string>
+    <string name="ui_wireless_9ce1e6" formatted="false">Sans fil</string>
+    <string name="ui_unplugged_920752" formatted="false">Débranchée</string>
+    <string name="ui_remaining_charge_7f8ea2" formatted="false">Charge restante</string>
+    <string name="ui_front_42b0ca" formatted="false">Avant</string>
+    <string name="ui_back_68196a" formatted="false">Arrière</string>
+    <string name="ui_external_55dff5" formatted="false">Externe</string>
+    <string name="ui_hardware_level_10eaf3" formatted="false">Niveau matériel</string>
+    <string name="ui_max_jpeg_resolution_b73e28" formatted="false">Résolution JPEG maximale</string>
+    <string name="ui_sensor_size_b755ea" formatted="false">Taille du capteur</string>
+    <string name="ui_focal_length_942f9b" formatted="false">Distance focale</string>
+    <string name="ui_aperture_1d30a7" formatted="false">Ouverture</string>
+    <string name="ui_optical_stabilization_b1883e" formatted="false">Stabilisation optique</string>
+    <string name="ui_flash_9884df" formatted="false">Flash</string>
+    <string name="ui_sensor_orientation_e16c2b" formatted="false">Orientation du capteur</string>
+    <string name="ui_sensor_resolution_f6c3cb" formatted="false">Résolution du capteur</string>
+    <string name="ui_active_sensor_area_19a3c0" formatted="false">Zone active du capteur</string>
+    <string name="ui_max_digital_zoom_2086b0" formatted="false">Zoom numérique maximal</string>
+    <string name="ui_max_af_regions_dd0947" formatted="false">Zones AF maximales</string>
+    <string name="ui_max_ae_regions_0d9984" formatted="false">Zones AE maximales</string>
+    <string name="ui_capabilities_codes_7b4a73" formatted="false">Fonctions (codes)</string>
+    <string name="ui_system_other_breakdown_fe918a" formatted="false">Répartition Système / Autre</string>
+    <string name="ui_storage_by_app_22a99e" formatted="false">Stockage par application</string>
+    <string name="ui_wi_fi_ssid_97bad4" formatted="false">SSID Wi-Fi</string>
+    <string name="ui_cellular_network_28125b" formatted="false">Réseau cellulaire</string>
+    <string name="ui_android_limits_access_to_other_apps_storage_open_system_1f77ce" formatted="false">Android limite l’accès au stockage des autres applications. Consultez les paramètres système pour la répartition fournie par l’appareil.</string>
+    <string name="ui_enable_usage_access_to_see_app_code_data_and_cache_for__4bbc80" formatted="false">Activez l’accès aux données d’utilisation pour voir le code, les données et le cache des applications visibles.</string>
+    <string name="ui_allow_location_access_to_show_the_current_wi_fi_network_0a767d" formatted="false">Autorisez la localisation pour afficher le nom du réseau Wi-Fi actuel.</string>
+    <string name="ui_allow_phone_state_access_to_see_the_current_2g_3g_4g_5g_2ce6ef" formatted="false">Autorisez l’état du téléphone pour afficher le type de réseau 2G/3G/4G/5G actuel.</string>
+    <string name="ui_enable_usage_access_for_this_month_s_wi_fi_and_cellular_5a137e" formatted="false">Activez l’accès aux données d’utilisation pour lire les totaux Wi-Fi et cellulaires du mois.</string>
+    <string name="ui_android_requires_camera_access_to_read_lens_characteris_0e8f8a" formatted="false">Android exige l’accès à la caméra pour certaines caractéristiques. DeviceIn4 lit uniquement les spécifications, sans prendre de photos.</string>
+    <string name="ui_this_device_reports_no_cameras_through_camera2_b8212c" formatted="false">L’appareil ne signale aucune caméra via Camera2.</string>
+    <string name="ui_this_device_reports_no_sensors_through_sensormanager_c61d1c" formatted="false">L’appareil ne signale aucun capteur via SensorManager.</string>
+    <string name="ui_waiting_for_device_data_dac4e7" formatted="false">En attente des données…</string>
+    <string name="ui_android_cannot_verify_replaced_components_60b8f4" formatted="false">Android ne peut pas vérifier les composants remplacés</string>
+    <string name="ui_restricted_for_regular_apps_on_android_10_49e538" formatted="false">Accès limité aux applications ordinaires sur Android 10+</string>
+    <string name="ui_no_root_indicators_detected_8e831b" formatted="false">Aucun indice de root détecté</string>
+    <string name="ui_possible_root_indicators_unconfirmed_125121" formatted="false">Indices de root possibles, non confirmés</string>
+    <string name="ui_cannot_be_verified_through_android_apis_bd2c93" formatted="false">Impossible à vérifier via les API Android</string>
+    <string name="ui_system_reported_pnp_code_physical_component_not_verifie_e5232a" formatted="false">Code PNP fourni par le système ; composant physique non vérifié</string>
+    <string name="ui_android_does_not_expose_the_battery_cell_manufacturer_326015" formatted="false">Android n’expose pas le fabricant de la cellule</string>
+    <string name="ui_not_reported_by_device_648c79" formatted="false">Non indiqué par l’appareil</string>
+    <string name="ui_none_8d5f26" formatted="false">Aucun</string>
+    <string name="ui_landscape_dd3b26" formatted="false">Paysage</string>
+    <string name="ui_portrait_9f5aed" formatted="false">Portrait</string>
+    <string name="ui_access_4de786" formatted="false">Accès</string>
+    <string name="ui_battery_data_unavailable_f58ec9" formatted="false">Données batterie indisponibles</string>
+    <string name="ui_ram_hardware_technology_de3edf" formatted="false">Matériel et technologie RAM</string>
+    <string name="ui_ram_details_hardware_0af78d" formatted="false">Détails et matériel RAM</string>
+    <string name="ui_modem_4g_5g_hardware_58ba53" formatted="false">Modem et matériel 4G/5G</string>
+    <string name="ui_4g_lte_hardware_30ecd9" formatted="false">Matériel 4G LTE</string>
+    <string name="ui_5g_nr_hardware_b960b6" formatted="false">Matériel 5G NR</string>
+    <string name="ui_current_data_network_afcb33" formatted="false">Réseau de données actuel</string>
+    <string name="ui_4g_5g_display_information_f89ee3" formatted="false">Informations d’affichage 4G/5G</string>
+    <string name="ui_baseband_version_1ac23d" formatted="false">Version de bande de base</string>
+    <string name="ui_supported_logical_modems_f54a91" formatted="false">Modems logiques pris en charge</string>
+    <string name="ui_active_logical_modems_c4728c" formatted="false">Modems logiques actifs</string>
+    <string name="ui_confirmation_source_360030" formatted="false">Source de confirmation</string>
+    <string name="ui_modem_frequency_bands_d8cc97" formatted="false">Bandes de fréquences du modem</string>
+    <string name="ui_no_cellular_hardware_e19eec" formatted="false">Aucun matériel cellulaire</string>
+    <string name="ui_yes_reported_by_modem_7e4ecd" formatted="false">Oui · indiqué par le modem</string>
+    <string name="ui_yes_confirmed_by_network_information_09e167" formatted="false">Oui · confirmé par les informations réseau</string>
+    <string name="ui_no_absent_from_modem_capabilities_1f8b26" formatted="false">Non · absent des capacités du modem</string>
+    <string name="ui_unverified_android_restricts_the_modem_capability_inven_c0b996" formatted="false">Non vérifié · Android limite l’inventaire du modem pour les applications ordinaires</string>
+    <string name="ui_modem_radio_technology_inventory_4ba879" formatted="false">Inventaire des technologies radio du modem</string>
+    <string name="ui_data_network_type_and_display_information_reported_by_a_9c0c30" formatted="false">Type de réseau et informations d’affichage fournis par Android</string>
+    <string name="ui_android_does_not_expose_the_full_lte_nr_band_inventory__1f9d8a" formatted="false">Android n’expose pas la liste complète des bandes LTE/NR aux applications ordinaires</string>
+    <string name="ui_sensor_summary_b1e952" formatted="false">Résumé des capteurs</string>
+    <string name="ui_total_available_sensors_dbe58a" formatted="false">Nombre de capteurs disponibles</string>
+    <string name="ui_sensor_types_70ad9e" formatted="false">Types de capteurs</string>
+    <string name="ui_wake_up_sensors_96811f" formatted="false">Capteurs de réveil</string>
+    <string name="ui_non_wake_up_sensors_7f4882" formatted="false">Capteurs sans réveil</string>
+    <string name="ui_connected_dynamic_sensors_2162fc" formatted="false">Capteurs dynamiques connectés</string>
+    <string name="ui_counting_scope_6bbe00" formatted="false">Périmètre du comptage</string>
+    <string name="ui_reported_by_sensormanager_includes_virtual_sensors_and__a77f15" formatted="false">Données SensorManager : incluent les capteurs virtuels et variantes de réveil, pas le nombre de puces physiques</string>
+    <string name="ui_ram_standard_generation_4eb524" formatted="false">Norme et génération RAM</string>
+    <string name="ui_ram_standard_technology_8e2f17" formatted="false">Norme et technologie RAM</string>
+    <string name="ui_ram_manufacturer_daf69a" formatted="false">Fabricant de la RAM</string>
+    <string name="ui_data_transfer_speed_86d7e4" formatted="false">Débit de transfert</string>
+    <string name="ui_nominal_bandwidth_3cf079" formatted="false">Bande passante nominale</string>
+    <string name="ui_estimated_bandwidth_1dd092" formatted="false">Bande passante estimée</string>
+    <string name="ui_detection_source_f6954d" formatted="false">Source d’identification</string>
+    <string name="ui_storage_standard_6ce64c" formatted="false">Norme de stockage</string>
+    <string name="ui_flash_storage_manufacturer_8808b8" formatted="false">Fabricant de la mémoire flash</string>
+    <string name="ui_flash_component_model_a1ff1d" formatted="false">Modèle de la puce flash</string>
+    <string name="ui_hardware_interface_2d5e2c" formatted="false">Interface matérielle</string>
+    <string name="ui_firmware_revision_1185e3" formatted="false">Révision du micrologiciel</string>
+    <string name="ui_cpu_activity_7351ad" formatted="false">ACTIVITÉ CPU</string>
+    <string name="ui_live_cpu_load_f4f338" formatted="false">CHARGE CPU EN DIRECT</string>
+    <string name="ui_live_cpu_load_60_seconds_65d303" formatted="false">CHARGE CPU · 60 SECONDES</string>
+    <string name="ui_real_time_cpu_load_history_over_the_last_60_seconds_744dcf" formatted="false">Historique de charge CPU des 60 dernières secondes</string>
+    <string name="ui_core_details_proc_cpuinfo_ad66f8" formatted="false">Détails des cœurs et /proc/cpuinfo ↗</string>
+    <string name="ui_power_saving_idle_2ee368" formatted="false">Économie d’énergie / Repos</string>
+    <string name="ui_balanced_routine_539d4d" formatted="false">Équilibré / Usage courant</string>
+    <string name="ui_balanced_daily_activity_52c5f5" formatted="false">Équilibré / Activité quotidienne</string>
+    <string name="ui_high_performance_peak_load_4daa0e" formatted="false">Hautes performances / Pic de charge</string>
+    <string name="ui_high_performance_heavy_load_53e3e6" formatted="false">Hautes performances / Charge élevée</string>
+    <string name="ui_current_load_274f25" formatted="false">CHARGE ACTUELLE</string>
+    <string name="ui_peak_load_60s_08df72" formatted="false">PIC DE CHARGE · 60 S</string>
+    <string name="ui_max_freq_63c282" formatted="false">FRÉQUENCE MAX.</string>
+    <string name="ui_active_cores_43cf24" formatted="false">CŒURS ACTIFS</string>
+    <string name="ui_cpu_synthesis_analysis_a80404" formatted="false">SYNTHÈSE ET ANALYSE CPU</string>
+    <string name="ui_core_performance_status_3de081" formatted="false">Performances et état des cœurs</string>
+    <string name="ui_core_frequency_performance_table_3be3fd" formatted="false">FRÉQUENCE ET PERFORMANCE PAR CŒUR</string>
+    <string name="ui_rear_camera_main_wide_bea6cd" formatted="false">Caméra arrière · Grand-angle principal</string>
+    <string name="ui_rear_camera_ultra_wide_808ba7" formatted="false">Caméra arrière · Ultra grand-angle</string>
+    <string name="ui_rear_camera_telephoto_optical_zoom_23c461" formatted="false">Caméra arrière · Téléobjectif optique</string>
+    <string name="ui_rear_camera_periscope_telephoto_642515" formatted="false">Caméra arrière · Téléobjectif périscopique</string>
+    <string name="ui_rear_camera_macro_lens_7be927" formatted="false">Caméra arrière · Macro</string>
+    <string name="ui_rear_camera_depth_sensor_06c1ef" formatted="false">Caméra arrière · Profondeur</string>
+    <string name="ui_rear_camera_monochrome_b_w_9ae7fd" formatted="false">Caméra arrière · Monochrome</string>
+    <string name="ui_front_camera_portrait_selfie_8d7e7c" formatted="false">Caméra avant · Portrait et selfie</string>
+    <string name="ui_front_camera_ultra_wide_selfie_5e66bb" formatted="false">Caméra avant · Selfie ultra grand-angle</string>
+    <string name="ui_rear_multi_lens_array_logical_1f91db" formatted="false">Ensemble arrière multi-objectifs (logique)</string>
+    <string name="ui_external_usb_camera_cd012d" formatted="false">Caméra externe / USB</string>
+    <string name="ui_optical_image_stabilization_ois_dd5bc8" formatted="false">Stabilisation optique (OIS)</string>
+    <string name="ui_field_of_view_fov_3e36ad" formatted="false">Champ de vision (FOV)</string>
+    <string name="ui_35mm_equivalent_focal_length_0414c8" formatted="false">Distance focale équivalente 35 mm</string>
+    <string name="ui_minimum_focus_distance_de83b0" formatted="false">Distance minimale de mise au point</string>
+    <string name="ui_sensor_color_filter_6e09e0" formatted="false">Filtre couleur du capteur</string>
+    <string name="ui_discrete_physical_lens_1e75c4" formatted="false">Objectif physique distinct</string>
+    <string name="ui_logical_multi_camera_array_d984ca" formatted="false">Ensemble multi-caméras logique</string>
+    <string name="ui_available_5cca76" formatted="false">Disponible</string>
+    <string name="ui_app_details_unavailable_700051" formatted="false">Informations sur l’application indisponibles</string>
+    <string name="ui_android_restricted_app_settings_0d7f86" formatted="false">Android a limité l’accès aux paramètres de l’application</string>
+    <string name="ui_battery_cell_manufacturer_not_exposed_by_android_7fbaca" formatted="false">Fabricant de la cellule : non exposé par Android</string>
+    <string name="ui_camera_module_manufacturer_not_exposed_by_camera2_a87a6c" formatted="false">Fabricant du module caméra : non exposé par Camera2</string>
+    <string name="ui_source_android_system_apis_restricted_data_is_noted_in__b241c1" formatted="false">Source : API Android · Les restrictions sont signalées dans chaque section · Balayez pour changer de page</string>
+    <string name="ui_device_intelligence_dbc165" formatted="false">Informations sur l’appareil</string>
+    <string name="ui_your_device_4c986b" formatted="false">VOTRE APPAREIL</string>
+    <string name="ui_avg_load_2ada5c" formatted="false">charge moyenne</string>
+    <string name="ui_cpu_operating_at_low_power_state_background_tasks_are_h_b5a683" formatted="false">Le CPU fonctionne à faible consommation. Les petits cœurs économes traitent les tâches de fond, avec peu de chaleur et de décharge.</string>
+    <string name="ui_cpu_handling_ui_streaming_or_routine_multitasking_smoot_5ae283" formatted="false">Le CPU gère l’interface, la vidéo ou le multitâche courant avec une répartition équilibrée des fréquences.</string>
+    <string name="ui_high_cpu_load_active_big_cores_boosted_for_heavy_proces_59ded8" formatted="false">Charge CPU élevée. Les grands cœurs accélèrent pour le calcul intensif, le rendu 3D ou les jeux.</string>
+    <string name="ui_avg_load_3a2b10" formatted="false">CHARGE MOY.</string>
+    <string name="ui_peak_load_12d7be" formatted="false">PIC DE CHARGE</string>
+    <string name="ui_in_depth_cpu_proc_cpuinfo_analysis_1efcff" formatted="false">Analyse détaillée CPU et /proc/cpuinfo ↗</string>
+    <string name="ui_close_280a01" formatted="false">Fermer</string>
+    <string name="ui_in_depth_cpu_analysis_f71355" formatted="false">ANALYSE CPU DÉTAILLÉE</string>
+    <string name="ui_performance_proc_cpuinfo_e8a37b" formatted="false">Performances et /proc/cpuinfo</string>
+    <string name="ui_core_performance_live_8f4e11" formatted="false">Performances des cœurs en direct</string>
+    <string name="ui_proc_cpuinfo_1_s_cores_0aaf39">proc.cpuinfo (%1$s cœurs)</string>
+    <string name="ui_real_time_logical_core_metrics_6f6bd0" formatted="false">MESURES DES CŒURS LOGIQUES EN DIRECT</string>
+    <string name="ui_system_hardware_identifiers_7547b6" formatted="false">IDENTIFIANTS MATÉRIELS DU SYSTÈME</string>
+    <string name="ui_copied_cd3a9c" formatted="false">Copié !</string>
+    <string name="ui_copy_all_b072db" formatted="false">Tout copier</string>
+    <string name="ui_raw_proc_cpuinfo_output_373d66" formatted="false">SORTIE BRUTE /proc/cpuinfo</string>
+    <string name="ui_close_d2b73a" formatted="false">Fermer</string>
+    <string name="ui_in_depth_gpu_analysis_aa223e" formatted="false">ANALYSE GPU DÉTAILLÉE</string>
+    <string name="ui_graphics_capabilities_hardware_limits_b1c442" formatted="false">Capacités graphiques et limites matérielles</string>
+    <string name="ui_capabilities_limits_39b67b" formatted="false">Capacités et limites</string>
+    <string name="ui_gl_extensions_1_s_a8e639">GL_EXTENSIONS (%1$s)</string>
+    <string name="ui_opengl_es_hardware_limits_49443f" formatted="false">LIMITES MATÉRIELLES OPENGL ES</string>
+    <string name="ui_driver_compute_capabilities_1cbab5" formatted="false">PILOTE ET CAPACITÉS DE CALCUL</string>
+    <string name="ui_copy_all_fa7c79" formatted="false">Tout copier</string>
+    <string name="ui_search_extensions_c33cb0" formatted="false">Rechercher une extension…</string>
+    <string name="ui_showing_1_s_of_2_s_798ef1">%1$s sur %2$s affichés</string>
+    <string name="ui_bw_6a0af1" formatted="false">Bande passante</string>
+    <string name="ui_battery_3adadd" formatted="false">BATTERIE</string>
+    <string name="ui_system_files_223df7" formatted="false">Système et fichiers</string>
+    <string name="ui_reserved_free_474e45" formatted="false">Espace libre réservé</string>
+    <string name="ui_last_60_seconds_30f824" formatted="false">60 DERNIÈRES SECONDES</string>
+    <string name="ui_storage_d1e637" formatted="false">STOCKAGE</string>
+    <string name="ui_collapse_analysis_8a4e9d" formatted="false">Réduire l’analyse</string>
+    <string name="ui_in_depth_analysis_bdc2c6" formatted="false">Analyse détaillée</string>
+    <string name="ui_in_depth_cpu_proc_cpuinfo_analysis_010e4d" formatted="false">Analyse détaillée CPU et /proc/cpuinfo</string>
+    <string name="ui_in_depth_gpu_extensions_analysis_fff0ea" formatted="false">Analyse détaillée GPU et extensions</string>
+    <string name="ui_live_core_metrics_structured_proc_cpuinfo_bd01fa" formatted="false">Mesures des cœurs en direct et /proc/cpuinfo structuré</string>
+    <string name="ui_hardware_limits_vulkan_gl_extensions_261127" formatted="false">Limites matérielles, Vulkan et GL_EXTENSIONS</string>
+    <string name="ui_open_275cce" formatted="false">Ouvrir ↗</string>
+    <string name="ui_used_4b49ad" formatted="false">utilisé</string>
+    <string name="ui_zram_is_compressed_ram_and_is_shown_on_the_ram_page_cac_2bdcff" formatted="false">La ZRAM est de la RAM compressée, affichée dans l’onglet RAM. Le cache est séparé lorsque l’accès aux données d’utilisation est autorisé.</string>
+    <string name="ui_live_power_9b8c4b" formatted="false">PUISSANCE EN DIRECT</string>
+    <string name="ui_current_e9ee5c" formatted="false">COURANT</string>
+    <string name="ui_power_15c965" formatted="false">PUISSANCE</string>
+    <string name="ui_p_over_60_seconds_the_sign_depends_on_device_reporting_3a7cd9" formatted="false">Puissance absolue sur 60 s · Le signe dépend des données fournies par l’appareil</string>
+    <string name="ui_applications_1_s_10df7c">Applications (%1$s)</string>
+    <string name="ui_tap_to_collapse_4baf54" formatted="false">Appuyez pour réduire</string>
+    <string name="ui_tap_to_view_app_storage_72a32d" formatted="false">Appuyez pour voir le stockage des applications</string>
+    <string name="ui_about_c94c1d" formatted="false">À propos</string>
+    <string name="ui_explore_device_hardware_android_sensors_and_live_resour_b2ba30" formatted="false">Explorez le matériel, Android, les capteurs et les ressources en direct.</string>
+    <string name="ui_privacy_99d106" formatted="false">Confidentialité</string>
+    <string name="ui_device_data_is_read_locally_no_account_or_cloud_sync_5f5d44" formatted="false">Les données sont lues sur l’appareil. Aucun compte ni synchronisation cloud.</string>
+    <string name="ui_built_with_kotlin_jetpack_compose_and_android_apis_thir_e1e16d" formatted="false">Conçu avec Kotlin, Jetpack Compose et les API Android. Les bibliothèques tierces conservent leurs licences respectives.</string>
+    <string name="ui_settings_01f3f3" formatted="false">Paramètres</string>
+    <string name="ui_language_65074a" formatted="false">Langue</string>
+    <string name="ui_appearance_705b42" formatted="false">Apparence</string>
+    <string name="ui_accent_color_cf445b" formatted="false">Couleur d’accent</string>
+    <string name="ui_apply_color_b8866c" formatted="false">Appliquer la couleur</string>
+    <string name="ui_units_bbf372" formatted="false">Unités</string>
+    <string name="ui_home_screen_widget_70e1d8" formatted="false">Widget d’écran d’accueil</string>
+    <string name="ui_battery_9c9184" formatted="false">Batterie</string>
+    <string name="ui_add_widget_df8816" formatted="false">Ajouter un widget</string>
+    <string name="ui_system_language_fc7995" formatted="false">🌐 Langue du système</string>
+    <string name="ui_default_d75aa6" formatted="false">Par défaut</string>
+    <string name="ui_custom_66c5f1" formatted="false">Personnalisé</string>
+    <string name="ui_live_last_10_s_bbd494" formatted="false">En direct · 10 dernières secondes</string>
+    <string name="ui_unable_to_rearm_trigger_0e93e7" formatted="false">Impossible de réarmer le déclencheur</string>
+    <string name="ui_sensor_access_restricted_71ca13" formatted="false">Accès au capteur limité</string>
+    <string name="ui_sensor_disconnected_7472c1" formatted="false">Capteur déconnecté</string>
+    <string name="ui_permission_required_to_receive_data_1178b8" formatted="false">Autorisation nécessaire pour recevoir des données</string>
+    <string name="ui_device_declined_this_sensor_stream_d1436a" formatted="false">L’appareil a refusé ce flux de capteur</string>
+    <string name="ui_listening_waiting_for_a_sensor_event_a4a322" formatted="false">Écoute en cours · En attente d’un événement</string>
+    <string name="ui_sensor_access_restricted_by_android_oem_34a285" formatted="false">Accès au capteur limité par Android ou le fabricant</string>
+    <string name="ui_sensor_is_no_longer_available_bb7d9d" formatted="false">Capteur désormais indisponible</string>
+    <string name="ui_paused_b8d3bf" formatted="false">En pause</string>
+    <string name="ui_allow_sensor_access_45ba4b" formatted="false">Autoriser le capteur</string>
+    <string name="ui_latest_event_324f6c" formatted="false">Dernier événement</string>
+    <string name="ui_raw_sensor_values_f3895e" formatted="false">Valeurs brutes du capteur</string>
+    <string name="ui_storage_used_d8b314" formatted="false">STOCKAGE UTILISÉ</string>
+    <string name="ui_ram_in_use_3cff75" formatted="false">RAM UTILISÉE</string>
+    <string name="ui_os_cbdae4" formatted="false">Système</string>
+    <string name="ui_storage_229800" formatted="false">Stockage</string>
+    <string name="ui_network_955ba5" formatted="false">Réseau</string>
+    <string name="ui_camera_4da9c9" formatted="false">Caméra</string>
+    <string name="ui_features_5cbb5b" formatted="false">Fonctions</string>
+    <string name="ui_system_d90f70" formatted="false">Système</string>
+    <string name="ui_dark_ca1dd5" formatted="false">Sombre</string>
+    <string name="ui_light_55942c" formatted="false">Clair</string>
+    <string name="ui_mint_d89d9e" formatted="false">Menthe</string>
+    <string name="ui_violet_684e59" formatted="false">Violet</string>
+    <string name="ui_amber_a2fec9" formatted="false">Ambre</string>
+    <string name="ui_rose_5a43ba" formatted="false">Rose</string>
+    <string name="ui_blue_95beb5" formatted="false">Bleu</string>
+    <string name="ui_version_ba3f38" formatted="false">Version</string>
+    <string name="ui_vendor_oem_dbb458" formatted="false">Fournisseur / OEM</string>
+    <string name="ui_resolution_ce25cb" formatted="false">Résolution</string>
+    <string name="ui_power_bbe3cb" formatted="false">Puissance</string>
+    <string name="ui_maximum_range_743a9d" formatted="false">Plage maximale</string>
+    <string name="ui_sensor_name_8ee03c" formatted="false">Nom du capteur</string>
+    <string name="ui_sensor_type_22c414" formatted="false">Type de capteur</string>
+    <string name="ui_reporting_mode_e98f8f" formatted="false">Mode de rapport</string>
+    <string name="ui_continuous_557f07" formatted="false">Continu</string>
+    <string name="ui_on_change_7a06cb" formatted="false">Lors d’un changement</string>
+    <string name="ui_one_shot_4b3112" formatted="false">Déclenchement unique</string>
+    <string name="ui_special_trigger_5b4f5d" formatted="false">Déclenchement spécial</string>
+    <string name="ui_cpu_ff221d" formatted="false">CPU</string>
+    <string name="ui_gpu_a6a631" formatted="false">GPU</string>
+    <string name="ui_system_ram_2f86a7" formatted="false">RAM système</string>
+    <string name="ui_ram_in_use_dfa352" formatted="false">RAM utilisée</string>
+    <string name="ui_available_ram_5d8fe2" formatted="false">RAM disponible</string>
+    <string name="ui_low_memory_threshold_912795" formatted="false">Seuil de mémoire faible</string>
+    <string name="ui_app_heap_memory_b401a2" formatted="false">Mémoire du tas de l’application</string>
+    <string name="ui_advertised_ram_7a9d29" formatted="false">RAM annoncée</string>
+    <string name="ui_memory_pressure_05a0bc" formatted="false">Pression mémoire</string>
+    <string name="ui_normal_7a1fa8" formatted="false">Normal</string>
+    <string name="ui_system_reports_low_memory_007d9c" formatted="false">Le système signale un manque de mémoire</string>
+    <string name="ui_cpu_cache_4eb84d" formatted="false">Cache CPU</string>
+    <string name="ui_cpu_governor_fa2f52" formatted="false">Gouverneur CPU</string>
+    <string name="ui_per_core_frequency_range_dd617c" formatted="false">Plage de fréquence par cœur</string>
+    <string name="ui_supported_abis_ba2a23" formatted="false">ABI pris en charge</string>
+    <string name="ui_instruction_set_6f83f4" formatted="false">Jeu d’instructions</string>
+    <string name="ui_soc_manufacturer_95cb69" formatted="false">Fabricant du SoC</string>
+    <string name="ui_chip_platform_84aa29" formatted="false">Puce / plateforme</string>
+    <string name="ui_64_bit_architecture_a90624" formatted="false">Architecture 64 bits</string>
+    <string name="ui_logical_cores_651e66" formatted="false">Cœurs logiques</string>
+    <string name="ui_total_data_partition_capacity_76cafe" formatted="false">Capacité totale de la partition de données</string>
+    <string name="ui_used_unavailable_4a114c" formatted="false">Utilisé / indisponible</string>
+    <string name="ui_occupied_by_files_ff8f6c" formatted="false">Occupé par les fichiers</string>
+    <string name="ui_reserved_free_space_a017c1" formatted="false">Espace libre réservé</string>
+    <string name="ui_usable_free_space_68dca5" formatted="false">Espace libre utilisable</string>
+    <string name="ui_calculation_e43fe7" formatted="false">Calcul</string>
+    <string name="ui_app_data_excluding_cache_5a270a" formatted="false">Données des applications hors cache</string>
+    <string name="ui_app_cache_included_in_data_910e49" formatted="false">Cache inclus dans les données</string>
+    <string name="ui_app_code_reported_by_system_9f9b5b" formatted="false">Code des applications signalé par le système</string>
+    <string name="ui_limitations_7c8a4d" formatted="false">Limites</string>
+    <string name="ui_classification_f581d1" formatted="false">Classification</string>
+    <string name="ui_system_wide_swap_ffd1bc" formatted="false">Swap du système</string>
+    <string name="ui_zram_swap_separate_from_internal_storage_d07430" formatted="false">ZRAM et swap · Séparés du stockage interne</string>
+    <string name="ui_wake_up_mode_d89545" formatted="false">Mode de réveil</string>
+    <string name="ui_battery_cell_manufacturer_a18f84" formatted="false">Fabricant de la cellule de batterie</string>
+    <string name="ui_lens_function_62a167" formatted="false">Fonction de l’objectif</string>
+    <string name="ui_actual_field_of_view_fov_62ccae" formatted="false">Champ de vision réel (FOV)</string>
+    <string name="ui_sensor_pixel_resolution_5eff76" formatted="false">Résolution en pixels du capteur</string>
+    <string name="ui_physical_sensor_size_2e3502" formatted="false">Taille physique du capteur</string>
+    <string name="ui_hardware_identity_2d90db" formatted="false">Identité matérielle</string>
+    <string name="ui_camera2_hardware_level_14c83b" formatted="false">Niveau matériel Camera2</string>
+    <string name="ui_optical_image_stabilization_ois_e15b4a" formatted="false">Stabilisation optique de l’image (OIS)</string>
+    <string name="ui_flash_light_d86624" formatted="false">Éclairage flash</string>
+    <string name="ui_frame_rate_fps_a86d99" formatted="false">Cadence d’images (FPS)</string>
+    <string name="ui_iso_sensitivity_range_59778b" formatted="false">Plage de sensibilité ISO</string>
+    <string name="ui_exposure_time_range_7e6423" formatted="false">Plage du temps d’exposition</string>
+    <string name="ui_face_detection_65d2b9" formatted="false">Détection des visages</string>
+    <string name="ui_linked_physical_cameras_764969" formatted="false">Caméras physiques associées</string>
+    <string name="ui_advanced_capabilities_0c6b1d" formatted="false">Fonctions avancées</string>
+    <string name="ui_extensions_572808" formatted="false">Extensions</string>
+    <string name="ui_maximum_digital_zoom_118f8e" formatted="false">Zoom numérique maximal</string>
+    <string name="ui_build_cccc7f" formatted="false">Version système</string>
+    <string name="ui_product_name_a2ed56" formatted="false">Nom du produit</string>
+    <string name="ui_brand_74de14" formatted="false">Marque</string>
+    <string name="ui_device_code_a450df" formatted="false">Code de l’appareil</string>
+    <string name="ui_board_4f90cf" formatted="false">Carte mère</string>
+    <string name="ui_manufacturer_model_902b67" formatted="false">Fabricant / modèle</string>
+    <string name="ui_device_board_29bdb4" formatted="false">Appareil / carte mère</string>
+    <string name="ui_device_system_00fd91" formatted="false">Appareil et système</string>
+    <string name="ui_cpu_architecture_1e9f3d" formatted="false">CPU et architecture</string>
+    <string name="ui_model_68c2cc" formatted="false">Modèle</string>
+    <string name="ui_board_e879b0" formatted="false">Carte mère</string>
+    <string name="ui_brand_62b4aa" formatted="false">Marque</string>
+    <string name="ui_build_time_72b8e5" formatted="false">Date de compilation</string>
+    <string name="ui_product_dd3b86" formatted="false">Produit</string>
+    <string name="ui_user_9f8a23" formatted="false">Utilisateur</string>
+    <string name="ui_host_3960ec" formatted="false">Hôte</string>
+    <string name="ui_description_55f8eb" formatted="false">Description</string>
+    <string name="ui_processor_b74d0d" formatted="false">Processeur</string>
+    <string name="ui_vendor_d96159" formatted="false">Fournisseur</string>
+    <string name="ui_connection_status_bcab62" formatted="false">État de connexion</string>
+    <string name="ui_transport_network_type_64c7f8" formatted="false">Transport / type de réseau</string>
+    <string name="ui_ip_address_11f510" formatted="false">Adresse IP</string>
+    <string name="ui_link_speed_758697" formatted="false">Vitesse de liaison</string>
+    <string name="ui_wi_fi_frequency_dd64ca" formatted="false">Fréquence Wi-Fi</string>
+    <string name="ui_wi_fi_standard_809543" formatted="false">Norme Wi-Fi</string>
+    <string name="ui_wi_fi_mac_address_3ebca5" formatted="false">Adresse MAC Wi-Fi</string>
+    <string name="ui_screen_resolution_390a92" formatted="false">Résolution de l’écran</string>
+    <string name="ui_security_patch_e0097a" formatted="false">Correctif de sécurité</string>
+    <string name="ui_security_level_0ec835" formatted="false">Niveau de sécurité</string>
+    <string name="ui_version_name_95e238" formatted="false">Nom de version</string>
+    <string name="ui_gpu_renderer_6dfa7e" formatted="false">Moteur de rendu GPU</string>
+    <string name="ui_gpu_vendor_d7e0f5" formatted="false">Fournisseur du GPU</string>
+    <string name="ui_opengl_driver_ad91bb" formatted="false">Pilote OpenGL</string>
+    <string name="ui_maximum_texture_size_d3b4ed" formatted="false">Taille maximale des textures</string>
+    <string name="ui_dynamic_sensor_711481" formatted="false">Capteur dynamique</string>
+    <string name="ui_wake_up_sensor_c8b760" formatted="false">Capteur de réveil</string>
+    <string name="ui_wide_color_gamut_47e775" formatted="false">Gamme de couleurs étendue</string>
+    <string name="ui_1_s_apps_visible_to_android_the_list_may_be_incomplete_25f454">%1$s applications visibles ; liste potentiellement incomplète</string>
+    <string name="ui_core_1_s_2_s_3_s_3ffe1b">Cœur %1$s : %2$s – %3$s</string>
+    <string name="ui_1_s_cores_c556fa">%1$s cœurs</string>
+    <string name="ui_1_s_android_visibility_restrictions_6ec7ea">%1$s (visibilité limitée par Android)</string>
+    <string name="ui_1_s_supported_extensions_965acd">%1$s extensions prises en charge</string>
+    <string name="ui_device_property_1_s_52d980">Propriété de l’appareil : %1$s</string>
+    <string name="ui_zram_1_s_logical_capacity_10669b">ZRAM %1$s · capacité logique</string>
+    <string name="ui_zram_1_s_uncompressed_data_de7ef1">ZRAM %1$s · données non compressées</string>
+    <string name="ui_zram_1_s_physical_ram_used_13732d">ZRAM %1$s · RAM physique utilisée</string>
+    <string name="ui_macro_capture_supported_d47218" formatted="false">Prise en charge macro</string>
+    <string name="ui_scsi_ufs_multi_channel_flash_storage_5dc8a3" formatted="false">SCSI / UFS (flash multicanal)</string>
+    <string name="ui_mmc_read_300_mb_s_write_250_mb_s_ea3d23" formatted="false">MMC (lecture ~300 Mo/s, écriture ~250 Mo/s)</string>
+    <string name="ui_scsi_ufs_read_1000_mb_s_write_800_mb_s_835dce" formatted="false">SCSI / UFS (lecture ~1000 Mo/s, écriture ~800 Mo/s)</string>
+    <string name="ui_scsi_ufs_read_2100_mb_s_write_1200_mb_s_accdd8" formatted="false">SCSI / UFS (lecture ~2100 Mo/s, écriture ~1200 Mo/s)</string>
+    <string name="ui_scsi_ufs_read_4200_mb_s_write_2800_mb_s_ab315a" formatted="false">SCSI / UFS (lecture ~4200 Mo/s, écriture ~2800 Mo/s)</string>
+    <string name="ui_scsi_ufs_read_850_mb_s_write_260_mb_s_103381" formatted="false">SCSI / UFS (lecture ~850 Mo/s, écriture ~260 Mo/s)</string>
+    <string name="ui_expand_d91c62" formatted="false">Développer</string>
+    <string name="ui_collapse_b12331" formatted="false">Réduire</string>
+    <string name="ui_open_app_details_cfc7c9" formatted="false">Ouvrir les informations de l’application</string>
+    <string name="ui_show_apps_ad2d15" formatted="false">Afficher les applications</string>
+    <string name="ui_collapse_apps_5a7eeb" formatted="false">Réduire les applications</string>
+    <string name="ui_ram_used_ea08fa" formatted="false">RAM UTILISÉE</string>
+    <string name="ui_android_restricts_hardware_mac_the_connection_mac_may_b_fee8cb" formatted="false">Android limite la MAC matérielle ; la MAC de connexion peut être aléatoire</string>
+    <string name="ui_not_activated_5545b8" formatted="false">Non activé</string>
+    <string name="ui_manual_sensor_controls_13175e" formatted="false">Réglages manuels du capteur</string>
+    <string name="ui_high_speed_burst_capture_2ffe31" formatted="false">Rafale haute vitesse</string>
+    <string name="ui_raw_capture_3ecae8" formatted="false">Capture RAW</string>
+    <string name="ui_supported_vulkan_compute_shader_9d1154" formatted="false">Pris en charge (Vulkan Compute Shader)</string>
+    <string name="ui_hardware_supported_8da95c" formatted="false">Prise en charge matérielle</string>
+    <string name="ui_ois_hardware_present_c1309d" formatted="false">Matériel OIS présent</string>
+    <string name="ui_usage_access_is_required_to_view_app_storage_d3c8e1" formatted="false">L’accès aux données d’utilisation est requis pour le stockage des applications</string>
+    <string name="ui_usage_access_is_required_to_estimate_unclassified_stora_602d51" formatted="false">L’accès aux données d’utilisation permet une estimation ; la séparation exacte est indisponible</string>
+    <string name="ui_enable_usage_access_in_android_settings_b6ac38" formatted="false">Activez l’accès aux données d’utilisation dans les paramètres Android</string>
+    <string name="ui_external_device_66c5a1" formatted="false">Appareil externe</string>
+    <string name="ui_flagship_high_end_graphics_77addf" formatted="false">Haut de gamme / graphismes avancés</string>
+    <string name="ui_full_camera2_support_2ab132" formatted="false">Prise en charge complète de Camera2</string>
+    <string name="ui_narrow_zoom_906e01" formatted="false">Étroit / zoom</string>
+    <string name="ui_standard_wide_angle_13d2d8" formatted="false">Grand-angle standard</string>
+    <string name="ui_ultra_wide_angle_ef4763" formatted="false">Ultra grand-angle</string>
+    <string name="ui_supports_ray_tracing_or_modern_shading_for_demanding_3d_9a740a" formatted="false">Compatible avec le ray tracing ou les techniques modernes pour les jeux 3D exigeants à haute résolution et fréquence.</string>
+    <string name="ui_no_single_camera_17c448" formatted="false">Non (caméra unique)</string>
+    <string name="ui_not_exposed_or_camera_permission_required_e4daf1" formatted="false">Non exposé ou autorisation caméra requise</string>
+    <string name="ui_not_exposed_through_android_137ea9" formatted="false">Non exposé via Android</string>
+    <string name="ui_a_reliable_ratio_cannot_be_calculated_on_this_device_d8ccdb" formatted="false">Aucun ratio fiable ne peut être calculé sur cet appareil</string>
+    <string name="ui_cannot_reconcile_app_statistics_exceed_used_storage_8f1a80" formatted="false">Rapprochement impossible : les statistiques dépassent le stockage utilisé</string>
+    <string name="ui_not_found_or_android_restricts_access_f537b5" formatted="false">Introuvable ou accès limité par Android</string>
+    <string name="ui_cannot_read_proc_cpuinfo_system_access_restriction_382f06" formatted="false">Lecture de /proc/cpuinfo impossible : accès limité</string>
+    <string name="ui_cannot_read_specifications_device_access_may_be_restric_f9c614" formatted="false">Spécifications indisponibles ; accès potentiellement limité</string>
+    <string name="ui_cannot_read_storage_volume_396897" formatted="false">Lecture du volume impossible</string>
+    <string name="ui_l1_l2_l3_details_restricted_by_android_8ee02e" formatted="false">L1/L2/L3 (détails limités par Android)</string>
+    <string name="ui_legacy_basic_960bea" formatted="false">Ancien mode (basique)</string>
+    <string name="ui_level_3_advanced_raw_yuv_ee3acb" formatted="false">Niveau 3 (avancé / RAW et YUV)</string>
+    <string name="ui_limited_9c32e2" formatted="false">Limité</string>
+    <string name="ui_identified_from_soc_and_system_partitions_23612c" formatted="false">Identification par SoC et partitions système</string>
+    <string name="ui_managed_by_flash_controller_3ea4ab" formatted="false">Géré par le contrôleur flash</string>
+    <string name="ui_samsung_semiconductor_sk_hynix_oem_flash_suppliers_4b21a8" formatted="false">Samsung Semiconductor / SK Hynix (fournisseurs flash OEM)</string>
+    <string name="ui_system_media_and_user_files_cannot_be_separated_exactly_bbcd95" formatted="false">Les autorisations actuelles ne permettent pas de séparer exactement système, médias et fichiers utilisateur</string>
+    <string name="ui_standard_basic_b32ee3" formatted="false">Standard / basique</string>
+    <string name="ui_backward_compatible_6ef32a" formatted="false">Rétrocompatible</string>
+    <string name="ui_mid_range_capable_c80b9b" formatted="false">Milieu de gamme / performant</string>
+    <string name="ui_files_reserved_free_usable_free_total_used_unavailable__49a645" formatted="false">Fichiers + libre réservé + libre utilisable = total ; utilisé/indisponible inclut les deux premiers</string>
+    <string name="ui_optimized_for_efficient_system_ui_and_light_games_conse_dc234e" formatted="false">Optimisé pour une interface fluide et les jeux légers, avec une consommation réduite.</string>
+    <string name="ui_infinity_fixed_focus_62042f" formatted="false">Infini / mise au point fixe</string>
+    <string name="ui_depth_map_output_f8878f" formatted="false">Sortie de carte de profondeur</string>
+    <string name="ui_manual_post_processing_84e67a" formatted="false">Post-traitement manuel</string>
+    <string name="ui_handles_common_3d_games_at_medium_to_high_settings_with_2a38f3" formatted="false">Convient aux jeux 3D courants avec des réglages moyens à élevés et prend en charge Vulkan et OpenGL ES 3.2.</string>
+    <string name="ui_zram_is_compressed_swap_in_ram_excluded_from_internal_s_aef02c" formatted="false">La ZRAM est du swap compressé en RAM, exclu du taux de stockage interne</string>
+    <string name="ui_read_sensor_settings_4b8f55" formatted="false">Lecture des réglages du capteur</string>
+    <string name="ui_read_directly_from_sysfs_block_device_873fd6" formatted="false">Lecture directe depuis le périphérique bloc sysfs</string>
+    <string name="duration_format">%1$d j %2$d h %3$d min</string>
+    <string name="panel_oem_format">Nom de la dalle : %1$s · Code PNP OEM : %2$s</string>
+    <string name="cpu_play_description">Un CPU court et saute dans l’herbe</string>
+    <plurals name="visible_app_count">
+        <item quantity="one">%d application</item>
+        <item quantity="other">%d applications</item>
+    </plurals>
+</resources>
